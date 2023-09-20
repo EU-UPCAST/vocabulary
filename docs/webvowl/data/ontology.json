@@ -1,0 +1,5152 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "cs", "ar", "ja", "el", "en", "it", "fr", "da", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/ns/org", "http://ontologies.atb-bremen.de/smashHitCore", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/dcat", "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts", "https://w3id.org/idsa/core", "https://www.upcast-project.eu/upcast-vocab", "http://www.w3.org/ns/odrl/2", "http://purl.org/adaptcentre/openscience/ontologies/consent", "https://w3id.org/GConsent", "http://www.w3.org/2000/01/rdf-schema", "http://www.ict-abovo.eu/ontologies/PolicyModel", "http://www.w3.org/ns/prov", "http://www.ict-abovo.eu/ontologies/Workflow", "http://purl.org/dc/terms", "http://www.ict-abovo.eu/ontologies/InformationModel", "http://xmlns.com/foaf/0.1", "http://purl.org/dc/dcmitype", "http://www.w3.org/2006/time", "http://www.w3.org/ns/dpv" ],
+    "title" : {
+      "undefined" : "UPCAST Vocabulary"
+    },
+    "iri" : "https://www.upcast-project.eu/upcast-vocab",
+    "description" : {
+      "undefined" : "Vocabulary for interoperability of UPCAST plugins among themselves and with other Data Spaces and Data Marketplaces"
+    },
+    "labels" : {
+      "undefined" : "UPCAST Vocabulary"
+    },
+    "other" : {
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "UPCAST Vocabulary",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "118",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "146",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "147",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "184",
+    "type" : "owl:Class"
+  }, {
+    "id" : "186",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "192",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "202",
+    "type" : "owl:Class"
+  }, {
+    "id" : "203",
+    "type" : "owl:Class"
+  }, {
+    "id" : "204",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "owl:Class"
+  }, {
+    "id" : "205",
+    "type" : "owl:Class"
+  }, {
+    "id" : "197",
+    "type" : "owl:Class"
+  }, {
+    "id" : "196",
+    "type" : "owl:Class"
+  }, {
+    "id" : "215",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "230",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "251",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "174",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "195",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "190",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "185",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/prov#InstantaneousEvent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InstantaneousEvent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/InformationModel#OrganisationTypes",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/InformationModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OrganisationTypes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/MutualContractualAgreement",
+    "baseIri" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts",
+    "instances" : 0,
+    "description" : {
+      "en" : "contract between named parties whose individual rights and obligations are not transferable to another party without prior written permission."
+    },
+    "label" : {
+      "IRI-based" : "MutualContractualAgreement",
+      "en" : "Mutual Contractual Agreement"
+    },
+    "comment" : {
+      "en" : "Explanatory Note\nA mutual contractual agreement involves an exchange of a promises in which the promises made by each party represent considerations supporting the promises of the other party(ies)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Person",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "agents-responsibility",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Person agents are people.",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "expanded",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Person",
+      "undefined" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#Actions",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actions",
+      "undefined" : "Action"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://purl.org/dc/terms/LocationPeriodOrJurisdiction",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LocationPeriodOrJurisdiction",
+      "en" : "Location, Period, or Jurisdiction"
+    },
+    "subClasses" : [ "13", "14", "15" ],
+    "comment" : {
+      "en" : "A location, period of time, or jurisdiction."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#OperationEntities",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperationEntities",
+      "undefined" : "Operation Entity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Resource",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "annotations" : {
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "cs",
+        "value" : "Nová t?ída p?idaná ve verzi DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova classe aggiunta in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "es",
+        "value" : "Nueva clase agregada en DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "da",
+        "value" : "Ny klasse i DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "New class added in DCAT 2.0.",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Recurso publicado o curado por un agente único.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Risorsa pubblicata o curata da un singolo agente.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "Ressource udgivet eller udvalgt og arrangeret af en enkelt aktør.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Zdroj publikovaný ?i ?ízený jediným ?initelem.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Resource published or curated by a single agent.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "dcat:Resource is an extension point that enables the definition of any kind of catalog. Additional subclasses may be defined in a DCAT profile or application for catalogs of other kinds of resources.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "La classe di tutte le risorse catalogate, la Superclasse di dcat:Dataset, dcat:DataService, dcat:Catalog e qualsiasi altro membro di dcat:Catalog. Questa classe porta proprietà comuni a tutte le risorse catalogate, inclusi set di dati e servizi dati. Si raccomanda vivamente di utilizzare una sottoclasse più specifica. Quando si descrive una risorsa che non è un dcat:Dataset o dcat:DataService, si raccomanda di creare una sottoclasse di dcat:Resource appropriata, o utilizzare dcat:Resource con la proprietà dct:type per indicare il tipo specifico.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "dcat:Resource es un punto de extensión que permite la definición de cualquier tipo de catálogo. Se pueden definir subclases adicionales en perfil de DCAT o una aplicación para catálogos de otro tipo de recursos.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "dcat:Resource er et udvidelsespunkt der tillader oprettelsen af enhver type af kataloger. Yderligere subklasser kan defineres i en DCAT-profil eller i en applikation til kataloger med andre typer af ressourcer.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "dcat:Resource è un punto di estensione che consente la definizione di qualsiasi tipo di catalogo. Sottoclassi aggiuntive possono essere definite in un profilo DCAT o in un'applicazione per cataloghi di altri tipi di risorse.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "dcat:Resource je bod pro rozší?ení umož?ující definici r?zných druh? katalog?. Další podt?ídy lze definovat v profilech DCAT ?i aplikacích pro katalogy zdroj? jiných druh?.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Klassen for alle katalogiserede ressourcer, den overordnede klasse for dcat:Dataset, dcat:DataService, dcat:Catalog og enhvert medlem af et dcat:Catalog. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer, herunder dataset og datatjenester. Det anbefales kraftigt at mere specifikke subklasser oprettes. Når der beskrives ressourcer der ikke er dcat:Dataset eller dcat:DataService, anbefales det at oprette passende subklasser af dcat:Resource eller at dcat:Resource anvendes sammen med egenskaben dct:type til opmærkning med en specifik typeangivelse.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "T?ída všech katalogizovaných zdroj?, nadt?ída dcat:Dataset, dcat:DataService, dcat:Catalog a všech ostatních ?len? dcat:Catalog. Tato t?ída nese vlastnosti spole?né všem katalogizovaným zdroj?m v?etn? datových sad a datových služeb. Je siln? doporu?eno používat specifi?t?jší podt?ídy, pokud je to možné. P?i popisu zdroje, který není ani dcat:Dataset, ani dcat:DataService se doporu?uje vytvo?it odpovídající podt?ídu dcat:Resrouce a nebo použít dcat:Resource s vlastností dct:type pro ur?ení konkrétního typu.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "The class of all catalogued resources, the Superclass of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all catalogued resources, including datasets and data services. It is strongly recommended to use a more specific sub-class. When describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dct:type property to indicate the specific type.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "La clase de todos los recursos catalogados, la superclase de dcat:Dataset, dcat:DataService, dcat:Catalog y cualquier otro miembro de un dcat:Catalog. Esta clase tiene propiedades comunes a todos los recursos catalogados, incluyendo conjuntos de datos y servicios de datos. Se recomienda fuertemente que se use una clase más específica. Cuando se describe un recurso que no es un dcat:Dataset o dcat:DataService, se recomienda crear una sub-clase apropiada de dcat:Resource, o usar dcat:Resource con la propiedad dct:type to indicar el tipo específico.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "Katalogizovaný zdroj",
+      "IRI-based" : "Resource",
+      "en" : "Catalogued resource",
+      "it" : "Risorsa catalogata",
+      "da" : "Katalogiseret ressource",
+      "es" : "Recurso catalogado"
+    },
+    "subClasses" : [ "17", "22", "23", "24" ],
+    "comment" : {
+      "cs" : "Zdroj publikovaný ?i ?ízený jediným ?initelem.",
+      "en" : "Resource published or curated by a single agent.",
+      "it" : "Risorsa pubblicata o curata da un singolo agente.",
+      "da" : "Ressource udgivet eller udvalgt og arrangeret af en enkelt aktør.",
+      "es" : "Recurso publicado o curado por un agente único."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Offer",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Offer",
+      "undefined" : "Offer"
+    },
+    "subClasses" : [ "26" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/InformationModel#StateValues",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/InformationModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateValues"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#WorkflowModels",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WorkflowModels",
+      "undefined" : "Workflow Models"
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/InformationModel#ContextTypes",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/InformationModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContextTypes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/idsa/core/ContractOffer",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContractOffer",
+      "en" : "Contract offer"
+    },
+    "comment" : {
+      "en" : "Contract issued by the Data Provider offering the usage of a Resource at particular conditions."
+    },
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "36", "25" ]
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#Variables",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variables",
+      "undefined" : "Variable"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "agents-responsibility",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. ",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "starting-point",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "subClasses" : [ "9", "39", "40" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/ns/dpv#Processing",
+    "baseIri" : "http://www.w3.org/ns/dpv",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Processing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#Edges",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Edges",
+      "undefined" : "Edge"
+    },
+    "subClasses" : [ "47" ],
+    "comment" : {
+      "undefined" : "Edge of a Workflow"
+    },
+    "attributes" : [ "external" ],
+    "id" : "47",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Distribution",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/vocab-dcat/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ja",
+        "value" : "???????????????????????????????????????????????????????????????????????????????????????????????????????????????CSV?????API?RSS???????????",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "fr",
+        "value" : "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Konkrétní reprezentace datové sady. Datová sada m?že být dostupná v r?zných serializacích, které se mohou navzájem lišit r?znými zp?soby, mimo jiné p?irozeným jazykem, media-typem ?i formátem, schematickou organizací, ?asovým a prostorovým rozlišením, úrovní detailu ?i profily (které mohou specifikovat n?které ?i všechny tyto rozdíly).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ar",
+        "value" : "??? ???? ?????? ???????? ???? ?????? ????. ????? ?????? ?? ???? ?? ???? ????? ?????? ? ????? ??????.  ??? ???? ?????? ?? ????? ?????? ???? ?? ?????? ?????? ??? ???????? ?? ????? ??? ???.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, 'media-type' o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "el",
+        "value" : "?????????? ??? ???????????? ????????? ????? ???? ??????? ?????????. ???? ?????? ????????? ?????? ?? ????? ????????? ?? ???????????? ??????, ?? ?????? ????? ?????? ?? ???????????? ???????????? ?????? ??????? ? ??????????? ?????? ????????. ???????????? ???????? ???????????????? ??? ????????????? ?????? ?????? CSV, ??? API ? ??? RSS feed.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Datarepræsentation",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Dataudstilling",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Datamanifestation",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Datadistribution",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Questa classe rappresenta una disponibilità generale di un dataset e non implica alcuna informazione sul metodo di accesso effettivo ai dati, ad esempio se si tratta di un accesso a download diretto, API, o attraverso una pagina Web. L'utilizzo della proprietà dcat:downloadURL indica distribuzioni direttamente scaricabili.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "fr",
+        "value" : "Ceci représente une disponibilité générale du jeu de données, et implique qu'il n'existe pas d'information sur la méthode d'accès réelle des données, par exple, si c'est un lien de téléchargement direct ou à travers une page Web.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "Esta clase representa una disponibilidad general de un conjunto de datos, e implica que no existe información acerca del método de acceso real a los datos, i.e., si es un enlace de descarga directa o a través de una página Web.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Toto popisuje obecnou dostupnost datové sady. Neimplikuje žádnou informaci o skute?né metod? p?ístupu k dat?m, tj. zda jsou p?ímo ke stažení, skrze API ?i p?es webovou stránku. Použití vlastnosti dcat:downloadURL indikuje p?ímo stažitelné distribuce.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "ja",
+        "value" : "?????????????????????????????????????????????????????????????API????????????????????????????dcat:downloadURL???????????????????????????????",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "This represents a general availability of a dataset it implies no information about the actual access method of the data, i.e. whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Denne klasse repræsenterer datasættets overordnede tilgængelighed og giver ikke oplysninger om hvilken metode der kan anvendes til at få adgang til data, dvs. om adgang til datasættet realiseres ved direkte download, API eller via et websted. Anvendelsen af egenskaben dcat:downloadURL indikerer at distributionen kan downloades direkte.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "el",
+        "value" : "???? ?????????? ??? ?????? ????????????? ???? ??????? ????????? ??? ??? ??????? ?????? ???? ??? ??????????? ?????? ????????? ??? ????????, ?? ????? ????? ?????????????, ???? API ? ???? ???? ???????????. ? ????? ??? ????????? dcat:downloadURL ??????? ???? ????? ?????????????? ????????.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "Distribuce",
+      "ar" : "???????",
+      "IRI-based" : "Distribution",
+      "el" : "???????",
+      "ja" : "??",
+      "en" : "Distribution",
+      "it" : "Distribuzione",
+      "fr" : "Distribution",
+      "da" : "Distribution",
+      "es" : "Distribución"
+    },
+    "comment" : {
+      "cs" : "Konkrétní reprezentace datové sady. Datová sada m?že být dostupná v r?zných serializacích, které se mohou navzájem lišit r?znými zp?soby, mimo jiné p?irozeným jazykem, media-typem ?i formátem, schematickou organizací, ?asovým a prostorovým rozlišením, úrovní detailu ?i profily (které mohou specifikovat n?které ?i všechny tyto rozdíly).",
+      "ar" : "??? ???? ?????? ???????? ???? ?????? ????. ????? ?????? ?? ???? ?? ???? ????? ?????? ? ????? ??????.  ??? ???? ?????? ?? ????? ?????? ???? ?? ?????? ?????? ??? ???????? ?? ????? ??? ???.",
+      "el" : "?????????? ??? ???????????? ????????? ????? ???? ??????? ?????????. ???? ?????? ????????? ?????? ?? ????? ????????? ?? ???????????? ??????, ?? ?????? ????? ?????? ?? ???????????? ???????????? ?????? ??????? ? ??????????? ?????? ????????. ???????????? ???????? ???????????????? ??? ????????????? ?????? ?????? CSV, ??? API ? ??? RSS feed.",
+      "ja" : "???????????????????????????????????????????????????????????????????????????????????????????????????????????????CSV?????API?RSS???????????",
+      "en" : "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
+      "it" : "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed.",
+      "fr" : "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS.",
+      "da" : "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).",
+      "es" : "Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, 'media-type' o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/idsa/core/AppStore",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AppStore",
+      "en" : "App Store"
+    },
+    "comment" : {
+      "en" : "Secure platform for distributing Data Apps."
+    },
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#DataProduct",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataProduct"
+    },
+    "comment" : {
+      "undefined" : "A Data Product is one or more distributions of a dataset packaged together with attributes defining their pricing conditions"
+    },
+    "id" : "59"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#Obligations",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Obligations",
+      "undefined" : "Obligation"
+    },
+    "subClasses" : [ "60" ],
+    "attributes" : [ "external" ],
+    "id" : "60",
+    "superClasses" : [ "44", "60" ]
+  }, {
+    "iri" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Contract",
+    "baseIri" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts",
+    "instances" : 0,
+    "description" : {
+      "en" : "Voluntary, deliberate agreement between competent parties to which the parties agree to be legally bound, and for which the parties provide valuable consideration."
+    },
+    "label" : {
+      "IRI-based" : "Contract",
+      "en" : "Contract"
+    },
+    "subClasses" : [ "8" ],
+    "comment" : {
+      "en" : "A contractual relationship is evidenced by (1) an offer, (2) acceptance of the offer, and a (3) valid (legal and valuable) consideration. A contract is a kind of agreement, and as such it embodies the assertion that it has been negotiated, such negotiation having included the presence of some offer and the acceptance of that offer on the part of either or both of the parties. Contracts are usually written but may be spoken or implied, and generally have to do with employment, sale or lease, or tenancy."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Request",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Request"
+    },
+    "subClasses" : [ "62" ],
+    "attributes" : [ "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/InformationModel#Purposes",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/InformationModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Purposes",
+      "undefined" : "Purpose"
+    },
+    "attributes" : [ "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#EnvironmentalProfile",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnvironmentalProfile",
+      "undefined" : "Environmental Profile"
+    },
+    "comment" : {
+      "undefined" : "An environmental profile measures/estimates the energy consumption and CO2 emissions of a DataService that serves a Dataset."
+    },
+    "id" : "64"
+  }, {
+    "iri" : "http://purl.org/adaptcentre/openscience/ontologies/consent#OnlineForm",
+    "baseIri" : "http://purl.org/adaptcentre/openscience/ontologies/consent",
+    "instances" : 0,
+    "description" : {
+      "en" : "It identifies if the consent is taken in the form of an online form."
+    },
+    "label" : {
+      "IRI-based" : "OnlineForm",
+      "en" : "Online Form"
+    },
+    "comment" : {
+      "en" : "It also identifies if the contract/license is made in the form of an online form."
+    },
+    "attributes" : [ "external" ],
+    "id" : "65",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "https://w3id.org/idsa/core/DataApp",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataApp",
+      "en" : "DataApp"
+    },
+    "comment" : {
+      "en" : "Self-contained, self-descriptive software package that is distributed via the App Store and deployed inside a Connector; provides access to data and data processing capa­bilities; the interface of a Data App is semantically described by the IDS Information Model."
+    },
+    "attributes" : [ "external" ],
+    "id" : "70",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/idsa/core/Participant",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Participant",
+      "en" : "Participant"
+    },
+    "comment" : {
+      "en" : "Stakeholder in the International Data Spaces, assuming one or more of the predefined roles; every participant is given a unique identity by the Identity Provider."
+    },
+    "attributes" : [ "external" ],
+    "id" : "74",
+    "superClasses" : [ "75", "76", "77", "78" ]
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/InformationModel#OperationContainerTypes",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/InformationModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperationContainerTypes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/InformationModel#AttributeNames",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/InformationModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttributeNames",
+      "undefined" : "Attribute Name"
+    },
+    "attributes" : [ "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#DataProcessingTask",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataProcessingTask"
+    },
+    "subClasses" : [ "70" ],
+    "comment" : {
+      "undefined" : "Processing task with a precise input and output. Used as steps of Data Processing Workflows"
+    },
+    "id" : "22",
+    "superClasses" : [ "86", "21" ]
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#Entities",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entities"
+    },
+    "subClasses" : [ "88", "87" ],
+    "attributes" : [ "external" ],
+    "id" : "87",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#Signed",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Signed"
+    },
+    "attributes" : [ "external" ],
+    "id" : "89",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "https://w3id.org/idsa/core/ContractRequest",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContractRequest",
+      "en" : "Contract request"
+    },
+    "comment" : {
+      "en" : "Contract issued by the Data Consumer requesting the usage of a Resource at particular conditions."
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "36", "61" ]
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.upcast-project.eu/upcast-vocab#European_Commission",
+      "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+      "labels" : {
+        "IRI-based" : "European_Commission",
+        "undefined" : "European Commission"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.w3.org/ns/org#Organization",
+    "baseIri" : "http://www.w3.org/ns/org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "subClasses" : [ "74" ],
+    "attributes" : [ "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://purl.org/dc/terms/Agent",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent",
+      "en" : "Agent"
+    },
+    "comment" : {
+      "en" : "A resource that acts or has the power to act."
+    },
+    "attributes" : [ "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#EnhancedEntities",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnhancedEntities"
+    },
+    "attributes" : [ "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://purl.org/dc/terms/LicenseDocument",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LicenseDocument",
+      "en" : "License Document"
+    },
+    "comment" : {
+      "en" : "A legal document giving official permission to do something with a resource."
+    },
+    "attributes" : [ "external" ],
+    "id" : "100",
+    "superClasses" : [ "101" ]
+  }, {
+    "iri" : "http://purl.org/dc/terms/PeriodOfTime",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PeriodOfTime",
+      "en" : "Period of Time"
+    },
+    "comment" : {
+      "en" : "An interval of time that is named or defined by its start and end dates."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/adaptcentre/openscience/ontologies/consent#Paper",
+    "baseIri" : "http://purl.org/adaptcentre/openscience/ontologies/consent",
+    "instances" : 0,
+    "description" : {
+      "en" : "It identifies if the consent is taken on paper."
+    },
+    "label" : {
+      "IRI-based" : "Paper",
+      "en" : "Paper"
+    },
+    "comment" : {
+      "en" : "It also identifies if the contract/license is made on paper."
+    },
+    "attributes" : [ "external" ],
+    "id" : "106",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/InformationModel#DataTypes",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/InformationModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataTypes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://purl.org/adaptcentre/openscience/ontologies/consent#AppBased",
+    "baseIri" : "http://purl.org/adaptcentre/openscience/ontologies/consent",
+    "instances" : 0,
+    "description" : {
+      "en" : "It identifies if the consent is taken in the form of mobile application."
+    },
+    "label" : {
+      "IRI-based" : "AppBased",
+      "en" : "App Based"
+    },
+    "comment" : {
+      "en" : "It also identifies if the contract/license is taken in the form of mobile application."
+    },
+    "attributes" : [ "external" ],
+    "id" : "109",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://schema.org/Grant",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Grant"
+    },
+    "subClasses" : [ "114" ],
+    "attributes" : [ "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#EnhancedEntities",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnhancedEntities",
+      "undefined" : "Enhanced Entity"
+    },
+    "subClasses" : [ "122" ],
+    "attributes" : [ "external" ],
+    "id" : "122",
+    "superClasses" : [ "122" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Organization",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "agents-responsibility",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An organization is a social or legal institution such as a company, society, etc.",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "expanded",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Organization",
+      "undefined" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "39",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/time#TemporalEntity",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalEntity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#Expressions",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expressions"
+    },
+    "comment" : {
+      "undefined" : "Expression"
+    },
+    "attributes" : [ "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#ExecutionAspects",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExecutionAspects",
+      "undefined" : "Execution Aspect"
+    },
+    "comment" : {
+      "undefined" : "Defines the execution of the step of a workflow \n\nRe-used from Workflow Ontology Model."
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "entities-activities",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "starting-point",
+        "type" : "label"
+      } ],
+      "constraints" : [ {
+        "identifier" : "constraints",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Activity",
+      "undefined" : "Activity"
+    },
+    "subClasses" : [ "22", "129" ],
+    "attributes" : [ "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://w3id.org/idsa/core/Connector",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Connector"
+    },
+    "subClasses" : [ "56" ],
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "134", "74", "135" ],
+    "attributes" : [ "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "141",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "118",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "146",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#ExecutionEnvironment",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExecutionEnvironment",
+      "undefined" : "Execution Environment"
+    },
+    "comment" : {
+      "undefined" : "Environment where a Data Processing Workflow is executed"
+    },
+    "id" : "72"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "96",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "147",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Organization",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.southampton.ac.uk#this",
+      "baseIri" : "https://www.southampton.ac.uk",
+      "annotations" : {
+        "homepage" : [ {
+          "identifier" : "homepage",
+          "language" : "undefined",
+          "value" : "https://www.southampton.ac.uk/",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "this",
+        "undefined" : "University of Southampton"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "134",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/dc/terms/RightsStatement",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RightsStatement",
+      "en" : "Rights Statement"
+    },
+    "subClasses" : [ "100" ],
+    "comment" : {
+      "en" : "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."
+    },
+    "attributes" : [ "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#Expressions",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expressions"
+    },
+    "attributes" : [ "external" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Catalog",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "description" : {
+      "en" : "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)"
+    },
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "English, Italian, Spanish definitions updated in this revision. Multilingual text not yet updated.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/vocab-dcat/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "En samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ja",
+        "value" : "???????????????????????????????????????",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ar",
+        "value" : "?????? ?? ??????? ????? ????????",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "fr",
+        "value" : "Une collection élaborée de métadonnées sur les jeux de données.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "?ízená kolekce metadat o datových sadách a datových službách.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "el",
+        "value" : "??? ??????????? ??????? ????????????? ???? ??????? ?????????.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "el",
+        "value" : "???????, ???? ????????? ????????? ???? ????????? ???? ????????????? ?? ??? ??????????? ????? ??? ??????.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "Normalmente, un catálogo de datos disponible en la web se representa como una única instancia de esta clase.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Et webbaseret datakatalog repræsenteres typisk ved en enkelt instans af denne klasse.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Webový datový katalog je typicky reprezentován jako jedna instance této t?ídy.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Normalmente, un catalogo di dati nel web viene rappresentato come una singola istanza di questa classe.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "ja",
+        "value" : "???????????????????????????1??????????????????",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A web-based data catalog is typically represented as a single instance of this class.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "Katalog",
+      "ar" : "???? ????? ????????",
+      "IRI-based" : "Catalog",
+      "ja" : "????",
+      "el" : "?????????",
+      "en" : "Catalog",
+      "it" : "Catalogo",
+      "fr" : "Catalogue",
+      "da" : "Katalog",
+      "es" : "Catálogo"
+    },
+    "comment" : {
+      "cs" : "?ízená kolekce metadat o datových sadách a datových službách",
+      "ar" : "?????? ?? ??????? ????? ????????",
+      "ja" : "???????????????????????????????????????",
+      "el" : "??? ??????????? ??????? ????????????? ???? ??????? ?????????",
+      "en" : "A Web-based data catalog is typically represented as a single instance of this class",
+      "it" : "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati).",
+      "fr" : "Une collection élaborée de métadonnées sur les jeux de données",
+      "da" : "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). ",
+      "es" : "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "24", "21" ]
+  }, {
+    "iri" : "https://w3id.org/GConsent#Medium",
+    "baseIri" : "https://w3id.org/GConsent",
+    "instances" : 0,
+    "description" : {
+      "en" : "Describes the medium through which consent was given/provided. Example: web form, recorded voice, signature on document."
+    },
+    "label" : {
+      "IRI-based" : "Medium",
+      "en" : "Medium "
+    },
+    "subClasses" : [ "106", "109", "149", "150", "65", "151" ],
+    "comment" : {
+      "en" : "The class can also be used for contracts and licenses, which have the same types of mediums."
+    },
+    "attributes" : [ "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://purl.org/dc/terms/Policy",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Policy",
+      "en" : "Policy"
+    },
+    "comment" : {
+      "en" : "A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters."
+    },
+    "attributes" : [ "external" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dayTimeDuration",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "153",
+    "label" : {
+      "IRI-based" : "dayTimeDuration"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "158",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "159",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "162",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#SoftwareAgent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "annotations" : {
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "agents-responsibility",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "dm" : [ {
+        "identifier" : "dm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A software agent is running software.",
+        "type" : "label"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "expanded",
+        "type" : "label"
+      } ],
+      "n" : [ {
+        "identifier" : "n",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SoftwareAgent",
+      "undefined" : "SoftwareAgent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "https://orcid.org/0000-0001-6993-0001",
+      "baseIri" : "https://orcid.org",
+      "annotations" : {
+        "memberOf" : [ {
+          "identifier" : "memberOf",
+          "language" : "undefined",
+          "value" : "https://www.southampton.ac.uk#this",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "0000-0001-6993-0001"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "135",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "163",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#ActorEntities",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActorEntities",
+      "undefined" : "Actor Entity"
+    },
+    "comment" : {
+      "undefined" : "Actor Entity that applies operation on an execution profile"
+    },
+    "attributes" : [ "external" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#DataStates",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataStates"
+    },
+    "attributes" : [ "external" ],
+    "id" : "167"
+  }, {
+    "iri" : "https://w3id.org/idsa/core/ContractAgreement",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContractAgreement",
+      "en" : "Contract agreement"
+    },
+    "comment" : {
+      "en" : "Contract governing the actual usage of a Resource that has been agreed by all parties."
+    },
+    "attributes" : [ "external" ],
+    "id" : "173",
+    "superClasses" : [ "36", "174" ]
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#TaskNodes",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TaskNodes",
+      "undefined" : "Task Node"
+    },
+    "comment" : {
+      "undefined" : "A Task Node is part of a Workflow"
+    },
+    "attributes" : [ "external" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://purl.org/dc/terms/Location",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Location",
+      "en" : "Location"
+    },
+    "comment" : {
+      "en" : "A spatial region or named place."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#ContractStatus",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContractStatus",
+      "undefined" : "Contract Status"
+    },
+    "subClasses" : [ "175", "176", "89", "5" ],
+    "attributes" : [ "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#ConcreteEntities",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConcreteEntities",
+      "undefined" : "Concrete Entity"
+    },
+    "subClasses" : [ "88" ],
+    "attributes" : [ "external" ],
+    "id" : "88",
+    "superClasses" : [ "88", "87" ]
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#VariableConstraints",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VariableConstraints",
+      "undefined" : "Variable Constraint"
+    },
+    "attributes" : [ "external" ],
+    "id" : "179"
+  }, {
+    "iri" : "https://w3id.org/idsa/core/ManagedEntity",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ManagedEntity"
+    },
+    "subClasses" : [ "74" ],
+    "attributes" : [ "external" ],
+    "id" : "77"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "185" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "184"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "185" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#Updated",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Updated",
+      "undefined" : "Updated"
+    },
+    "comment" : {
+      "undefined" : "Status of contract is Updated"
+    },
+    "attributes" : [ "external" ],
+    "id" : "68"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "185" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#DataService",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "annotations" : {
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "da",
+        "value" : "Ny klasse tilføjet i DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "New class added in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova classe aggiunta in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "cs",
+        "value" : "Nová t?ída p?idaná ve verzi DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "es",
+        "value" : "Nueva clase añadida en DCAT 2.0.",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Umíst?ní ?i p?ístupový bod poskytující operace související s hledáním, p?istupem k, ?i výkonem funkcí na datech ?i souvisejících zdrojích.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Un sito o end-point che fornisce operazioni relative alla scoperta, all'accesso o all'elaborazione di funzioni su dati o risorse correlate.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "Et site eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Dataservice",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Il tipo di servizio può essere indicato usando la proprietà dct:type. Il suo valore può essere preso da un vocabolario controllato come il vocabolario dei tipi di servizi per dati spaziali di INSPIRE.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Datatjenestetypen kan indikeres ved hjælp af egenskaben dct:type. Værdien kan tages fra kontrollerede udfaldsrum såsom INSPIRE spatial data service vocabulary.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "The kind of service can be indicated using the dct:type property. Its value may be taken from a controlled vocabulary such as the INSPIRE spatial data service type vocabulary.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Hvis en dcat:DataService er bundet til en eller flere specifikke datasæt kan dette indikeres ved hjælp af egenskaben dcat:servesDataset. ",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Se un dcat:DataService è associato a uno o più Dataset specificati, questi sono indicati dalla proprietà dcat:serveDataset.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Druh služby m?že být indikován vlastností dct:type. Její hodnota m?že být z ?ízeného slovníku, kterým je nap?íklad slovník typ? prostorových datových služeb INSPIRE.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "If a dcat:DataService is bound to one or more specified Datasets, they are indicated by the dcat:servesDataset property.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "El tipo de servicio puede indicarse usando la propiedad dct:type. Su valor puede provenir de un vocabulario controlado, como por ejemplo el vocabulario de servicios de datos espaciales de INSPIRE.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Pokud je dcat:DataService navázána na jednu ?i více Datových sad, jsou tyto indikovány vlstností dcat:servesDataset.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "Si un dcat:DataService está asociado con uno o más conjuntos de datos especificados, dichos conjuntos de datos pueden indicarse con la propiedad dcat:servesDataset.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DataService",
+      "en" : "Data service",
+      "it" : "Servizio di dati",
+      "da" : "Datatjeneste",
+      "es" : "Servicio de datos"
+    },
+    "comment" : {
+      "cs" : "Umíst?ní ?i p?ístupový bod poskytující operace související s hledáním, p?istupem k, ?i výkonem funkcí na datech ?i souvisejících zdrojích.",
+      "en" : "A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources.",
+      "it" : "Un sito o end-point che fornisce operazioni relative alla scoperta, all'accesso o all'elaborazione di funzioni su dati o risorse correlate.",
+      "da" : "Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer.",
+      "es" : "Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados."
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "189", "21" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "166", "190" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#DatasetProfile",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DatasetProfile",
+      "undefined" : "Dataset Profile"
+    },
+    "comment" : {
+      "undefined" : "A Profile or Summary of a Dataset useful for Discovery by potential Consumers."
+    },
+    "id" : "116"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#WFPurposes",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WFPurposes",
+      "undefined" : "Workflow Purpose"
+    },
+    "comment" : {
+      "undefined" : "Purpose of a Workflow to process data"
+    },
+    "attributes" : [ "external" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#Prohibitions",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Prohibitions",
+      "undefined" : "Prohibition"
+    },
+    "subClasses" : [ "43" ],
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "44", "43" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Policy",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Policy"
+    },
+    "subClasses" : [ "36" ],
+    "attributes" : [ "external" ],
+    "id" : "194"
+  }, {
+    "instances" : 0,
+    "union" : [ "167", "81", "97", "63", "179", "108", "195", "37", "7", "196", "197", "30" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/idsa/core/UsageControlObject",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UsageControlObject"
+    },
+    "attributes" : [ "external" ],
+    "id" : "198"
+  }, {
+    "instances" : 0,
+    "union" : [ "47", "28" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#Pending",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pending"
+    },
+    "attributes" : [ "external" ],
+    "id" : "175",
+    "superClasses" : [ "90" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "148", "190" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "202"
+  }, {
+    "instances" : 0,
+    "union" : [ "140", "24" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "203"
+  }, {
+    "instances" : 0,
+    "union" : [ "86", "41" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "204"
+  }, {
+    "iri" : "https://w3id.org/idsa/core/Contract",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Contract",
+      "en" : "Contract"
+    },
+    "subClasses" : [ "62", "26", "173" ],
+    "comment" : {
+      "en" : "Abstract set of rules governing the usage of a Resource."
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "194" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "81", "63", "85", "35", "108", "195", "205", "196", "7", "197" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "206",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "11", "97", "88", "179", "87", "37" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "137"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "185" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://purl.org/dc/dcmitype/Service",
+    "baseIri" : "http://purl.org/dc/dcmitype",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service"
+    },
+    "subClasses" : [ "17" ],
+    "attributes" : [ "external" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/InformationModel#StateTypes",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/InformationModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StateTypes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "205"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/InformationModel#Roles",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/InformationModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Roles",
+      "undefined" : "Role"
+    },
+    "attributes" : [ "external" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/InformationModel#MachineTypes",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/InformationModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MachineTypes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#Terminated",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Terminated",
+      "undefined" : "Terminated"
+    },
+    "comment" : {
+      "undefined" : "Contract status is terminated"
+    },
+    "attributes" : [ "external" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://purl.org/dc/terms/Jurisdiction",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Jurisdiction",
+      "en" : "Jurisdiction"
+    },
+    "comment" : {
+      "en" : "The extent or range of judicial, law enforcement, or other authority."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#Permissions",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Permissions",
+      "undefined" : "Permission"
+    },
+    "subClasses" : [ "230" ],
+    "attributes" : [ "external" ],
+    "id" : "230",
+    "superClasses" : [ "230", "44" ]
+  }, {
+    "iri" : "http://schema.org/MonetaryGrant",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MonetaryGrant"
+    },
+    "individuals" : [ {
+      "iri" : "https://www.upcast-project.eu/upcast-vocab#UPCAST-project",
+      "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+      "labels" : {
+        "IRI-based" : "UPCAST-project",
+        "undefined" : "UPCAST Project"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "114",
+    "superClasses" : [ "113" ]
+  }, {
+    "iri" : "http://purl.org/adaptcentre/openscience/ontologies/consent#Audio",
+    "baseIri" : "http://purl.org/adaptcentre/openscience/ontologies/consent",
+    "instances" : 0,
+    "description" : {
+      "en" : "It is used to identify if the consent is taken in the form of audio."
+    },
+    "label" : {
+      "IRI-based" : "Audio",
+      "en" : "Audio"
+    },
+    "comment" : {
+      "en" : "It also identifies if the contract is made in the form of audio or verbal."
+    },
+    "attributes" : [ "external" ],
+    "id" : "151",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#Expire",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expire"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Party",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Party"
+    },
+    "subClasses" : [ "74" ],
+    "attributes" : [ "external" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://purl.org/adaptcentre/openscience/ontologies/consent#OnlineOptInOption",
+    "baseIri" : "http://purl.org/adaptcentre/openscience/ontologies/consent",
+    "instances" : 0,
+    "description" : {
+      "en" : "It identifies if the consent is taken as an online opt-in option."
+    },
+    "label" : {
+      "IRI-based" : "OnlineOptInOption",
+      "en" : "Opt-In Option"
+    },
+    "comment" : {
+      "en" : "It also identifies if the contract/license is made as an online opt-in option."
+    },
+    "attributes" : [ "external" ],
+    "id" : "149",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "id" : "251",
+    "label" : {
+      "IRI-based" : "PlainLiteral"
+    }
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#Created",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Created"
+    },
+    "attributes" : [ "external" ],
+    "id" : "176",
+    "superClasses" : [ "90" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "217",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Agreement",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agreement"
+    },
+    "subClasses" : [ "173" ],
+    "attributes" : [ "external" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/adaptcentre/openscience/ontologies/consent#Video",
+    "baseIri" : "http://purl.org/adaptcentre/openscience/ontologies/consent",
+    "instances" : 0,
+    "description" : {
+      "en" : "It identifies if the consent is taken in the form of video."
+    },
+    "label" : {
+      "IRI-based" : "Video",
+      "en" : "Video"
+    },
+    "comment" : {
+      "en" : "It also identifies if the contract/license is made in the form of video."
+    },
+    "attributes" : [ "external" ],
+    "id" : "150",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#DataProcessingWorkflow",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataProcessingWorkflow"
+    },
+    "comment" : {
+      "undefined" : "A Data Processing Workflow (DPW) defines a sequence of Data Processing Tasks for processing one or more datasets, to output a dataset or artefact."
+    },
+    "id" : "129",
+    "superClasses" : [ "86" ]
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/InformationModel#Operations",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/InformationModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Operations",
+      "undefined" : "Operation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Dataset",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "2020-03-16 A new scopenote added and need to be translated",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/vocab-dcat/",
+        "type" : "iri"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "2018-02 - sottoclasse di dctype:Dataset rimosso perché l'ambito di dcat:Dataset include diversi altri tipi dal vocabolario dctype.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "cs",
+        "value" : "2018-02 - odstran?no tvrzení o podt?íd? dctype:Dataset, jelikož rozsah dcat:Dataset zahrnuje n?kolik dalších typ? ze slovníku dctype.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "da",
+        "value" : "2018-02 - subklasse af dctype:Dataset fjernet da scope af dcat:Dataset omfatter flere forskellige typer fra dctype-vokabularet.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "2018-02 - subclass of dctype:Dataset removed because scope of dcat:Dataset includes several other types from the dctype vocabulary.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "es",
+        "value" : "2018-02 - se eliminó el axioma de subclase con dctype:Dataset porque el alcance de dcat:Dataset incluye muchos otros tipos del vocabulario dctype.",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Kolekce dat poskytovaná ?i ?ízená jedním zdrojem, která je k dispozici pro p?ístup ?i stažení v jednom ?i více formátech.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "fr",
+        "value" : "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "En samling a data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ar",
+        "value" : "????? ?????? ?????? ?? ?????? ?? ??? ???? ?? ? ???? ?????? ????? ?? ???????",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "el",
+        "value" : "??? ??????? ??? ????????, ???????????? ? ??????????? ??? ??? ??? ???? ????, ????????? ?? ???? ???????? ? ??????????? ?? ??? ? ???????????? ??????.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ja",
+        "value" : "1?????????????????????????1??????????????????????????????",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A collection of data, published or curated by a single source, and available for access or download in one or more represenations.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Datasamling",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "Esta clase representa el conjunto de datos publicados. En los casos donde es necesario distinguir entre el conjunto de datos y su entrada en el catálogo de datos, se debe utilizar la clase 'registro del catálogo'.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "el",
+        "value" : "? ????? ???? ?????????? ?? ?????? ????????? ???? ???'?????, ???? ???? ??????????? ??? ??? ??????. ?? ??????????? ???? ????? ??????????? ? ??????????? ?????? ??? ??????? ????????? ??? ??? ?????????? ????? ???? ???????? (????? ???????????? ???? ? ?????????? ??????? ??? ? ?????????? ?????? ?? ?????????) ? ????? ??? ?????????? ????????? ?????? ?? ?????????????? ??? ?? ?????????.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "fr",
+        "value" : "Cette classe représente le jeu de données publié par le fournisseur de données. Dans les cas où une distinction est nécessaire entre le jeu de donénes et son entrée dans le catalogue, la classe registre de données peut être utilisée pour ce dernier.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "The notion of dataset in DCAT is broad and inclusive, with the intention of accommodating resource types arising from all communities. Data comes in many forms including numbers, text, pixels, imagery, sound and other multi-media, and potentially other types, any of which might be collected into a dataset.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "This class describes the conceptual dataset. One or more representations might be available, with differing schematic layouts and formats or serializations.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Denne klasse repræsenterer det konkrete datasæt som det udgives af datasætleverandøren. I de tilfælde hvor det er nødvendigt at skelne mellem det konkrete datasæt og dets registrering i kataloget (fordi metadata såsom ændringsdato og vedligeholder er forskellige), så kan klassen katalogpost anvendes. ",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "ja",
+        "value" : "?????????????????????????????????????????????????????????????????????????????????????????????????????????catalog record??????????????",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Questa classe rappresenta il dataset come pubblicato dall’editore. Nel caso in cui sia necessario operare  una distinzione fra i metadati originali del dataset e il record dei metadati ad esso associato nel catalogo (ad esempio, per distinguere la data di modifica del dataset da quella del dataset nel catalogo) si può impiegare la classe catalog record.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "This class represents the actual dataset as published by the dataset provider. In cases where a distinction between the actual dataset and its entry in the catalog is necessary (because metadata such as modification date and maintainer might differ), the catalog record class can be used for the latter.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Questa classe descrive il dataset dal punto di vista concettuale. Possono essere disponibili una o più rappresentazioni, con diversi layout e formati schematici o serializzazioni.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Tato t?ída reprezentuje datovou sadu tak, jak je publikována poskytovatelem dat. V p?ípad? pot?eby rozlišení datové sady a jejího katalogiza?ního záznamu (jelikož metadata jako datum modifikace se mohou lišit) pro n?j m?že být použita t?ída \"katalogiza?ní záznam\".",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Denne klasse beskriver det konceptuelle datasæt. En eller flere repræsentationer kan være tilgængelige med forskellige skematiske opsætninger, formater eller serialiseringer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "Datová sada",
+      "ar" : "????? ??????",
+      "IRI-based" : "Dataset",
+      "ja" : "??????",
+      "el" : "?????? ?????????",
+      "en" : "Dataset",
+      "it" : "Dataset",
+      "fr" : "Jeu de données",
+      "da" : "Datasæt",
+      "es" : "Conjunto de datos"
+    },
+    "subClasses" : [ "23" ],
+    "comment" : {
+      "cs" : "Kolekce dat poskytovaná ?i ?ízená jedním zdrojem, která je k dispozici pro p?ístup ?i stažení v jednom ?i více formátech.",
+      "ar" : "????? ?????? ?????? ?? ?????? ?? ??? ???? ?? ? ???? ?????? ????? ?? ???????",
+      "ja" : "1?????????????????????????1??????????????????????????????",
+      "el" : "??? ??????? ??? ????????, ???????????? ? ??????????? ??? ??? ??? ???? ????, ????????? ?? ???? ???????? ? ??????????? ?? ??? ? ???????????? ??????.",
+      "en" : "A collection of data, published or curated by a single source, and available for access or download in one or more representations.",
+      "it" : "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati.",
+      "fr" : "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats.",
+      "da" : "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.",
+      "es" : "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos."
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#LogicalRelations",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogicalRelations"
+    },
+    "attributes" : [ "external" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#Rules",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rules",
+      "undefined" : "Rule"
+    },
+    "subClasses" : [ "230", "44", "60", "43" ],
+    "attributes" : [ "external" ],
+    "id" : "44",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "https://w3id.org/GConsent#Consent",
+    "baseIri" : "https://w3id.org/GConsent",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Consent",
+      "undefined" : "Consent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "185"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "177",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "178",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "199",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "200",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "207",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "216",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "228",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "231",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "232",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "233",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "234",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "237",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "238",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "239",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "240",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "241",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "245",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "248",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "249",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "250",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "252",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "253",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "254",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "255",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "256",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "257",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "258",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "259",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "260",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "261",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "262",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "263",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "264",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "265",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "267",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "268",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "269",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "270",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "271",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "272",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "273",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "274",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "275",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "276",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "277",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#includesEdgeInverse",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "includesEdgeInverse"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasExpired",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "5",
+    "description" : {
+      "en" : "Used to indicate the expired state of contract."
+    },
+    "label" : {
+      "IRI-based" : "hasExpired",
+      "en" : "has expired"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#updateFrequency",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "18",
+    "description" : {
+      "undefined" : "Recommended practice is to use a value from the Collection Description Frequency Vocabulary [[DCMI-COLLFREQ](https://dublincore.org/groups/collections/frequency/)]."
+    },
+    "label" : {
+      "IRI-based" : "updateFrequency"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#includesTaskInverse",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "includesTaskInverse"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#hasOperationEntity",
+    "inverse" : "29",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasOperationEntity",
+      "undefined" : "has operation entity"
+    },
+    "domain" : "28",
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#catalog",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "23",
+    "annotations" : {
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "cs",
+        "value" : "Nová vlastnost p?idaná ve verzi DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova proprietà aggiunta in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "New property added in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "es",
+        "value" : "Nueva propiedad agregada en DCAT 2.0.",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Un catálogo cuyo contenido es de interés en el contexto del catálogo que está siendo descripto.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "Et katalog hvis indhold er relevant i forhold til det aktuelle katalog.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Katalog, jehož obsah je v kontextu tohoto katalogu zajímavý.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A catalog whose contents are of interest in the context of this catalog.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Un catalogo i cui contenuti sono di interesse nel contesto di questo catalogo.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "har delkatalog",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "katalog",
+      "IRI-based" : "catalog",
+      "en" : "catalog",
+      "it" : "catalogo",
+      "da" : "katalog",
+      "es" : "catálogo"
+    },
+    "superproperty" : [ "33", "34" ],
+    "domain" : "23",
+    "comment" : {
+      "cs" : "Katalog, jehož obsah je v kontextu tohoto katalogu zajímavý.",
+      "en" : "A catalog whose contents are of interest in the context of this catalog.",
+      "it" : "Un catalogo i cui contenuti sono di interesse nel contesto di questo catalogo.",
+      "da" : "Et katalog hvis indhold er relevant i forhold til det aktuelle katalog.",
+      "es" : "Un catálogo cuyo contenido es de interés en el contexto del catálogo que está siendo descripto."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#isDestinationOf",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isDestinationOf",
+      "undefined" : "is destination of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "44",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#hasExprValue",
+    "inverse" : "51",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasExprValue",
+      "undefined" : "has expression value"
+    },
+    "domain" : "49",
+    "attributes" : [ "external", "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#hasActors",
+    "inverse" : "54",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasActors",
+      "undefined" : "has Actor"
+    },
+    "domain" : "28",
+    "attributes" : [ "external", "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#isSourceOf",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isSourceOf",
+      "undefined" : "is source of"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasUpdated",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "68",
+    "description" : {
+      "en" : "Used to indicate an update in the state pf a contract."
+    },
+    "label" : {
+      "IRI-based" : "hasUpdated",
+      "undefined" : "has updated"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#service",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "17",
+    "annotations" : {
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "New property added in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "cs",
+        "value" : "Nová vlastnost p?idaná ve verzi DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "es",
+        "value" : "Nueva propiedad añadida en DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova proprietà aggiunta in DCAT 2.0.",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A site or endpoint that is listed in the catalog.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "Et websted eller et endpoint som er opført i kataloget.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Un sitio o 'endpoint' que está listado en el catálogo.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Un sito o endpoint elencato nel catalogo.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Umíst?ní ?i p?ístupový bod registrovaný v katalogu.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "har datatjeneste",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "služba",
+      "IRI-based" : "service",
+      "en" : "service",
+      "it" : "servizio",
+      "da" : "datatjeneste",
+      "es" : "servicio"
+    },
+    "superproperty" : [ "33", "34" ],
+    "domain" : "23",
+    "comment" : {
+      "cs" : "Umíst?ní ?i p?ístupový bod registrovaný v katalogu.",
+      "en" : "A site or endpoint that is listed in the catalog.",
+      "it" : "Un sito o endpoint elencato nel catalogo.",
+      "da" : "Et websted eller et endpoint som er opført i kataloget.",
+      "es" : "Un sitio o 'endpoint' que está listado en el catálogo."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#storageSystem",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "storageSystem"
+    },
+    "domain" : "72",
+    "comment" : {
+      "undefined" : "The detailed technical information and characteristics of specific storage technology\nand architectures used for storing and managing digital data."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "80",
+    "description" : {
+      "en" : "A name given to the distribution."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "title",
+      "en" : "Title"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "A name given to the resource."
+    },
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#servesPurposeInverse",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "servesPurposeInverse"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#theme",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "84",
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "Status: English Definition text modified by DCAT revision team, all except for Italian and Czech translations are pending.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/vocab-dcat/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "La categoría principal del recurso. Un recurso puede tener varios temas.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Hlavní téma zdroje. Zdroj m?že mít více témat.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A main category of the resource. A resource can have multiple themes.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "Et centralt emne for ressourcen. En ressource kan have flere centrale emner.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ja",
+        "value" : "???????????????????????????????????????",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ar",
+        "value" : "??????? ??????? ?????? ????????. ????? ???????? ???? ?? ???? ???? ?? ????? ????? ????.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "La categoria principale della risorsa. Una risorsa può avere più temi.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "fr",
+        "value" : "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "el",
+        "value" : "? ????? ????????? ??? ??????? ?????????. ??? ?????? ????????? ??????? ?? ???? ???????? ??????.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "tema",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "The set of skos:Concepts used to categorize the resources are organized in a skos:ConceptScheme describing all the categories and their relations in the catalog.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "El conjunto de skos:Concepts utilizados para categorizar los recursos están organizados en un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Il set di concetti skos usati per categorizzare le risorse sono organizzati in skos:ConceptScheme che descrive tutte le categorie e le loro relazioni nel catalogo.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Sada instancí t?ídy skos:Concept použitá pro kategorizaci zdroj? je organizována do schématu koncept? skos:ConceptScheme, které popisuje všechny kategorie v katalogu a jejich vztahy.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "el",
+        "value" : "?? ??? ??? skos:Concepts ??? ??????????????? ??? ?? ???????????????? ?? ?????? ????????? ????? ?????????? ????? ???? skos:ConceptScheme ??? ?????????? ???? ??? ?????????? ??? ??? ??????? ????? ???? ????????.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "ja",
+        "value" : "???????????????????skos:Concept?????????????????????????????????skos:ConceptScheme?????????",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Samlingen af begreber (skos:Concept) der anvendes til at emneinddele ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "fr",
+        "value" : "Un ensemble de skos:Concepts utilisés pour catégoriser les ressources sont organisés en un skos:ConceptScheme décrivant toutes les catégories et ses relations dans le catalogue.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "téma",
+      "ar" : "???????",
+      "IRI-based" : "theme",
+      "ja" : "???/?????",
+      "el" : "????",
+      "en" : "theme",
+      "it" : "tema",
+      "fr" : "thème",
+      "da" : "emne",
+      "es" : "tema"
+    },
+    "domain" : "1",
+    "comment" : {
+      "cs" : "Hlavní téma zdroje. Zdroj m?že mít více témat.",
+      "ar" : "??????? ??????? ?????? ????????. ????? ???????? ???? ?? ???? ???? ?? ????? ????? ????.",
+      "el" : "? ????? ????????? ??? ??????? ?????????. ??? ?????? ????????? ??????? ?? ???? ???????? ??????.",
+      "ja" : "???????????????????????????????????????",
+      "en" : "A main category of the resource. A resource can have multiple themes.",
+      "it" : "La categoria principale della risorsa. Una risorsa può avere più temi.",
+      "fr" : "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes.",
+      "da" : "Et centralt emne for ressourcen. En ressource kan have flere centrale emner.",
+      "es" : "La categoría principal del recurso. Un recurso puede tener varios temas."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://w3id.org/idsa/core/consumer",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "consumer",
+      "en" : "Consumer"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "Consumer of a Resource or Service that is the subject matter of the Contract. This party may differ from the Assignee specified by the Contract rules."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#hasConditionInverse",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasConditionInverse"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#hasEnvironmentalProfile",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasEnvironmentalProfile",
+      "undefined" : "has environmental profile"
+    },
+    "domain" : "96",
+    "comment" : {
+      "undefined" : "Links an Activity that is executed in hardware or Cloud with an environmental profile"
+    },
+    "attributes" : [ "object", "irreflexive", "functional" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#processorType",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "processorType",
+      "undefined" : "processor type"
+    },
+    "domain" : "72",
+    "comment" : {
+      "undefined" : "Type of processor of the Data Service. Values must be \"CPU\" or \"GPU\""
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasCreationDate",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "105",
+    "description" : {
+      "en" : "Relates contracts and licenses to their creation date."
+    },
+    "label" : {
+      "IRI-based" : "hasCreationDate",
+      "en" : "creation date"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#servesDataset",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "24",
+    "annotations" : {
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "cs",
+        "value" : "Nová vlastnost p?idaná ve verzi DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova proprietà in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "es",
+        "value" : "Nueva propiedad agregada en DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "New property in DCAT 2.0.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "ekspederer",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "udstiller",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "distribuerer",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Kolekce dat, kterou je tato Datová služba schopna poskytnout.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A collection of data that this DataService can distribute.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Una raccolta di dati che questo DataService può distribuire.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "En samling af data som denne datatjeneste kan distribuere.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Una colección de datos que este Servicio de Datos puede distribuir.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "poskytuje datovou sadu",
+      "IRI-based" : "servesDataset",
+      "en" : "serves dataset",
+      "it" : "serve set di dati",
+      "da" : "datatjeneste for datasæt",
+      "es" : "provee conjunto de datos"
+    },
+    "domain" : "17",
+    "comment" : {
+      "cs" : "Kolekce dat, kterou je tato Datová služba schopna poskytnout.",
+      "en" : "A collection of data that this DataService can distribute.",
+      "it" : "Una raccolta di dati che questo DataService può distribuire.",
+      "da" : "En samling af data som denne datatjeneste kan distribuere.",
+      "es" : "Una colección de datos que este Servicio de Datos puede distribuir."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasInfluencedBy",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "wasInfluencedBy"
+    },
+    "domain" : "1",
+    "subproperty" : [ "111", "112" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#profile",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "profile",
+      "undefined" : "Profile"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "Links a Dataset with a Dataset Profile"
+    },
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://schema.org/funder",
+    "baseIri" : "http://schema.org",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "funder"
+    },
+    "domain" : "118",
+    "attributes" : [ "external", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasDataProcessor",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "10",
+    "description" : {
+      "en" : "Relates consent and contract to a specific data processor."
+    },
+    "label" : {
+      "IRI-based" : "hasDataProcessor",
+      "en" : "has data processor"
+    },
+    "domain" : "120",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#hasResourceInverse",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasResourceInverse"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#hasActorsInverse",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasActorsInverse"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#hasSource",
+    "inverse" : "58",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "hasSource"
+    },
+    "domain" : "47",
+    "attributes" : [ "external", "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#dataset",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "24",
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "Status: English Definition text modified by DCAT revision team, Italian, Spanish and Czech translation provided, other translations pending.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/vocab-dcat/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "fr",
+        "value" : "Relie un catalogue à un jeu de données faisant partie de ce catalogue.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Kolekce dat, která je katalogizována v katalogu.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A collection of data that is listed in the catalog.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Una raccolta di dati che è elencata nel catalogo.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "el",
+        "value" : "??????? ???? ???????? ?? ??? ?????? ????????? ?? ????? ?????? ???? ?? ???? ????????.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ar",
+        "value" : "???? ?????? ?????? ?????? ????",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ja",
+        "value" : "?????????????????",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Un conjunto de datos que se lista en el catálogo.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "En samling af data som er opført i kataloget.",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "datasamling",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "har datasæt",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "datová sada",
+      "ar" : "????? ??????",
+      "IRI-based" : "dataset",
+      "ja" : "??????",
+      "el" : "?????? ?????????",
+      "en" : "dataset",
+      "it" : "dataset",
+      "fr" : "jeu de données",
+      "da" : "datasæt",
+      "es" : "conjunto de datos"
+    },
+    "superproperty" : [ "33", "34" ],
+    "domain" : "23",
+    "comment" : {
+      "cs" : "Kolekce dat, která je katalogizována v katalogu.",
+      "ar" : "???? ?????? ?????? ?????? ????",
+      "ja" : "?????????????????",
+      "el" : "??????? ???? ???????? ?? ??? ?????? ????????? ?? ????? ?????? ???? ?? ???? ????????.",
+      "en" : "A collection of data that is listed in the catalog.",
+      "it" : "Una raccolta di dati che è elencata nel catalogo.",
+      "fr" : "Relie un catalogue à un jeu de données faisant partie de ce catalogue.",
+      "da" : "En samling af data som er opført i kataloget.",
+      "es" : "Un conjunto de datos que se lista en el catálogo."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#hasExprSubject",
+    "inverse" : "128",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "hasExprSubject",
+      "undefined" : "has expression subject"
+    },
+    "domain" : "49",
+    "attributes" : [ "external", "object" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasDataProtectionOfficer",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "10",
+    "description" : {
+      "en" : "Relates consent and contract to a specific data protection officer."
+    },
+    "label" : {
+      "IRI-based" : "hasDataProtectionOfficer",
+      "en" : "has data protection officer"
+    },
+    "domain" : "131",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "130"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#deliveryMethod",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "deliveryMethod",
+      "undefined" : "delivery method"
+    },
+    "domain" : "59",
+    "comment" : {
+      "undefined" : "The method used to deliver the data product to the Consumer"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#member",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "member"
+    },
+    "domain" : "1",
+    "subproperty" : [ "32", "69", "125" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#hasResource",
+    "inverse" : "121",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "hasResource",
+      "undefined" : "has resource"
+    },
+    "domain" : "11",
+    "attributes" : [ "external", "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#hasExecutionAspect",
+    "inverse" : "139",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasExecutionAspect",
+      "undefined" : "has Execution Aspect"
+    },
+    "domain" : "124",
+    "attributes" : [ "external", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#hasDescription",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "undefined" : "has description"
+    },
+    "domain" : "44",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://purl.org/dc/terms/subject",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "145",
+    "description" : {
+      "en" : "Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "subject",
+      "en" : "Subject"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "A topic of the resource."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#hasOperationEntityInverse",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasOperationEntityInverse"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasContractStatus",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "90",
+    "description" : {
+      "en" : "Links contract status to a contract"
+    },
+    "label" : {
+      "IRI-based" : "hasContractStatus",
+      "en" : "has contract status"
+    },
+    "domain" : "4",
+    "subproperty" : [ "67", "154", "155", "156", "3", "157" ],
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#hasExecutionEnvironment",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasExecutionEnvironment",
+      "undefined" : "has execution environment"
+    },
+    "domain" : "146",
+    "comment" : {
+      "undefined" : "Links a DPW, DataApp or Execution Profile with an Execution Environment where is executed"
+    },
+    "attributes" : [ "object" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#includesTask",
+    "inverse" : "19",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "includesTask",
+      "undefined" : "includes task"
+    },
+    "domain" : "129",
+    "attributes" : [ "external", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "21",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "25",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#accessService",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "17",
+    "annotations" : {
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova proprietà aggiunta in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "da",
+        "value" : "Ny egenskab tilføjet i DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "es",
+        "value" : "Nueva propiedad agregada en DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "cs",
+        "value" : "Nová vlastnost p?idaná ve verzi DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "New property added in DCAT 2.0.",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A site or end-point that gives access to the distribution of the dataset.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Umíst?ní ?i p?ístupový bod zp?ístup?ující distribuci datové sady.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "Et websted eller endpoint der giver adgang til en repræsentation af datasættet.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Un sitio o end-point que da acceso a la distribución de un conjunto de datos.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Un sito o end-point che dà accesso alla distribuzione del set di dati.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "služba pro p?ístup k dat?m",
+      "IRI-based" : "accessService",
+      "en" : "data access service",
+      "it" : "servizio di accesso ai dati",
+      "da" : "dataadgangstjeneste",
+      "es" : "servicio de acceso de datos"
+    },
+    "domain" : "147",
+    "comment" : {
+      "cs" : "Umíst?ní ?i p?ístupový bod zp?ístup?ující distribuci datové sady.",
+      "en" : "A site or end-point that gives access to the distribution of the dataset.",
+      "it" : "Un sito o end-point che dà accesso alla distribuzione del set di dati.",
+      "da" : "Et websted eller endpoint der giver adgang til en repræsentation af datasættet.",
+      "es" : "Un sitio o end-point que da acceso a la distribución de un conjunto de datos."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://schema.org/funding",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "funding"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "172"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#storageDatasetTimeSpan",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "153",
+    "label" : {
+      "IRI-based" : "storageDatasetTimeSpan"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "The time period covered by the dataset for how long it is stored within the storage system."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "177"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#processorSpeed",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "processorSpeed",
+      "undefined" : "processor speed"
+    },
+    "domain" : "72",
+    "comment" : {
+      "undefined" : "Speed of the processors of the Data Service"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "178"
+  }, {
+    "range" : "21",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "12",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "21",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "range" : "21",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "12",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasPending",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "175",
+    "description" : {
+      "en" : "Used to indicate the pending state of contract."
+    },
+    "label" : {
+      "IRI-based" : "hasPending",
+      "en" : "has pending"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "155"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#energyConsumption",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "165",
+    "label" : {
+      "IRI-based" : "energyConsumption",
+      "undefined" : "Energy Consumption"
+    },
+    "domain" : "64",
+    "comment" : {
+      "undefined" : "The total profiled dataset power consumption of a typical dataset (during storage + processing activities) involves considering the energy usage associated with both storing and processing phases. Expressed in Kw/h"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#includesEdge",
+    "inverse" : "0",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "includesEdge",
+      "undefined" : "includes edge"
+    },
+    "domain" : "129",
+    "attributes" : [ "external", "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "https://w3id.org/idsa/core/contract",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "range" : "173",
+    "label" : {
+      "IRI-based" : "contract",
+      "en" : "has contract"
+    },
+    "domain" : "198",
+    "comment" : {
+      "en" : "The target contract defining the usage of the data object."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "199"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#dataprocessingtask",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "dataprocessingtask"
+    },
+    "superproperty" : [ "33" ],
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Extension of dcat partOf properties to admit cataloguing of Data Processing Tasks"
+    },
+    "attributes" : [ "object" ],
+    "id" : "200"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#hasExecutionAspectInverse",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasExecutionAspectInverse"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/homepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "206",
+    "label" : {
+      "IRI-based" : "homepage"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "207"
+  }, {
+    "range" : "66",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "101",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#appliesForActionInverse",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "appliesForActionInverse"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "66",
+    "domain" : "149",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  }, {
+    "range" : "66",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
+  }, {
+    "range" : "78",
+    "domain" : "135",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#used",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "140",
+    "annotations" : {
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "wasUsedBy",
+        "type" : "label"
+      } ],
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "entities-activities",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "starting-point",
+        "type" : "label"
+      } ],
+      "qualifiedForm" : [ {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#qualifiedUsage",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Usage",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "used",
+      "undefined" : "used"
+    },
+    "superproperty" : [ "110" ],
+    "domain" : "86",
+    "comment" : {
+      "en" : "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/idsa/core/provider",
+    "baseIri" : "https://w3id.org/idsa/core",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "provider",
+      "en" : "Provider"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "Provider of a Resource or Service that is the subject matter of the contract. This party may differ from the Assigner specified by the Contract rules."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "214"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasCreated",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "176",
+    "description" : {
+      "en" : "Used to indicate that a contract has been created."
+    },
+    "label" : {
+      "IRI-based" : "hasCreated",
+      "undefined" : "has created"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://schema.org/identifier",
+    "baseIri" : "http://schema.org",
+    "range" : "217",
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "216"
+  }, {
+    "range" : "78",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "218"
+  }, {
+    "range" : "78",
+    "domain" : "134",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "219"
+  }, {
+    "range" : "86",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "220"
+  }, {
+    "range" : "122",
+    "domain" : "122",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  }, {
+    "range" : "57",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "222"
+  }, {
+    "range" : "86",
+    "domain" : "129",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "223"
+  }, {
+    "range" : "87",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "range" : "87",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "225"
+  }, {
+    "range" : "113",
+    "domain" : "114",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "226"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#servesPurpose",
+    "inverse" : "82",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "192",
+    "label" : {
+      "IRI-based" : "servesPurpose",
+      "undefined" : "serves purpose"
+    },
+    "domain" : "31",
+    "attributes" : [ "external", "object" ],
+    "id" : "227"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#vendor",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "vendor",
+      "undefined" : "Vendor"
+    },
+    "domain" : "59",
+    "comment" : {
+      "undefined" : "Vendor of a Data Product"
+    },
+    "attributes" : [ "object" ],
+    "id" : "228"
+  }, {
+    "range" : "75",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "229"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#numberOfCores",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "158",
+    "label" : {
+      "IRI-based" : "numberOfCores",
+      "undefined" : "Number of cores"
+    },
+    "domain" : "72",
+    "comment" : {
+      "undefined" : "Number of cores of the processor in Data Service"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://purl.org/dc/terms/hasPart",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "1",
+    "description" : {
+      "en" : "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPart",
+      "en" : "Has Part"
+    },
+    "domain" : "1",
+    "subproperty" : [ "32", "69", "125", "200" ],
+    "comment" : {
+      "en" : "A related resource that is included either physically or logically in the described resource."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#hasCondition",
+    "inverse" : "92",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "202",
+    "label" : {
+      "IRI-based" : "hasCondition",
+      "undefined" : "has condition"
+    },
+    "domain" : "201",
+    "attributes" : [ "external", "object" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#appliesForAction",
+    "inverse" : "210",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "appliesForAction"
+    },
+    "domain" : "44",
+    "attributes" : [ "external", "object" ],
+    "id" : "233"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#generated",
+    "inverse" : "111",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "203",
+    "label" : {
+      "IRI-based" : "generated",
+      "undefined" : "generated"
+    },
+    "domain" : "204",
+    "attributes" : [ "external", "object" ],
+    "id" : "234"
+  }, {
+    "range" : "61",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "235"
+  }, {
+    "range" : "4",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "236"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#carbonEmission",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "162",
+    "label" : {
+      "IRI-based" : "carbonEmission"
+    },
+    "domain" : "64",
+    "comment" : {
+      "undefined" : "The amount of CO2 emissions produced as a result of the energy consumption required to store, process, and manage the dataset. Expressed in Kg"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "237"
+  }, {
+    "range" : "22",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "238"
+  }, {
+    "range" : "10",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "239"
+  }, {
+    "range" : "10",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "240"
+  }, {
+    "range" : "60",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "241"
+  }, {
+    "range" : "47",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "242"
+  }, {
+    "range" : "44",
+    "domain" : "230",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "243"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "204",
+    "description" : {
+      "en" : "Used to identify how a dataset was generated. Specifically, what data processing generated the dataset."
+    },
+    "annotations" : {
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "generated",
+        "type" : "label"
+      } ],
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "entities-activities",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "starting-point",
+        "type" : "label"
+      } ],
+      "qualifiedForm" : [ {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#qualifiedGeneration",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Generation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wasGeneratedBy",
+      "en" : "was generated by",
+      "undefined" : "wasGeneratedBy"
+    },
+    "superproperty" : [ "110" ],
+    "domain" : "203",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "111"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "244"
+  }, {
+    "range" : "44",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "245"
+  }, {
+    "range" : "44",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "246"
+  }, {
+    "range" : "230",
+    "domain" : "230",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "range" : "174",
+    "domain" : "173",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "248"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasTerminated",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "215",
+    "description" : {
+      "en" : "Used to indicate the terminated state of contract."
+    },
+    "label" : {
+      "IRI-based" : "hasTerminated",
+      "en" : "has terminated"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "156"
+  }, {
+    "range" : "76",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "249"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#hasExprValueInverse",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasExprValueInverse"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#contractID",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "251",
+    "label" : {
+      "IRI-based" : "contractID"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "someValues", "datatype" ],
+    "id" : "250"
+  }, {
+    "range" : "26",
+    "domain" : "173",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "252"
+  }, {
+    "range" : "62",
+    "domain" : "173",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "253"
+  }, {
+    "range" : "62",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "254"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/PolicyModel#hasExprSubjectInverse",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/PolicyModel",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasExprSubjectInverse"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "140",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "255"
+  }, {
+    "range" : "2",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "256"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#hasIPAddress",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "159",
+    "label" : {
+      "IRI-based" : "hasIPAddress",
+      "undefined" : "has IP address"
+    },
+    "domain" : "72",
+    "attributes" : [ "datatype" ],
+    "id" : "257"
+  }, {
+    "range" : "36",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "258"
+  }, {
+    "range" : "36",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "259"
+  }, {
+    "range" : "189",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "260"
+  }, {
+    "range" : "36",
+    "domain" : "173",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "261"
+  }, {
+    "range" : "77",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "262"
+  }, {
+    "range" : "88",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "263"
+  }, {
+    "range" : "194",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "264"
+  }, {
+    "range" : "43",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "265"
+  }, {
+    "range" : "90",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "266"
+  }, {
+    "range" : "90",
+    "domain" : "89",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "267"
+  }, {
+    "iri" : "https://www.upcast-project.eu/upcast-vocab#energyIntensity",
+    "baseIri" : "https://www.upcast-project.eu/upcast-vocab",
+    "range" : "163",
+    "label" : {
+      "IRI-based" : "energyIntensity",
+      "undefined" : "Energy Intensity"
+    },
+    "domain" : "64",
+    "comment" : {
+      "undefined" : "The energy intensity refers to the amount of energy required to store, process, and manage a dataset. It measures the energy consumption associated with the entire lifecycle of the dataset."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "268"
+  }, {
+    "iri" : "http://www.ict-abovo.eu/ontologies/Workflow#hasDestination",
+    "inverse" : "38",
+    "baseIri" : "http://www.ict-abovo.eu/ontologies/Workflow",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "hasDestination",
+      "undefined" : "has destination"
+    },
+    "domain" : "47",
+    "attributes" : [ "external", "object" ],
+    "id" : "269"
+  }, {
+    "iri" : "http://purl.org/dc/terms/creator",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "141",
+    "description" : {
+      "en" : "An entity responsible for making the resource."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "creator",
+      "en" : "Creator"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "An entity responsible for making the resource."
+    },
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "270"
+  }, {
+    "range" : "90",
+    "domain" : "176",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "271"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasDataSubject",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "10",
+    "description" : {
+      "en" : "Relates consent and contract to a specific data subject."
+    },
+    "label" : {
+      "IRI-based" : "hasDataSubject",
+      "en" : "has data subject"
+    },
+    "domain" : "186",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "272"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasDataController",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "10",
+    "description" : {
+      "en" : "Relates consent and contracts to a specific data controller."
+    },
+    "label" : {
+      "IRI-based" : "hasDataController",
+      "en" : "has data controller"
+    },
+    "domain" : "184",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "273"
+  }, {
+    "range" : "66",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "274"
+  }, {
+    "range" : "66",
+    "domain" : "150",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "275"
+  }, {
+    "iri" : "http://ontologies.atb-bremen.de/smashHitCore#hasSigned",
+    "baseIri" : "http://ontologies.atb-bremen.de/smashHitCore",
+    "range" : "89",
+    "description" : {
+      "en" : "Used to indicate the signed state of contract."
+    },
+    "label" : {
+      "IRI-based" : "hasSigned",
+      "en" : "has signed"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "4",
+    "attributes" : [ "external", "object", "functional" ],
+    "id" : "157"
+  }, {
+    "range" : "90",
+    "domain" : "175",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "276"
+  }, {
+    "range" : "66",
+    "domain" : "151",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "277"
+  } ]
+}
