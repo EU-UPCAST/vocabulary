@@ -8,7 +8,10 @@
 
 <https://www.upcast-project.eu/upcast-vocab> rdf:type owl:Ontology ;
                                               owl:versionIRI <https://www.upcast-project.eu/upcast-vocab/1.0> ;
+                                              owl:imports <https://w3id.org/idsa/core> ,
+                                                          <https://www.w3.org/TR/vocab-dcat-3/> ;
                                               <http://purl.org/dc/elements/1.1/title> "UPCAST Vocabulary" ;
+                                              <http://purl.org/dc/terms/creator> "UPCAST project team" ;
                                               <http://purl.org/dc/terms/description> "Vocabulary for interoperability of UPCAST plugins among themselves and with other Data Spaces and Data Marketplaces" ;
                                               rdfs:label "UPCAST Vocabulary" .
 
@@ -95,6 +98,10 @@
 ###  http://schema.org/funding
 <http://schema.org/funding> rdf:type owl:AnnotationProperty ;
                             rdfs:range <http://schema.org/Grant> .
+
+
+###  http://www.w3.org/2002/07/owl#imports
+owl:imports rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#altLabel
@@ -1740,41 +1747,13 @@ A mutual contractual agreement involves an exchange of a promises in which the p
 #    Individuals
 #################################################################
 
-###  https://orcid.org/0000-0001-6993-0001
-<https://orcid.org/0000-0001-6993-0001> rdf:type owl:NamedIndividual ,
-                                                 <http://xmlns.com/foaf/0.1/Person> ;
-                                        <http://xmlns.com/foaf/0.1/name> "Luis-Daniel Ibáñez" ;
-                                        <http://www.w3.org/ns/org#memberOf> <https://www.southampton.ac.uk#this> .
-
-
-###  https://www.southampton.ac.uk#this
-<https://www.southampton.ac.uk#this> rdf:type owl:NamedIndividual ,
-                                              <http://xmlns.com/foaf/0.1/Organization> ;
-                                     <http://xmlns.com/foaf/0.1/name> "University of Southampton" ;
-                                     rdfs:label "University of Southampton" ;
-                                     <http://xmlns.com/foaf/0.1/homepage> "https://www.southampton.ac.uk/" .
+###  https://doi.org/10.3030/101093216
+<https://doi.org/10.3030/101093216> rdf:type owl:NamedIndividual .
 
 
 ###  https://www.upcast-project.eu/upcast-vocab
 <https://www.upcast-project.eu/upcast-vocab> rdf:type owl:NamedIndividual ;
-                                             <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6993-0001> ;
-                                             <http://schema.org/funding> :UPCAST-project .
-
-
-###  https://www.upcast-project.eu/upcast-vocab#European_Commission
-:European_Commission rdf:type owl:NamedIndividual ,
-                              <http://schema.org/Organization> ;
-                     <http://schema.org/name> "European Commission" ;
-                     rdfs:label "European Commission" .
-
-
-###  https://www.upcast-project.eu/upcast-vocab#UPCAST-project
-:UPCAST-project rdf:type owl:NamedIndividual ,
-                         <http://schema.org/MonetaryGrant> ;
-                <http://schema.org/funder> :European_Commission ;
-                <http://schema.org/identifier> "https://doi.org/10.3030/101093216" ;
-                <http://schema.org/name> "UPCAST" ;
-                rdfs:label "UPCAST Project" .
+                                             <http://schema.org/funding> <https://doi.org/10.3030/101093216> .
 
 
 #################################################################

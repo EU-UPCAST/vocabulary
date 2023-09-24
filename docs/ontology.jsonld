@@ -1300,6 +1300,9 @@
   "@id" : "http://www.w3.org/2001/XMLSchema#dayTimeDuration",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
+  "@id" : "http://www.w3.org/2002/07/owl#imports",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -2803,17 +2806,8 @@
   "@id" : "http://xmlns.com/foaf/0.1/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://orcid.org/0000-0001-6993-0001",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Person"
-  } ],
-  "http://www.w3.org/ns/org#memberOf" : [ {
-    "@id" : "https://www.southampton.ac.uk#this"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Luis-Daniel Ibáñez"
-  } ]
+  "@id" : "https://doi.org/10.3030/101093216",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Contract",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -3055,37 +3049,27 @@
     "@id" : "https://w3id.org/idsa/core/Participant"
   } ]
 }, {
-  "@id" : "https://www.southampton.ac.uk#this",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Organization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "University of Southampton"
-  } ],
-  "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@value" : "https://www.southampton.ac.uk/"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "University of Southampton"
-  } ]
-}, {
   "@id" : "https://www.upcast-project.eu/upcast-vocab",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@value" : "UPCAST Vocabulary"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://orcid.org/0000-0001-6993-0001"
+    "@value" : "UPCAST project team"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "Vocabulary for interoperability of UPCAST plugins among themselves and with other Data Spaces and Data Marketplaces"
   } ],
   "http://schema.org/funding" : [ {
-    "@id" : "https://www.upcast-project.eu/upcast-vocab#UPCAST-project"
+    "@id" : "https://doi.org/10.3030/101093216"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "UPCAST Vocabulary"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/idsa/core"
+  }, {
+    "@id" : "https://www.w3.org/TR/vocab-dcat-3/"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://www.upcast-project.eu/upcast-vocab/1.0"
@@ -3137,18 +3121,6 @@
     "@value" : "Environmental Profile"
   } ]
 }, {
-  "@id" : "https://www.upcast-project.eu/upcast-vocab#European_Commission",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://schema.org/name" : [ {
-    "@value" : "European Commission"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://schema.org/Organization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "European Commission"
-  } ]
-}, {
   "@id" : "https://www.upcast-project.eu/upcast-vocab#ExecutionEnvironment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3156,24 +3128,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Execution Environment"
-  } ]
-}, {
-  "@id" : "https://www.upcast-project.eu/upcast-vocab#UPCAST-project",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://schema.org/funder" : [ {
-    "@id" : "https://www.upcast-project.eu/upcast-vocab#European_Commission"
-  } ],
-  "http://schema.org/identifier" : [ {
-    "@value" : "https://doi.org/10.3030/101093216"
-  } ],
-  "http://schema.org/name" : [ {
-    "@value" : "UPCAST"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://schema.org/MonetaryGrant"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "UPCAST Project"
   } ]
 }, {
   "@id" : "https://www.upcast-project.eu/upcast-vocab#carbonEmission",

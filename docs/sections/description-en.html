@@ -1,3 +1,36 @@
 <h2 id="desc" class="list">UPCAST Vocabulary: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<span class="markdown">Vocabulary for interoperability of UPCAST plugins among themselves and with other Data Spaces and Data Marketplaces</span>
+<span class="markdown">UPCAST Vocabulary is divided in 6 logical units or “Facets”, based on the concerns of the plugins most related to each facet.</span>
+
+<h3 class="list" id="corefacet" > Core Facet   <span class="backlink"> back to <a href="#toc">ToC</a></span> </h3>>
+
+<span class="markdown"> This facet concerns the Resource Specification and Resource Discovery plugins. We reuse the core classes from the DCAT vocabulary: a Catalog that hosts Resources and Datasets. We add two additional Catalogued resources: Artefacts, to model resources that are not datasets such as reports or visualizations; and Data Processing Task as a high-level class that allows the modelling of data processing that is not implemented in a containerized piece of Software. For processing tasks that are containerized, we reuse the DataApp class from the IDS Information Model. IDS Participants in a Data Space can be declared as Consumers and Providers of Resources.
+    In this facet we introduce Data Processing Workflow as a subclass of prov:Activity (from the widely extended Prov-O vocabulary), linked to the Resources it uses and generates. </span>
+
+<h3 class="list" id="envirofacet" > Environmental Facet   <span class="backlink"> back to <a href="#toc">ToC</a></span> </h3>>
+
+<span class="markdown"> We create a class “Enviromental Profile” to hold data about the estimation or measurement (depending on the permission to run the Papillon agent) of the environmental footprint of an execution and an “Execution Environment” class to hold hardware information of where a DataApp, a DataService or a Data Processing Workflow are run. This enables the comparison of the environmental profiles of the same Data App or Service in different Execution Environments.  </span>
+
+
+<h3 class="list" id="pricingfacet" > Pricing Facet   <span class="backlink"> back to <a href="#toc">ToC</a></span> </h3>>
+
+<span class="markdown"> The Pricing facet concerns the Pricing and Valuation plugin. We create a Data Product class to model the packaging of one or more Distributions of a Dataset in a Data Product for sale. In addition to relevant properties and attributes in DCAT Dataset, such as Temporal Coverage and Description, we created attributes on a Data Product to hold the input and output of the Pricing plugin. We will further research how Data Products are used in the wild, and how other current EU projects in the Data Space topic handle this concept to assess if we need a further “version” of a Data Product, e.g., to support different prices for different delivery methods.   </span>
+
+<h3 class="list" id="usagefacet" > Privacy and Usage Facet   <span class="backlink"> back to <a href="#toc">ToC</a></span> </h3>>
+
+<span class="markdown"> Here we reuse previous ontologies created by ICT-Abovo and develoepd during the BDPR-4-GDPR project. Rules are implemented as instances of the Permissions, Prohibitions and Obligations classes (sub-classes of the Rules class). The core of the rules are actions, implemented as Actions class instances. Actions consist of four elements, i.e., actor, operation, resource and organisation, that are either defined as concrete entities, by means of ConcreteEntities class instances, or abstract, implemented leveraging the concept of enhanced entities (EnhancedEntities class). The latter are enhanced in the sense that the ontology allows to define, apart from their semantic type, also the attributes characterising the entity. To this end, appropriate concepts are provided, including Expressions, the instances of which provide for modelling atomic constraints with a subject and a value, and Variables, that allow the specification of concepts in relation to other concepts (e.g., set the value of a resource’s constraint to be relative to the semantic type of the actor), thereby maximising expressiveness.  </span>
+
+<h3 class="list" id="dpwfacet" > Data Processing Workflow Facet   <span class="backlink"> back to <a href="#toc">ToC</a></span> </h3>>
+
+<span class="markdown"> A DPW is a graph where Tasks are the nodes, and the edges define the sequence of application, as well as overall data and control flow. Edges carry InformationEntities that define the nature of data to be transferred from one task to the next. A wmo:InformationEntity may refer to a specific dataset, or describe transferred data in abstract terms, through a data type and potential additional constraints. An edge may also be characterised by flow conditions and constraints, further specifying and/or restricting the occurence of implied transition. 
+    
+    A Task has 1 to N execution Profiles. An ExecutionProfile describes an actor that applies an operation (implemented in a DataProcessingTask) on an Asset (often a Dataset), subject to some task conditions. wmo:ActorEntity instances denote the entities assigned with the execution of tasks. They may be defined at either concrete (e.g., a particular person or organisation) or abstract level (e.g., some role and possibly additional constraints) Asset entities represent the objects on which tasks are performed, meaning that they are accessed, processed or modified for the purpose of delivering the corresponding functionalities. They can similarly be defined in either concrete or abstract terms. In UPCAST they are typically expected to refer to (types of) datasets.     
+    The wmo:OperationEntity describes the type of functionality executed at each workflow step. It is defined at an abstract level, through the corresponding operation type, and linked to its concrete materialisation through the upcast:implementedBy property.  </span>
+
+<h3 class="list" id="dpwfacet" > Contract and Negotiation Facet   <span class="backlink"> back to <a href="#toc">ToC</a></span> </h3>>
+
+<span class="markdown"> An instance of Data Processing Workflow describes the processing done to a set of Datasets with a set of Data Processing Tasks. A Contract formalises the state of the agreement of all participants in the DPW with that processing, from “Pending” to “Signed”, and describes the Medium and Jurisdiction (Location) of the Contract. 
+    The description of the processing of a DPW represents the “clauses” of the contract regarding the processing. A party wishing to start a negotiation would propose the removal, update or addition of one or more of the Execution Profiles that comprise the DPW, the amendment is rechecked with respect to existing Rules. If it passes is then submitted to the approval of the other Participants.  </span>
+
+
+

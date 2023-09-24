@@ -1,6 +1,9 @@
 <https://www.upcast-project.eu/upcast-vocab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://www.upcast-project.eu/upcast-vocab> <http://www.w3.org/2002/07/owl#versionIRI> <https://www.upcast-project.eu/upcast-vocab/1.0> .
+<https://www.upcast-project.eu/upcast-vocab> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/idsa/core> .
+<https://www.upcast-project.eu/upcast-vocab> <http://www.w3.org/2002/07/owl#imports> <https://www.w3.org/TR/vocab-dcat-3/> .
 <https://www.upcast-project.eu/upcast-vocab> <http://purl.org/dc/elements/1.1/title> "UPCAST Vocabulary" .
+<https://www.upcast-project.eu/upcast-vocab> <http://purl.org/dc/terms/creator> "UPCAST project team" .
 <https://www.upcast-project.eu/upcast-vocab> <http://purl.org/dc/terms/description> "Vocabulary for interoperability of UPCAST plugins among themselves and with other Data Spaces and Data Marketplaces" .
 <https://www.upcast-project.eu/upcast-vocab> <http://www.w3.org/2000/01/rdf-schema#label> "UPCAST Vocabulary" .
 # 
@@ -79,6 +82,9 @@
 # http://schema.org/funding
 <http://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://schema.org/funding> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Grant> .
+# 
+# http://www.w3.org/2002/07/owl#imports
+<http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2004/02/skos/core#altLabel
 <http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -1546,37 +1552,12 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# https://orcid.org/0000-0001-6993-0001
-<https://orcid.org/0000-0001-6993-0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://orcid.org/0000-0001-6993-0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<https://orcid.org/0000-0001-6993-0001> <http://xmlns.com/foaf/0.1/name> "Luis-Daniel Ibáñez" .
-<https://orcid.org/0000-0001-6993-0001> <http://www.w3.org/ns/org#memberOf> <https://www.southampton.ac.uk#this> .
-# 
-# https://www.southampton.ac.uk#this
-<https://www.southampton.ac.uk#this> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://www.southampton.ac.uk#this> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
-<https://www.southampton.ac.uk#this> <http://xmlns.com/foaf/0.1/name> "University of Southampton" .
-<https://www.southampton.ac.uk#this> <http://www.w3.org/2000/01/rdf-schema#label> "University of Southampton" .
-<https://www.southampton.ac.uk#this> <http://xmlns.com/foaf/0.1/homepage> "https://www.southampton.ac.uk/" .
+# https://doi.org/10.3030/101093216
+<https://doi.org/10.3030/101093216> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://www.upcast-project.eu/upcast-vocab
 <https://www.upcast-project.eu/upcast-vocab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://www.upcast-project.eu/upcast-vocab> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-6993-0001> .
-<https://www.upcast-project.eu/upcast-vocab> <http://schema.org/funding> <https://www.upcast-project.eu/upcast-vocab#UPCAST-project> .
-# 
-# https://www.upcast-project.eu/upcast-vocab#European_Commission
-<https://www.upcast-project.eu/upcast-vocab#European_Commission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://www.upcast-project.eu/upcast-vocab#European_Commission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Organization> .
-<https://www.upcast-project.eu/upcast-vocab#European_Commission> <http://schema.org/name> "European Commission" .
-<https://www.upcast-project.eu/upcast-vocab#European_Commission> <http://www.w3.org/2000/01/rdf-schema#label> "European Commission" .
-# 
-# https://www.upcast-project.eu/upcast-vocab#UPCAST-project
-<https://www.upcast-project.eu/upcast-vocab#UPCAST-project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://www.upcast-project.eu/upcast-vocab#UPCAST-project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/MonetaryGrant> .
-<https://www.upcast-project.eu/upcast-vocab#UPCAST-project> <http://schema.org/funder> <https://www.upcast-project.eu/upcast-vocab#European_Commission> .
-<https://www.upcast-project.eu/upcast-vocab#UPCAST-project> <http://schema.org/identifier> "https://doi.org/10.3030/101093216" .
-<https://www.upcast-project.eu/upcast-vocab#UPCAST-project> <http://schema.org/name> "UPCAST" .
-<https://www.upcast-project.eu/upcast-vocab#UPCAST-project> <http://www.w3.org/2000/01/rdf-schema#label> "UPCAST Project" .
+<https://www.upcast-project.eu/upcast-vocab> <http://schema.org/funding> <https://doi.org/10.3030/101093216> .
 # 
 # 
 # 

@@ -7,4 +7,4 @@
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
-:agent0 a prov:Agent; foaf:name "https://orcid.org/0000-0001-6993-0001".
+:agent0 a prov:Agent; foaf:name "UPCAST project team".

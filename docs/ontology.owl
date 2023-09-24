@@ -2,21 +2,31 @@
 <rdf:RDF xmlns="https://www.upcast-project.eu/upcast-vocab#"
      xml:base="https://www.upcast-project.eu/upcast-vocab"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:dqv="http://www.w3.org/ns/dqv#"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="https://w3id.org/idsa/core/"
      xmlns:dcam="http://purl.org/dc/dcam/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:odrl="http://www.w3.org/ns/odrl/2/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/">
+     xmlns:schema="http://schema.org/"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
     <owl:Ontology rdf:about="https://www.upcast-project.eu/upcast-vocab">
         <owl:versionIRI rdf:resource="https://www.upcast-project.eu/upcast-vocab/1.0"/>
+        <owl:imports rdf:resource="https://w3id.org/idsa/core"/>
+        <owl:imports rdf:resource="https://www.w3.org/TR/vocab-dcat-3/"/>
         <dc:title>UPCAST Vocabulary</dc:title>
+        <terms:creator>UPCAST project team</terms:creator>
         <terms:description>Vocabulary for interoperability of UPCAST plugins among themselves and with other Data Spaces and Data Marketplaces</terms:description>
         <rdfs:label>UPCAST Vocabulary</rdfs:label>
     </owl:Ontology>
@@ -160,6 +170,13 @@
     <owl:AnnotationProperty rdf:about="http://schema.org/funding">
         <rdfs:range rdf:resource="http://schema.org/Grant"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#imports -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#imports"/>
     
 
 
@@ -2580,26 +2597,10 @@ A mutual contractual agreement involves an exchange of a promises in which the p
     
 
 
-    <!-- https://orcid.org/0000-0001-6993-0001 -->
+    <!-- https://doi.org/10.3030/101093216 -->
 
 
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-6993-0001">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <foaf:name>Luis-Daniel Ibáñez</foaf:name>
-        <org:memberOf rdf:resource="https://www.southampton.ac.uk#this"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.southampton.ac.uk#this -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.southampton.ac.uk#this">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <foaf:name>University of Southampton</foaf:name>
-        <rdfs:label>University of Southampton</rdfs:label>
-        <foaf:homepage>https://www.southampton.ac.uk/</foaf:homepage>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://doi.org/10.3030/101093216"/>
     
 
 
@@ -2607,32 +2608,7 @@ A mutual contractual agreement involves an exchange of a promises in which the p
 
 
     <owl:NamedIndividual rdf:about="https://www.upcast-project.eu/upcast-vocab">
-        <terms:creator rdf:resource="https://orcid.org/0000-0001-6993-0001"/>
-        <schema:funding rdf:resource="https://www.upcast-project.eu/upcast-vocab#UPCAST-project"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.upcast-project.eu/upcast-vocab#European_Commission -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.upcast-project.eu/upcast-vocab#European_Commission">
-        <rdf:type rdf:resource="http://schema.org/Organization"/>
-        <schema:name>European Commission</schema:name>
-        <rdfs:label>European Commission</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.upcast-project.eu/upcast-vocab#UPCAST-project -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.upcast-project.eu/upcast-vocab#UPCAST-project">
-        <rdf:type rdf:resource="http://schema.org/MonetaryGrant"/>
-        <schema:funder rdf:resource="https://www.upcast-project.eu/upcast-vocab#European_Commission"/>
-        <schema:identifier>https://doi.org/10.3030/101093216</schema:identifier>
-        <schema:name>UPCAST</schema:name>
-        <rdfs:label>UPCAST Project</rdfs:label>
+        <schema:funding rdf:resource="https://doi.org/10.3030/101093216"/>
     </owl:NamedIndividual>
     
 
