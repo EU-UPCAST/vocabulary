@@ -22,7 +22,6 @@
         <owl:versionIRI rdf:resource="https://www.upcast-project.eu/upcast-vocab/1.0"/>
         <owl:imports rdf:resource="https://www.w3.org/TR/vocab-dcat-3/"/>
         <owl:imports rdf:resource="https://w3id.org/idsa/core"/>
-        <schema:funding rdf:resource="https://doi.org/10.3030/101093216"/>
         <dc:title>UPCAST Vocabulary</dc:title>
         <rdfs:label>UPCAST Vocabulary</rdfs:label>
         <terms:description>Vocabulary for interoperability of UPCAST plugins among themselves and with other Data Spaces and Data Marketplaces</terms:description>
@@ -1164,6 +1163,67 @@
     
 
 
+    <!-- https://www.upcast-project.eu/upcast-vocab#IdCompanies -->
+
+    <owl:DatatypeProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#IdCompanies">
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>True if the product includes data to identify companies. False otherwise.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#IdSessions -->
+
+    <owl:DatatypeProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#IdSessions">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>True if the product is granular enough to track sessions of individual users. False otherwise.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#IncludesLocation -->
+
+    <owl:DatatypeProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#IncludesLocation">
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>True if Data Product includes location data. False otherwise.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#OnDemand -->
+
+    <owl:DatatypeProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#OnDemand">
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>True if the data is provided on demand. False otherwise.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#ProfServices -->
+
+    <owl:DatatypeProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#ProfServices">
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>True if the product includes any kind of data about professional services (e.g., hours of an analyst). False otherwise.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#RealTime -->
+
+    <owl:DatatypeProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#RealTime">
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>True if the data is provided in real time. False otherwise.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://www.upcast-project.eu/upcast-vocab#carbonEmission -->
 
     <owl:DatatypeProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#carbonEmission">
@@ -1212,6 +1272,16 @@
         <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#ExecutionEnvironment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has IP address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#limitations -->
+
+    <owl:DatatypeProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#limitations">
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>True if the Data Product includes any kind of consumption limitation (e.g. Max number of users). False otherwise.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1747,7 +1817,9 @@ Re-used from Workflow Ontology Model.</rdfs:comment>
 
     <!-- http://www.ict-abovo.eu/ontologies/Workflow#LogicalRelations -->
 
-    <owl:Class rdf:about="http://www.ict-abovo.eu/ontologies/Workflow#LogicalRelations"/>
+    <owl:Class rdf:about="http://www.ict-abovo.eu/ontologies/Workflow#LogicalRelations">
+        <rdfs:subClassOf rdf:resource="http://www.ict-abovo.eu/ontologies/InformationModel#MachineTypes"/>
+    </owl:Class>
     
 
 
@@ -2381,9 +2453,17 @@ A mutual contractual agreement involves an exchange of a promises in which the p
     
 
 
+    <!-- https://doi.org/10.3030/101093216 -->
+
+    <owl:NamedIndividual rdf:about="https://doi.org/10.3030/101093216"/>
+    
+
+
     <!-- https://www.upcast-project.eu/upcast-vocab -->
 
-    <owl:NamedIndividual rdf:about="https://www.upcast-project.eu/upcast-vocab"/>
+    <owl:NamedIndividual rdf:about="https://www.upcast-project.eu/upcast-vocab">
+        <schema:funding rdf:resource="https://doi.org/10.3030/101093216"/>
+    </owl:NamedIndividual>
     
 
 
