@@ -1021,6 +1021,24 @@
     
 
 
+    <!-- https://www.upcast-project.eu/upcast-vocab#hasTrustScore -->
+
+    <owl:ObjectProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#hasTrustScore">
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProcessingWorkflow"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#isAssociatedToRisk -->
+
+    <owl:ObjectProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#isAssociatedToRisk">
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#TrustScore"/>
+        <rdfs:range rdf:resource="https://www.upcast-project.eu/upcast-vocab#Risk"/>
+        <rdfs:comment>Risk to which the trust score of a Data Processing Workflow is associated</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.upcast-project.eu/upcast-vocab#profile -->
 
     <owl:ObjectProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#profile">
@@ -1319,6 +1337,16 @@
     
 
 
+    <!-- https://www.upcast-project.eu/upcast-vocab#severity -->
+
+    <owl:DatatypeProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#severity">
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>risk severity. Must be one of &quot;Negligible&quot;, &quot;Minor&quot;, &quot;Moderate&quot;, &quot;Significant&quot;, &quot;Severe&quot;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://www.upcast-project.eu/upcast-vocab#storageDatasetTimeSpan -->
 
     <owl:DatatypeProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#storageDatasetTimeSpan">
@@ -1336,6 +1364,16 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The detailed technical information and characteristics of specific storage technology
 and architectures used for storing and managing digital data.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#trustScore -->
+
+    <owl:DatatypeProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#trustScore">
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProcessingWorkflow"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Score between 0-100% that quantifies trust that a DPW will not materialise the linked risk</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -2438,6 +2476,22 @@ A mutual contractual agreement involves an exchange of a promises in which the p
     <owl:Class rdf:about="https://www.upcast-project.eu/upcast-vocab#ExecutionEnvironment">
         <rdfs:comment>Environment where a Data Processing Workflow is executed</rdfs:comment>
         <rdfs:label>Execution Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#Risk -->
+
+    <owl:Class rdf:about="https://www.upcast-project.eu/upcast-vocab#Risk">
+        <rdfs:comment>Risk a Data Processing Workflow leaks data or does not comply with a contraint or leaks data</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#TrustScore -->
+
+    <owl:Class rdf:about="https://www.upcast-project.eu/upcast-vocab#TrustScore">
+        <rdfs:comment>TrustScore that a Data Processing Workflow will not materialise this risk</rdfs:comment>
     </owl:Class>
     
 
