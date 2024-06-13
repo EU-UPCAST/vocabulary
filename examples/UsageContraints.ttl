@@ -3,6 +3,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix idsa-core: <https://w3id.org/idsa/core/> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/> .
 
 
 <http://upcast-project.eu/distribution/example-distribution-dataset-1>
@@ -32,13 +33,13 @@
         odrl:permission [
                 odrl:action odrl:aggregate ;
                 odrl:assigner <https://upcast-project.eu/provider/example-data-provider>;
-                odrl:target <http://upcast-project.eu/dataset/example-dataset-1> .
+                odrl:target <http://upcast-project.eu/dataset/example-dataset-1> ;
         ] ;
         odrl:prohibition [
                 odrl:action odrl:use ;
                 odrl:assigner <https://upcast-project.eu/provider/example-data-provider>;
                 odrl:assignee <http://data-space-vocabulary/classes/AI-Agent> ;
-                odrl:target <http://upcast-project.eu/dataset/example-dataset-1> .
+                odrl:target <http://upcast-project.eu/dataset/example-dataset-1> ;
         ] .
   
         

@@ -1,0 +1,165 @@
+[
+    {
+      "@id": "_:b0",
+      "http://www.w3.org/ns/odrl/action": [
+        {
+          "@id": "http://www.w3.org/ns/odrl/aggregate"
+        }
+      ],
+      "http://www.w3.org/ns/odrl/assigner": [
+        {
+          "@id": "https://upcast-project.eu/provider/example-data-provider"
+        }
+      ],
+      "http://www.w3.org/ns/odrl/target": [
+        {
+          "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+        }
+      ]
+    },
+    {
+      "@id": "_:b1",
+      "http://www.w3.org/ns/odrl/action": [
+        {
+          "@id": "http://www.w3.org/ns/odrl/use"
+        }
+      ],
+      "http://www.w3.org/ns/odrl/assigner": [
+        {
+          "@id": "https://upcast-project.eu/provider/example-data-provider"
+        }
+      ],
+      "http://www.w3.org/ns/odrl/assignee": [
+        {
+          "@id": "http://data-space-vocabulary/classes/AI-Agent"
+        }
+      ],
+      "http://www.w3.org/ns/odrl/target": [
+        {
+          "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+        }
+      ]
+    },
+    {
+      "@id": "http://data-space-vocabulary/classes/AI-Agent"
+    },
+    {
+      "@id": "http://upcast-project.eu/dataset/example-dataset-1",
+      "@type": [
+        "http://www.w3.org/ns/dcat#Dataset"
+      ],
+      "http://purl.org/dc/terms/title": [
+        {
+          "@value": "Example Dataset"
+        }
+      ],
+      "http://purl.org/dc/terms/description": [
+        {
+          "@value": "Example of a Dataset showing a minimal set of properties for Usage Constraints"
+        }
+      ],
+      "http://purl.org/dc/terms/publisher": [
+        {
+          "@id": "https://upcast-project.eu/producer/example-data-provider"
+        }
+      ],
+      "https://w3id.org/idsa/core/Provider": [
+        {
+          "@id": "https://upcast-project.eu/producer/example-data-provider"
+        }
+      ],
+      "http://www.w3.org/ns/dcat#distribution": [
+        {
+          "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+        }
+      ],
+      "http://www.w3.org/ns/odrl/hasPolicy": [
+        {
+          "@id": "http://upcast-project.eu/policy/usage-constraint-example"
+        }
+      ]
+    },
+    {
+      "@id": "http://upcast-project.eu/distribution/example-distribution-dataset-1",
+      "@type": [
+        "http://www.w3.org/ns/dcat#Distribution"
+      ],
+      "http://purl.org/dc/terms/description": [
+        {
+          "@value": "Example Distribution of a Dataset"
+        }
+      ],
+      "http://purl.org/dc/terms/format": [
+        {
+          "@value": "csv"
+        }
+      ],
+      "http://purl.org/dc/terms/title": [
+        {
+          "@value": "CSV Distribution of Dataset 1"
+        }
+      ],
+      "http://www.w3.org/ns/dcat#byteSize": [
+        {
+          "@value": 346
+        }
+      ],
+      "http://www.w3.org/ns/dcat#mediaType": [
+        {
+          "@value": "text/csv"
+        }
+      ]
+    },
+    {
+      "@id": "http://upcast-project.eu/policy/usage-constraint-example",
+      "@type": [
+        "http://www.w3.org/ns/odrl/Offer"
+      ],
+      "http://www.w3.org/ns/odrl/permission": [
+        {
+          "@id": "_:b0"
+        }
+      ],
+      "http://www.w3.org/ns/odrl/prohibition": [
+        {
+          "@id": "_:b1"
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/dcat#Dataset"
+    },
+    {
+      "@id": "http://www.w3.org/ns/dcat#Distribution"
+    },
+    {
+      "@id": "http://www.w3.org/ns/odrl/Offer"
+    },
+    {
+      "@id": "http://www.w3.org/ns/odrl/aggregate"
+    },
+    {
+      "@id": "http://www.w3.org/ns/odrl/use"
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/Agent"
+    },
+    {
+      "@id": "http://xmlns.com/foaf/0.1/Organization"
+    },
+    {
+      "@id": "https://upcast-project.eu/producer/example-data-provider"
+    },
+    {
+      "@id": "https://upcast-project.eu/provider/example-data-provider",
+      "@type": [
+        "http://xmlns.com/foaf/0.1/Agent",
+        "http://xmlns.com/foaf/0.1/Organization"
+      ],
+      "http://xmlns.com/foaf/0.1/name": [
+        {
+          "@value": "Data Provider Organization"
+        }
+      ]
+    }
+  ]
