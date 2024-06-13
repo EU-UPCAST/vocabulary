@@ -1,0 +1,22 @@
+@prefix upcast: <https://www.upcast-project.eu/upcast-vocab/1.0/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix idsa-core: <https://w3id.org/idsa/core/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+
+<http://upcast-project.eu/data-/example-data-processing-task>
+        a   idsa-core:DataApp;
+        dct:title               "Example Data Processing Task";        
+        dct:description         "Example Data Processing Task, in this case a Data App, with minimal properties. Publisher, Creator and Provider are all the same in this example. We will illustrate links to containers or endpoints in later facets";    
+        dct:publisher           <https://upcast-project.eu/producer/example-data-operation-provider>;
+        dct:creator             <https://upcast-project.eu/creator/example-data-operation-provider>; 
+        idsa-core:Provider      <https://upcast-project.eu/producer/example-data-operation-provider>.
+        
+
+<https://upcast-project.eu/provider/example-operation-provider>
+        a   foaf:Agent;
+        a   foaf:Organization;
+        foaf:name               "Example Data Operation Provider".
+
+        

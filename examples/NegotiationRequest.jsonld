@@ -1,0 +1,218 @@
+[
+    {
+        "@id": "_:b0",
+        "http://www.w3.org/ns/odrl/action": [
+            {
+                "@id": "http://www.w3.org/ns/odrl/aggregate"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/assigner": [
+            {
+                "@id": "https://upcast-project.eu/provider/example-data-provider"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/assignee": [
+            {
+                "@id": "https://upcast-project.eu/consumer/example-data-consumer"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/target": [
+            {
+                "@id": "http://upcast-project.eu/dataset/example-dataset-spec-copy-for-negotiation"
+            }
+        ]
+    },
+    {
+        "@id": "_:b1",
+        "http://www.w3.org/ns/odrl/action": [
+            {
+                "@id": "http://www.w3.org/ns/odrl/use"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/assigner": [
+            {
+                "@id": "https://upcast-project.eu/provider/example-data-provider"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/assignee": [
+            {
+                "@id": "http://data-space-vocabulary/classes/AI-Agent"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/target": [
+            {
+                "@id": "http://upcast-project.eu/dataset/example-dataset-spec-copy-for-negotiation"
+            }
+        ]
+    },
+    {
+        "@id": "http://data-space-vocabulary/classes/AI-Agent"
+    },
+    {
+        "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+    },
+    {
+        "@id": "http://upcast-project.eu/dataset/example-dataset-spec-copy-for-negotiation",
+        "@type": [
+            "http://www.w3.org/ns/dcat#Dataset"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Example Dataset"
+            }
+        ],
+        "http://purl.org/dc/terms/description": [
+            {
+                "@value": "A request for a different dataset specification creates a new instance. Same for counter-offers"
+            }
+        ],
+        "http://purl.org/dc/terms/publisher": [
+            {
+                "@id": "https://upcast-project.eu/producer/example-data-provider"
+            }
+        ],
+        "https://w3id.org/idsa/core/Provider": [
+            {
+                "@id": "https://upcast-project.eu/producer/example-data-provider"
+            }
+        ],
+        "http://www.w3.org/ns/dcat#distribution": [
+            {
+                "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/hasPolicy": [
+            {
+                "@id": "http://upcast-project.eu/policy/request/example-request"
+            }
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/price": [
+            {
+                "@value": 500
+            }
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/priceUnit": [
+            {
+                "@value": "EUR/Month"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/distribution/example-distribution-spec-copy-for-negotiation",
+        "@type": [
+            "http://www.w3.org/ns/dcat#Distribution"
+        ],
+        "http://purl.org/dc/terms/description": [
+            {
+                "@value": "The dataset in RDF format"
+            }
+        ],
+        "http://purl.org/dc/terms/format": [
+            {
+                "@value": "rdf"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "RDF Distribution of Dataset 1"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/dpws/example-dpw"
+    },
+    {
+        "@id": "http://upcast-project.eu/offer/example-request",
+        "@type": [
+            "https://www.upcast-project.eu/upcast-vocab/1.0/Request"
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/refersTo": [
+            {
+                "@id": "http://upcast-project.eu/dataset/example-dataset-spec-copy-for-negotiation"
+            }
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/hasRequest": [
+            {
+                "@id": "http://upcast-project.eu/policy/request/example-request"
+            }
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/hasNLP": [
+            {
+                "@value": "The Natural Language Version of the Contract after adding permission to use by AI-Agent for a higher price"
+            }
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/hasDPW": [
+            {
+                "@id": "http://upcast-project.eu/dpws/example-dpw"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/policy/request/example-request",
+        "@type": [
+            "http://www.w3.org/ns/odrl/Request"
+        ],
+        "http://www.w3.org/ns/odrl/permission": [
+            {
+                "@id": "_:b0"
+            },
+            {
+                "@id": "_:b1"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.w3.org/ns/dcat#Dataset"
+    },
+    {
+        "@id": "http://www.w3.org/ns/dcat#Distribution"
+    },
+    {
+        "@id": "http://www.w3.org/ns/odrl/Request"
+    },
+    {
+        "@id": "http://www.w3.org/ns/odrl/aggregate"
+    },
+    {
+        "@id": "http://www.w3.org/ns/odrl/use"
+    },
+    {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+    },
+    {
+        "@id": "http://xmlns.com/foaf/0.1/Organization"
+    },
+    {
+        "@id": "https://upcast-project.eu/consumer/example-data-consumer"
+    },
+    {
+        "@id": "https://upcast-project.eu/producer/example-data-provider"
+    },
+    {
+        "@id": "https://upcast-project.eu/provider/example-data-consumer",
+        "@type": [
+            "http://xmlns.com/foaf/0.1/Agent",
+            "http://xmlns.com/foaf/0.1/Organization"
+        ],
+        "http://xmlns.com/foaf/0.1/name": [
+            {
+                "@value": "Data Consumer Organization"
+            }
+        ]
+    },
+    {
+        "@id": "https://upcast-project.eu/provider/example-data-provider",
+        "@type": [
+            "http://xmlns.com/foaf/0.1/Agent",
+            "http://xmlns.com/foaf/0.1/Organization"
+        ],
+        "http://xmlns.com/foaf/0.1/name": [
+            {
+                "@value": "Data Provider Organization"
+            }
+        ]
+    },
+    {
+        "@id": "https://www.upcast-project.eu/upcast-vocab/1.0/Request"
+    }
+]

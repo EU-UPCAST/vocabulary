@@ -1,0 +1,52 @@
+@prefix upcast: <https://www.upcast-project.eu/upcast-vocab/1.0/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix idsa-core: <https://w3id.org/idsa/core/>.
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<http://upcast-project.eu/distribution/example-distribution-dataset-1>
+        a   dcat:Distribution;
+        dct:description   "Example Distribution of a Dataset";
+        dct:format        "csv";
+        dct:title         "CSV Distribution of Dataset 1"; 
+        dcat:byteSize     346;
+        dcat:mediaType    "text/csv" .
+
+<http://upcast-project.eu/dataset/example-dataset-1>
+        a   dcat:Dataset;
+        dct:title               "Example Dataset";        
+        dct:description         "Example of a Dataset illustrating Pricing Facet related attributes";    
+        idsa-core:Provider      <https://upcast-project.eu/producer/example-data-producer>;
+        dcat:distribution       <http://upcast-project.eu/dataset/example-dataset-1>;
+        dcterms:isPartOf        <http://upcast-project.eu/data-product/example-data-product-1>;
+        dcat:theme              "Financial";
+        dcat:theme              "Resources";
+        dct:accrualPeriodicity      "Weekly";
+        dct:spatial         "European Union";
+        dct:hasPart          <http://upcast-project.eu/info-unit/example-info-unit>;
+        upcast:price                    400;
+        upcast:priceUnit                "EUR/Month".
+
+<https://upcast-project.eu/provider/example-data-producer>
+        a   foaf:Agent;
+        a   foaf:Organization;
+        foaf:name               "Data Provider Organization" .
+
+<http://upcast-project.eu/info-unit/example-info-unit>
+        a upcast:InformationUnit;
+        upcast:unit     "Number of People";
+        upcast:value    700 .        
+
+<http://upcast-project.eu/data-product/example-data-product-1>
+        a   upcast:DataProduct;
+        upcast:IdentifiesIndividuals    true;
+        upcast:IdentifiesCompanies      false;
+        upacst:ProfessionalServices     false;
+        upcast:OnDemand                 false;
+        upcast:RealTime                 false;
+        upcast:LocationData             true;
+        upcast:DeliveryType             "RestAPI";
+        upcast:DeliveryType             "DataDump";
+        upcast:price                    400;
+        upcast:priceUnit                "EUR/Month".
+

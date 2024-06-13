@@ -1,0 +1,116 @@
+[
+        {
+                "@id": "http://upcast-project.eu/dataset/example-dataset-1",
+                "@type": [
+                        "http://www.w3.org/ns/dcat#Dataset"
+                ],
+                "http://purl.org/dc/terms/title": [
+                        {
+                                "@value": "Example Dataset"
+                        }
+                ],
+                "http://purl.org/dc/terms/description": [
+                        {
+                                "@value": "Example of a Dataset showing a minimal set of properties."
+                        }
+                ],
+                "http://purl.org/dc/terms/publisher": [
+                        {
+                                "@id": "https://upcast-project.eu/producer/example-data-producer"
+                        }
+                ],
+                "http://purl.org/dc/terms/creator": [
+                        {
+                                "@id": "https://upcast-project.eu/creator/example-data-creator"
+                        }
+                ],
+                "https://w3id.org/idsa/core/Provider": [
+                        {
+                                "@id": "https://upcast-project.eu/producer/example-data-producer"
+                        }
+                ],
+                "http://purl.org/dc/terms/spatial": [
+                        {
+                                "@value": "European Union"
+                        }
+                ],
+                "http://www.w3.org/ns/dcat#distribution": [
+                        {
+                                "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+                        }
+                ]
+        },
+        {
+                "@id": "http://upcast-project.eu/distribution/example-distribution-dataset-1",
+                "@type": [
+                        "http://www.w3.org/ns/dcat#Distribution"
+                ],
+                "http://purl.org/dc/terms/description": [
+                        {
+                                "@value": "Example Distribution of a Dataset"
+                        }
+                ],
+                "http://purl.org/dc/terms/format": [
+                        {
+                                "@value": "csv"
+                        }
+                ],
+                "http://purl.org/dc/terms/title": [
+                        {
+                                "@value": "CSV Distribution of Dataset 1"
+                        }
+                ],
+                "http://www.w3.org/ns/dcat#byteSize": [
+                        {
+                                "@value": 346
+                        }
+                ],
+                "http://www.w3.org/ns/dcat#mediaType": [
+                        {
+                                "@value": "text/csv"
+                        }
+                ]
+        },
+        {
+                "@id": "http://www.w3.org/ns/dcat#Dataset"
+        },
+        {
+                "@id": "http://www.w3.org/ns/dcat#Distribution"
+        },
+        {
+                "@id": "http://xmlns.com/foaf/0.1/Agent"
+        },
+        {
+                "@id": "http://xmlns.com/foaf/0.1/Organization"
+        },
+        {
+                "@id": "http://xmlns.com/foaf/0.1/Person"
+        },
+        {
+                "@id": "https://upcast-project.eu/creator/example-data-creator",
+                "@type": [
+                        "http://xmlns.com/foaf/0.1/Agent",
+                        "http://xmlns.com/foaf/0.1/Person"
+                ],
+                "http://xmlns.com/foaf/0.1/name": [
+                        {
+                                "@value": "Example Data Creator"
+                        }
+                ]
+        },
+        {
+                "@id": "https://upcast-project.eu/producer/example-data-producer"
+        },
+        {
+                "@id": "https://upcast-project.eu/provider/example-data-producer",
+                "@type": [
+                        "http://xmlns.com/foaf/0.1/Agent",
+                        "http://xmlns.com/foaf/0.1/Organization"
+                ],
+                "http://xmlns.com/foaf/0.1/name": [
+                        {
+                                "@value": "Data Provider Organization"
+                        }
+                ]
+        }
+]

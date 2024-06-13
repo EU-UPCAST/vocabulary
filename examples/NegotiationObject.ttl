@@ -1,0 +1,25 @@
+@prefix upcast: <https://www.upcast-project.eu/upcast-vocab/1.0/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix idsa-core: <https://w3id.org/idsa/core/> .
+
+<http://upcast-project.eu/negotiation/example-negotiation>
+        a upcast:Negotiation;
+        idsa-core:Consumer      <https://upcast-project.eu/provider/example-data-consumer>;
+        idsa-core:Provider      <https://upcast-project.eu/producer/example-data-provider>;
+        upcast:hasNegotiationSequence   (<http://upcast-project.eu/policy/offer/example-offer> <http://upcast-project.eu/policy/request/example-request> <http://upcast-project.eu/policy/agreement/example-agreement-of-this-negotiation>) .
+
+
+<https://upcast-project.eu/provider/example-data-provider>
+        a   foaf:Agent;
+        a   foaf:Organization;
+        a   idsa-core:Participant;        
+        foaf:name               "Data Provider Organization" .
+
+<https://upcast-project.eu/provider/example-data-consumer>
+        a   foaf:Agent;
+        a   foaf:Organization;
+        a   idsa-core:Participant; 
+        foaf:name               "Data Consumer Organization" .
+
+

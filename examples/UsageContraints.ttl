@@ -1,0 +1,44 @@
+@prefix upcast: <https://www.upcast-project.eu/upcast-vocab/1.0/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix idsa-core: <https://w3id.org/idsa/core/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+
+<http://upcast-project.eu/distribution/example-distribution-dataset-1>
+        a   dcat:Distribution;
+        dct:description   "Example Distribution of a Dataset";
+        dct:format        "csv";
+        dct:title         "CSV Distribution of Dataset 1"; 
+        dcat:byteSize     346;
+        dcat:mediaType    "text/csv" .
+
+<http://upcast-project.eu/dataset/example-dataset-1>
+        a   dcat:Dataset;
+        dct:title               "Example Dataset";        
+        dct:description         "Example of a Dataset showing a minimal set of properties for Usage Constraints";    
+        dct:publisher           <https://upcast-project.eu/producer/example-data-provider>; 
+        idsa-core:Provider      <https://upcast-project.eu/producer/example-data-provider>;
+        dcat:distribution       <http://upcast-project.eu/dataset/example-dataset-1> ;
+        odrl:hasPolicy          <http://upcast-project.eu/policy/usage-constraint-example> .
+
+<https://upcast-project.eu/provider/example-data-provider>
+        a   foaf:Agent;
+        a   foaf:Organization;
+        foaf:name               "Data Provider Organization" .
+
+<http://upcast-project.eu/policy/usage-constraint-example>
+        a odrl:Offer ;
+        odrl:permission [
+                odrl:action odrl:aggregate ;
+                odrl:assigner <https://upcast-project.eu/provider/example-data-provider>;
+                odrl:target <http://upcast-project.eu/dataset/example-dataset-1> .
+        ] ;
+        odrl:prohibition [
+                odrl:action odrl:use ;
+                odrl:assigner <https://upcast-project.eu/provider/example-data-provider>;
+                odrl:assignee <http://data-space-vocabulary/classes/AI-Agent> ;
+                odrl:target <http://upcast-project.eu/dataset/example-dataset-1> .
+        ] .
+  
+        
