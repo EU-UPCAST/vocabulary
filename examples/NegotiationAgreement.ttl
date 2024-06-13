@@ -29,7 +29,7 @@
         dct:description         "Specification of dataset agreed in this contract";
         dcat:theme              "Financial";
         dcat:theme              "Resources"; 
-        dct:spatial         "European Union";     
+        dct:spatial             "European Union";     
         dct:publisher           <https://upcast-project.eu/producer/example-data-provider>; 
         idsa-core:Provider      <https://upcast-project.eu/producer/example-data-provider>;
         dcat:distribution       <http://upcast-project.eu/dataset/example-dataset-1> ;
@@ -51,16 +51,16 @@
 <http://upcast-project.eu/policy/agreement/example-agreement-of-this-negotiation>
         a odrl:Agreement ;
         odrl:permission [
-                odrl:action odrl:aggregate ;
-                odrl:assigner <https://upcast-project.eu/provider/example-data-provider>;
-                odrl:assignee <https://upcast-project.eu/consumer/example-data-consumer>;
-                odrl:target <http://upcast-project.eu/dataset/example-dataset-agreed> ;
+                odrl:action             odrl:aggregate ;
+                odrl:assigner           <https://upcast-project.eu/provider/example-data-provider>;
+                odrl:assignee           <https://upcast-project.eu/consumer/example-data-consumer>;
+                odrl:target             <http://upcast-project.eu/dataset/example-dataset-agreed> ;
         ] ;
         odrl:permission [
                 odrl:action odrl:use ;
-                odrl:assigner <https://upcast-project.eu/provider/example-data-provider>;
-                odrl:assignee <http://data-space-vocabulary/classes/AI-Agent> ;
-                odrl:target <http://upcast-project.eu/dataset/example-dataset-agreed> ;
+                odrl:assigner           <https://upcast-project.eu/provider/example-data-provider>;
+                odrl:assignee           <http://data-space-vocabulary/classes/AI-Agent> ;
+                odrl:target             <http://upcast-project.eu/dataset/example-dataset-agreed> ;
         ] .
   
         
