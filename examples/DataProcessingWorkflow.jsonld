@@ -1,0 +1,250 @@
+[
+    {
+        "@id": "http://data-space-vocabulary/classes/AI-Agent"
+    },
+    {
+        "@id": "http://upcast-project.eu/data-/example-data-processing-task",
+        "@type": [
+            "https://www.upcast-project.eu/upcast-vocab/1.0/DataProcessingTask",
+            "https://w3id.org/idsa/core/DataApp"
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/applies": [
+            {
+                "@id": "http://www.w3.org/ns/odrl/aggregate"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Example Data Processing Task"
+            }
+        ],
+        "http://purl.org/dc/terms/description": [
+            {
+                "@value": "Data Processing Task that implements an Abstract Operation of a DPW. In this case, odrl:aggregate"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/dataset/example-dataset-agreed"
+    },
+    {
+        "@id": "http://upcast-project.eu/dpts/AI-Agent-processor",
+        "@type": [
+            "https://www.upcast-project.eu/upcast-vocab/1.0/DataProcessingTask",
+            "https://w3id.org/idsa/core/DataApp"
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/applies": [
+            {
+                "@id": "http://www.w3.org/ns/odrl/use"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Example AI processor"
+            }
+        ],
+        "http://purl.org/dc/terms/description": [
+            {
+                "@value": "Data Processing Task done by AI-Agent"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/dpts/example-data-processing-task"
+    },
+    {
+        "@id": "http://upcast-project.eu/dpws/edges/edge-1",
+        "@type": [
+            "http://www.ict-abovo.eu/ontologies/WorkflowModel#Edge"
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasSource": [
+            {
+                "@id": "http://upcast-project.eu/dpws/steps/step-1"
+            }
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasDestination": [
+            {
+                "@id": "http://upcast-project.eu/dpws/steps/step-2"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/dpws/example-dpw",
+        "@type": [
+            "https://www.upcast-project.eu/upcast-vocab/1.0/DataProcessingWorkflow"
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#includesTask": [
+            {
+                "@id": "http://upcast-project.eu/dpws/steps/step-1"
+            },
+            {
+                "@id": "http://upcast-project.eu/dpws/steps/step-2"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/dpws/steps/operations/operation-1",
+        "@type": [
+            "http://www.ict-abovo.eu/ontologies/WorkflowModel#Operation"
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/applies": [
+            {
+                "@id": "http://www.w3.org/ns/odrl/aggregate"
+            }
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/implementedBy": [
+            {
+                "@id": "http://upcast-project.eu/dpts/example-data-processing-task"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/dpws/steps/operations/operation-2",
+        "@type": [
+            "http://www.ict-abovo.eu/ontologies/WorkflowModel#Operation"
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/applies": [
+            {
+                "@id": "http://www.w3.org/ns/odrl/translate"
+            }
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/implementedBy": [
+            {
+                "@id": "http://upcast-project.eu/dpts/AI-Agent-processor"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/dpws/steps/profiles/execution-profile-1",
+        "@type": [
+            "http://www.ict-abovo.eu/ontologies/WorkflowModel#ExecutionProfile"
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasActor": [
+            {
+                "@id": "https://upcast-project.eu/provider/example-data-consumer"
+            }
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasOperation": [
+            {
+                "@id": "http://upcast-project.eu/dpws/steps/operations/operation-1"
+            }
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasAsset": [
+            {
+                "@id": "http://upcast-project.eu/dataset/example-dataset-agreed"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/dpws/steps/profiles/execution-profile-2",
+        "@type": [
+            "http://www.ict-abovo.eu/ontologies/WorkflowModel#ExecutionProfile"
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasActor": [
+            {
+                "@id": "https://data-consumer.eu/agents/consumer-ai-agent"
+            }
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasOperation": [
+            {
+                "@id": "http://upcast-project.eu/dpws/steps/operations/operation-2"
+            }
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasAsset": [
+            {
+                "@id": "http://upcast-project.eu/dataset/example-dataset-agreed"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/dpws/steps/step-1",
+        "@type": [
+            "http://www.ict-abovo.eu/ontologies/WorkflowModel#TaskNode"
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasExecutionProfile": [
+            {
+                "@id": "http://upcast-project.eu/dpws/steps/profiles/execution-profile-1"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/dpws/steps/step-2",
+        "@type": [
+            "http://www.ict-abovo.eu/ontologies/WorkflowModel#Operation"
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasExecutionProfile": [
+            {
+                "@id": "http://upcast-project.eu/dpws/steps/profiles/execution-profile-2"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.ict-abovo.eu/ontologies/WorkflowModel#Edge"
+    },
+    {
+        "@id": "http://www.ict-abovo.eu/ontologies/WorkflowModel#ExecutionProfile"
+    },
+    {
+        "@id": "http://www.ict-abovo.eu/ontologies/WorkflowModel#Operation"
+    },
+    {
+        "@id": "http://www.ict-abovo.eu/ontologies/WorkflowModel#TaskNode"
+    },
+    {
+        "@id": "http://www.w3.org/ns/odrl/aggregate"
+    },
+    {
+        "@id": "http://www.w3.org/ns/odrl/translate"
+    },
+    {
+        "@id": "http://www.w3.org/ns/odrl/use"
+    },
+    {
+        "@id": "http://www.w3.org/ns/org#Organization"
+    },
+    {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+    },
+    {
+        "@id": "http://xmlns.com/foaf/0.1/Organization"
+    },
+    {
+        "@id": "https://data-consumer.eu/agents/consumer-ai-agent",
+        "@type": [
+            "http://xmlns.com/foaf/0.1/Agent",
+            "http://data-space-vocabulary/classes/AI-Agent"
+        ],
+        "http://xmlns.com/foaf/0.1/name": [
+            {
+                "@value": "Data Consumer AI Agent"
+            }
+        ],
+        "http://www.w3.org/ns/org#memberOf": [
+            {
+                "@id": "https://upcast-project.eu/provider/example-data-consumer"
+            }
+        ]
+    },
+    {
+        "@id": "https://upcast-project.eu/provider/example-data-consumer",
+        "@type": [
+            "http://xmlns.com/foaf/0.1/Agent",
+            "http://xmlns.com/foaf/0.1/Organization",
+            "http://www.w3.org/ns/org#Organization"
+        ],
+        "http://xmlns.com/foaf/0.1/name": [
+            {
+                "@value": "Data Consumer Organization"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/idsa/core/DataApp"
+    },
+    {
+        "@id": "https://www.upcast-project.eu/upcast-vocab/1.0/DataProcessingTask"
+    },
+    {
+        "@id": "https://www.upcast-project.eu/upcast-vocab/1.0/DataProcessingWorkflow"
+    }
+]

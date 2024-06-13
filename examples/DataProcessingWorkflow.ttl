@@ -1,0 +1,89 @@
+@prefix upcast: <https://www.upcast-project.eu/upcast-vocab/1.0/> .
+@prefix idsa-core: <https://w3id.org/idsa/core/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix wmo: <http://www.ict-abovo.eu/ontologies/WorkflowModel#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+
+# This DPW conforms to the policy negotiated in the Negotiation Agreement Example
+
+# Data Consumer
+<https://upcast-project.eu/provider/example-data-consumer>
+        a   foaf:Agent;
+        a   foaf:Organization;
+        a   org:Organization;
+        foaf:name               "Data Consumer Organization" .
+
+# AI Agent belonging to Data Consumer
+<https://data-consumer.eu/agents/consumer-ai-agent>
+        a   foaf:Agent;
+        a   <http://data-space-vocabulary/classes/AI-Agent>;
+        foaf:name               "Data Consumer AI Agent" ;
+        org:memberOf            <https://upcast-project.eu/provider/example-data-consumer> .
+
+# DPW holder object
+<http://upcast-project.eu/dpws/example-dpw> 
+        a   upcast:DataProcessingWorkflow ;
+        wmo:includesTask    <http://upcast-project.eu/dpws/steps/step-1> ;
+        wmo:includesTask    <http://upcast-project.eu/dpws/steps/step-2> .  
+
+# First step is further defined in an execution profile
+<http://upcast-project.eu/dpws/steps/step-1>
+        a   wmo:TaskNode ;
+        wmo:hasExecutionProfile     <http://upcast-project.eu/dpws/steps/profiles/execution-profile-1> .
+
+# The first step is the Data Consumer applying an action on the agreed dataset
+<http://upcast-project.eu/dpws/steps/profiles/execution-profile-1>
+        a   wmo:ExecutionProfile ;
+        wmo:hasActor        <https://upcast-project.eu/provider/example-data-consumer> ;
+        wmo:hasOperation    <http://upcast-project.eu/dpws/steps/operations/operation-1> ;
+        wmo:hasAsset        <http://upcast-project.eu/dataset/example-dataset-agreed> .
+
+# The operation applies an action consistent with the action agreed in the contract
+<http://upcast-project.eu/dpws/steps/operations/operation-1>
+        a   wmo:Operation ;
+        upcast:applies  odrl:aggregate ;
+        upcast:implementedBy     <http://upcast-project.eu/dpts/example-data-processing-task> .  
+
+#The operation may be concretelty implemented by a DataProcessingTask
+#This is a pre-condition for transformation to executable form
+<http://upcast-project.eu/data-/example-data-processing-task>
+        a   upcast:DataProcessingTask ;
+        a   idsa-core:DataApp ;
+        upcast:applies           odrl:aggregate ;
+        dct:title               "Example Data Processing Task";        
+        dct:description         "Data Processing Task that implements an Abstract Operation of a DPW. In this case, odrl:aggregate" .    
+
+#The second step...
+<http://upcast-project.eu/dpws/steps/step-2>
+        a   wmo:Operation ; 
+        wmo:hasExecutionProfile     <http://upcast-project.eu/dpws/steps/profiles/execution-profile-2> .
+
+# ..is the AI agent performing an operation. The contract gives permission to the AI Agent to perform the general action odrl:use
+<http://upcast-project.eu/dpws/steps/profiles/execution-profile-2> 
+        a   wmo:ExecutionProfile ;
+        wmo:hasActor        <https://data-consumer.eu/agents/consumer-ai-agent> ;
+        wmo:hasOperation    <http://upcast-project.eu/dpws/steps/operations/operation-2> ;
+        wmo:hasAsset        <http://upcast-project.eu/dataset/example-dataset-agreed> .
+
+# operation states the AI Agent applies the odrl:translate action, which is a subclass of odrl:use, hence, permitted.
+<http://upcast-project.eu/dpws/steps/operations/operation-2>
+        a   wmo:Operation ;
+        upcast:applies  odrl:translate ;
+        upcast:implementedBy     <http://upcast-project.eu/dpts/AI-Agent-processor> .  
+
+# For completeness, a Data Processing Task that implements the operation above. This will be used to exemplify a compilation to an executable form.
+<http://upcast-project.eu/dpts/AI-Agent-processor>
+        a   upcast:DataProcessingTask ;
+        a   idsa-core:DataApp ;
+        upcast:applies           odrl:translate ;
+        dct:title               "Example AI processor";        
+        dct:description         "Data Processing Task done by AI-Agent".   
+
+# the edge states that step-1 comes before step-2
+<http://upcast-project.eu/dpws/edges/edge-1>
+        a       wmo:Edge ;
+        wmo:hasSource           <http://upcast-project.eu/dpws/steps/step-1> ;
+        wmo:hasDestination      <http://upcast-project.eu/dpws/steps/step-2> .          
+
