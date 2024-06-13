@@ -53,6 +53,19 @@
                 "@value": "The initial offer refers to the same dataset published"
             }
         ],
+        "http://www.w3.org/ns/dcat#theme": [
+            {
+                "@value": "Financial"
+            },
+            {
+                "@value": "Resources"
+            }
+        ],
+        "http://purl.org/dc/terms/spatial": [
+            {
+                "@value": "European Union"
+            }
+        ],
         "http://purl.org/dc/terms/publisher": [
             {
                 "@id": "https://upcast-project.eu/producer/example-data-provider"

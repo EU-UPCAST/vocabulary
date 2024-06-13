@@ -26,7 +26,10 @@
 <http://upcast-project.eu/dataset/example-dataset-agreed>
         a   dcat:Dataset;
         dct:title               "Example Dataset agreed";        
-        dct:description         "Specification of dataset agreed in this contract";    
+        dct:description         "Specification of dataset agreed in this contract";
+        dcat:theme              "Financial";
+        dcat:theme              "Resources"; 
+        dct:spatial         "European Union";     
         dct:publisher           <https://upcast-project.eu/producer/example-data-provider>; 
         idsa-core:Provider      <https://upcast-project.eu/producer/example-data-provider>;
         dcat:distribution       <http://upcast-project.eu/dataset/example-dataset-1> ;

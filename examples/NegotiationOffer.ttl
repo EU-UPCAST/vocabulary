@@ -22,11 +22,14 @@
 <http://upcast-project.eu/dataset/example-dataset-1>
         a   dcat:Dataset;
         dct:title               "Example Dataset";        
-        dct:description         "The initial offer refers to the same dataset published";    
+        dct:description         "The initial offer refers to the same dataset published";  
+        dcat:theme              "Financial";
+        dcat:theme              "Resources";  
         dct:publisher           <https://upcast-project.eu/producer/example-data-provider>; 
         idsa-core:Provider      <https://upcast-project.eu/producer/example-data-provider>;
         dcat:distribution       <http://upcast-project.eu/dataset/example-dataset-1> ;
         odrl:hasPolicy          <http://upcast-project.eu/policy/usage-constraint-example> ;
+        dct:spatial         "European Union";
         upcast:price                    400;
         upcast:priceUnit                "EUR/Month".
 

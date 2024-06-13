@@ -22,7 +22,10 @@
 <http://upcast-project.eu/dataset/example-dataset-spec-copy-for-negotiation>
         a   dcat:Dataset;
         dct:title               "Example Dataset";        
-        dct:description         "A request for a different dataset specification creates a new instance. Same for counter-offers";    
+        dct:description         "A request for a different dataset specification creates a new instance. Same for counter-offers";   
+        dcat:theme              "Financial";
+        dcat:theme              "Resources"; 
+        dct:spatial         "European Union";  
         dct:publisher           <https://upcast-project.eu/producer/example-data-provider>; 
         idsa-core:Provider      <https://upcast-project.eu/producer/example-data-provider>;
         dcat:distribution       <http://upcast-project.eu/dataset/example-dataset-1> ;
