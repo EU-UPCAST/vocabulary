@@ -4,6 +4,7 @@
 @prefix idsa-core: <https://w3id.org/idsa/core/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix odrl: <http://www.w3.org/ns/odrl/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
 <http://upcast-project.eu/offer/example-contract>
@@ -30,8 +31,8 @@
         dcat:theme              "Financial";
         dcat:theme              "Resources"; 
         dct:spatial             "European Union";     
-        dct:publisher           <https://upcast-project.eu/producer/example-data-provider>; 
-        idsa-core:Provider      <https://upcast-project.eu/producer/example-data-provider>;
+        dct:publisher           <https://upcast-project.eu/provider/example-data-provider>; 
+        idsa-core:Provider      <https://upcast-project.eu/provider/example-data-provider>;
         dcat:distribution       <http://upcast-project.eu/dataset/example-dataset-1> ;
         odrl:hasPolicy          <http://upcast-project.eu/policy/usage-constraint-example> ;
         upcast:price             500;
@@ -55,12 +56,24 @@
                 odrl:assigner           <https://upcast-project.eu/provider/example-data-provider>;
                 odrl:assignee           <https://upcast-project.eu/consumer/example-data-consumer>;
                 odrl:target             <http://upcast-project.eu/dataset/example-dataset-agreed> ;
+                #A temporal constraint that states this action can be executed until 2024-12-31
+                odrl:constraint [
+                        odrl:leftOperand odrl:dateTime ;
+                        odrl:operator odrl:lt ;
+                        odrl:rightOperand "2024-12-31"^^xsd:date ;
+                ] ;
         ] ;
         odrl:permission [
                 odrl:action odrl:use ;
                 odrl:assigner           <https://upcast-project.eu/provider/example-data-provider>;
                 odrl:assignee           <http://data-space-vocabulary/classes/AI-Agent> ;
                 odrl:target             <http://upcast-project.eu/dataset/example-dataset-agreed> ;
+                # A counter constraint that states this action can be executed at most 3 times
+                odrl:constraint [
+                        odrl:leftOperand odrl:count ;
+                        odrl:operator odrl:lteq ;
+                        odrl:rightOperand 3 ;
+                ] ;
         ] .
   
         

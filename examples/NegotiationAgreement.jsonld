@@ -20,6 +20,11 @@
             {
                 "@id": "http://upcast-project.eu/dataset/example-dataset-agreed"
             }
+        ],
+        "http://www.w3.org/ns/odrl/constraint": [
+            {
+                "@id": "_:b2"
+            }
         ]
     },
     {
@@ -42,6 +47,48 @@
         "http://www.w3.org/ns/odrl/target": [
             {
                 "@id": "http://upcast-project.eu/dataset/example-dataset-agreed"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/constraint": [
+            {
+                "@id": "_:b3"
+            }
+        ]
+    },
+    {
+        "@id": "_:b2",
+        "http://www.w3.org/ns/odrl/leftOperand": [
+            {
+                "@id": "http://www.w3.org/ns/odrl/dateTime"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/operator": [
+            {
+                "@id": "http://www.w3.org/ns/odrl/lt"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/rightOperand": [
+            {
+                "@value": "2024-12-31",
+                "@type": "http://www.w3.org/2001/XMLSchema#date"
+            }
+        ]
+    },
+    {
+        "@id": "_:b3",
+        "http://www.w3.org/ns/odrl/leftOperand": [
+            {
+                "@id": "http://www.w3.org/ns/odrl/count"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/operator": [
+            {
+                "@id": "http://www.w3.org/ns/odrl/lteq"
+            }
+        ],
+        "http://www.w3.org/ns/odrl/rightOperand": [
+            {
+                "@value": 3
             }
         ]
     },
@@ -84,12 +131,12 @@
         ],
         "http://purl.org/dc/terms/publisher": [
             {
-                "@id": "https://upcast-project.eu/producer/example-data-provider"
+                "@id": "https://upcast-project.eu/provider/example-data-provider"
             }
         ],
         "https://w3id.org/idsa/core/Provider": [
             {
-                "@id": "https://upcast-project.eu/producer/example-data-provider"
+                "@id": "https://upcast-project.eu/provider/example-data-provider"
             }
         ],
         "http://www.w3.org/ns/dcat#distribution": [
@@ -202,6 +249,18 @@
     },
     {
         "@id": "http://www.w3.org/ns/odrl/aggregate"
+    },
+    {
+        "@id": "http://www.w3.org/ns/odrl/count"
+    },
+    {
+        "@id": "http://www.w3.org/ns/odrl/dateTime"
+    },
+    {
+        "@id": "http://www.w3.org/ns/odrl/lt"
+    },
+    {
+        "@id": "http://www.w3.org/ns/odrl/lteq"
     },
     {
         "@id": "http://www.w3.org/ns/odrl/use"
