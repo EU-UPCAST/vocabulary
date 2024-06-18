@@ -9,7 +9,7 @@
 # This DPW conforms to the policy negotiated in the Negotiation Agreement Example
 
 # Data Consumer
-<https://upcast-project.eu/provider/example-data-consumer>
+<https://upcast-project.eu/consumer/example-data-consumer>
         a   foaf:Agent;
         a   foaf:Organization;
         a   org:Organization;
@@ -17,16 +17,21 @@
 
 # AI Agent belonging to Data Consumer
 <https://data-consumer.eu/agents/consumer-ai-agent>
-        a   foaf:Agent;
-        a   <http://data-space-vocabulary/classes/AI-Agent>;
+        a   foaf:Agent ;
+        a   <http://data-space-vocabulary/classes/AI-Agent> ;
         foaf:name               "Data Consumer AI Agent" ;
-        org:memberOf            <https://upcast-project.eu/provider/example-data-consumer> .
+        org:memberOf            <https://upcast-project.eu/consumer/example-data-consumer> .
 
 # DPW holder object
 <http://upcast-project.eu/dpws/example-dpw> 
         a   upcast:DataProcessingWorkflow ;
+        wmo:wfPurposes      "Scientific Reseearch and Development" ;
+        wmo:Initiators      <https://upcast-project.eu/consumer/example-data-consumer> ;                   
         wmo:includesTask    <http://upcast-project.eu/dpws/steps/step-1> ;
-        wmo:includesTask    <http://upcast-project.eu/dpws/steps/step-2> .  
+        wmo:includesTask    <http://upcast-project.eu/dpws/steps/step-2> ;
+        # Link to an executable representation, e.g., a nexflow script
+        upcast:has_executable_representation    <http://data-consumer.eu/my-nexflow-workflows/example-dpw-nexflow-script> .
+
 
 # First step is further defined in an execution profile
 <http://upcast-project.eu/dpws/steps/step-1>
@@ -36,17 +41,17 @@
 # The first step is the Data Consumer applying an action on the agreed dataset
 <http://upcast-project.eu/dpws/steps/profiles/execution-profile-1>
         a   wmo:ExecutionProfile ;
-        wmo:hasActor        <https://upcast-project.eu/provider/example-data-consumer> ;
+        wmo:hasActor        <https://upcast-project.eu/consumer/example-data-consumer> ;
         wmo:hasOperation    <http://upcast-project.eu/dpws/steps/operations/operation-1> ;
         wmo:hasAsset        <http://upcast-project.eu/dataset/example-dataset-agreed> .
 
 # The operation applies an action consistent with the action agreed in the contract
 <http://upcast-project.eu/dpws/steps/operations/operation-1>
         a   wmo:Operation ;
-        upcast:applies  odrl:aggregate ;
+        wmo:refersToConcept      odrl:aggregate ;
         upcast:implementedBy     <http://upcast-project.eu/dpts/example-data-processing-task> .  
 
-#The operation may be concretelty implemented by a DataProcessingTask
+#The operation may be concretely implemented by a DataProcessingTask
 #This is a pre-condition for transformation to executable form
 <http://upcast-project.eu/data-/example-data-processing-task>
         a   upcast:DataProcessingTask ;
@@ -70,7 +75,7 @@
 # operation states the AI Agent applies the odrl:translate action, which is a subclass of odrl:use, hence, permitted.
 <http://upcast-project.eu/dpws/steps/operations/operation-2>
         a   wmo:Operation ;
-        upcast:applies  odrl:translate ;
+        wmo:refersToConcept      odrl:translate ;
         upcast:implementedBy     <http://upcast-project.eu/dpts/AI-Agent-processor> .  
 
 # For completeness, a Data Processing Task that implements the operation above. This will be used to exemplify a compilation to an executable form.

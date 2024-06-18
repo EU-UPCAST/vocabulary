@@ -1,5 +1,8 @@
 [
     {
+        "@id": "http://data-consumer.eu/my-nexflow-workflows/example-dpw-nexflow-script"
+    },
+    {
         "@id": "http://data-space-vocabulary/classes/AI-Agent"
     },
     {
@@ -35,7 +38,7 @@
         ],
         "https://www.upcast-project.eu/upcast-vocab/1.0/applies": [
             {
-                "@id": "http://www.w3.org/ns/odrl/use"
+                "@id": "http://www.w3.org/ns/odrl/translate"
             }
         ],
         "http://purl.org/dc/terms/title": [
@@ -73,12 +76,27 @@
         "@type": [
             "https://www.upcast-project.eu/upcast-vocab/1.0/DataProcessingWorkflow"
         ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#wfPurposes": [
+            {
+                "@value": "Scientific Reseearch and Development"
+            }
+        ],
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#Initiators": [
+            {
+                "@id": "https://upcast-project.eu/consumer/example-data-consumer"
+            }
+        ],
         "http://www.ict-abovo.eu/ontologies/WorkflowModel#includesTask": [
             {
                 "@id": "http://upcast-project.eu/dpws/steps/step-1"
             },
             {
                 "@id": "http://upcast-project.eu/dpws/steps/step-2"
+            }
+        ],
+        "https://www.upcast-project.eu/upcast-vocab/1.0/has_executable_representation": [
+            {
+                "@id": "http://data-consumer.eu/my-nexflow-workflows/example-dpw-nexflow-script"
             }
         ]
     },
@@ -87,7 +105,7 @@
         "@type": [
             "http://www.ict-abovo.eu/ontologies/WorkflowModel#Operation"
         ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/applies": [
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#refersToConcept": [
             {
                 "@id": "http://www.w3.org/ns/odrl/aggregate"
             }
@@ -103,7 +121,7 @@
         "@type": [
             "http://www.ict-abovo.eu/ontologies/WorkflowModel#Operation"
         ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/applies": [
+        "http://www.ict-abovo.eu/ontologies/WorkflowModel#refersToConcept": [
             {
                 "@id": "http://www.w3.org/ns/odrl/translate"
             }
@@ -121,7 +139,7 @@
         ],
         "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasActor": [
             {
-                "@id": "https://upcast-project.eu/provider/example-data-consumer"
+                "@id": "https://upcast-project.eu/consumer/example-data-consumer"
             }
         ],
         "http://www.ict-abovo.eu/ontologies/WorkflowModel#hasOperation": [
@@ -197,9 +215,6 @@
         "@id": "http://www.w3.org/ns/odrl/translate"
     },
     {
-        "@id": "http://www.w3.org/ns/odrl/use"
-    },
-    {
         "@id": "http://www.w3.org/ns/org#Organization"
     },
     {
@@ -221,12 +236,12 @@
         ],
         "http://www.w3.org/ns/org#memberOf": [
             {
-                "@id": "https://upcast-project.eu/provider/example-data-consumer"
+                "@id": "https://upcast-project.eu/consumer/example-data-consumer"
             }
         ]
     },
     {
-        "@id": "https://upcast-project.eu/provider/example-data-consumer",
+        "@id": "https://upcast-project.eu/consumer/example-data-consumer",
         "@type": [
             "http://xmlns.com/foaf/0.1/Agent",
             "http://xmlns.com/foaf/0.1/Organization",
