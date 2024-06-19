@@ -1,5 +1,16 @@
 [
     {
+        "@id": "http://data-consumer.eu/data-app/example-dpt-info",
+        "@type": [
+            "https://w3id.org/idsa/core/AppRepresentation"
+        ],
+        "https://w3id.org/idsa/core/data_app_distribution_service": [
+            {
+                "@id": "https://hub.docker/example-data-consumer/processing-task-container"
+            }
+        ]
+    },
+    {
         "@id": "http://upcast-project.eu/data-/example-data-processing-task",
         "@type": [
             "https://w3id.org/idsa/core/DataApp"
@@ -11,7 +22,40 @@
         ],
         "http://purl.org/dc/terms/description": [
             {
-                "@value": "Example Data Processing Task, in this case a Data App, with minimal properties. Publisher, Creator and Provider are all the same in this example. We will illustrate links to containers or endpoints in later facets"
+                "@value": "Example Data Processing Task, in this case a Data App, with minimal properties. Publisher, Creator and Provider are all the same in this example "
+            }
+        ],
+        "http://purl.org/dc/terms/publisher": [
+            {
+                "@id": "https://upcast-project.eu/producer/example-data-operation-provider"
+            }
+        ],
+        "http://purl.org/dc/terms/creator": [
+            {
+                "@id": "https://upcast-project.eu/creator/example-data-operation-provider"
+            }
+        ],
+        "https://w3id.org/idsa/core/Provider": [
+            {
+                "@id": "https://upcast-project.eu/producer/example-data-operation-provider"
+            }
+        ],
+        "https://w3id.org/idsa/core/data_app_information": [
+            {
+                "@id": "http://data-consumer.eu/data-app/example-dpt-info"
+            }
+        ]
+    },
+    {
+        "@id": "http://upcast-project.eu/data-/example-data-processing-task-non-containerised",
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Example Data Processing Task non Data App"
+            }
+        ],
+        "http://purl.org/dc/terms/description": [
+            {
+                "@value": "Example Data Processing Task, in this case a non Data App, so no related properties"
             }
         ],
         "http://purl.org/dc/terms/publisher": [
@@ -37,6 +81,9 @@
         "@id": "http://xmlns.com/foaf/0.1/Organization"
     },
     {
+        "@id": "https://hub.docker/example-data-consumer/processing-task-container"
+    },
+    {
         "@id": "https://upcast-project.eu/creator/example-data-operation-provider"
     },
     {
@@ -53,6 +100,9 @@
                 "@value": "Example Data Operation Provider"
             }
         ]
+    },
+    {
+        "@id": "https://w3id.org/idsa/core/AppRepresentation"
     },
     {
         "@id": "https://w3id.org/idsa/core/DataApp"
