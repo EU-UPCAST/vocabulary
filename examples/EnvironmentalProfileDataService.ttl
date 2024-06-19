@@ -1,0 +1,63 @@
+@prefix upcast: <https://www.upcast-project.eu/upcast-vocab/1.0/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix idsa-core: <https://w3id.org/idsa/core/>.
+@prefix dct: <http://purl.org/dc/terms/> .
+
+
+<http://upcast-project.eu/dataset/example-dataset-1>
+        a   dcat:Dataset;
+        dct:title               "Example Dataset";        
+        dct:description         "Example of a Dataset to illustrate environmental ";    
+        idsa-core:Provider      <https://upcast-project.eu/producer/example-data-producer>;
+
+
+<http://upcast-project.eu/distribution/example-distribution-dataset-1>
+        a   dcat:Distribution;
+        dct:description   "Example Distribution of a Dataset";
+        dct:format        "json";
+        dct:title         "JSON Distribution of Dataset 1"; 
+        # Distribution size is input to the Environmental Profile
+        dcat:byteSize     3460;
+        # Link to the data service that serves this distribution        
+        dcat:accessService      <http://upcast-project.eu/data-service/example-data-service>.
+
+# Data Service Specification      
+<http://upcast-project.eu/data-service/example-data-service>
+        a       dcat:DataService ;
+        dcat:endpointURL        <http://data-provider.eu/data-service-endpoint> ;
+        dcat:servesDataset      <http://upcast-project.eu/dataset/example-dataset-1> ;
+        # Link to execution environment where this data service is deployed
+        upcast:hasExecutionEnvironment <http://upcast-project.eu/execution-environment/example-exec-env> . 
+
+
+<http://upcast-project.eu/execution-environment/example-exec-env>
+        a      upcast:ExecutionEnvironment ;
+        upcast:ipaddress        "192.168.0.1" ;
+        upcast:processorType    "Intel vPRO" ;
+        upcast:processorSpeed   4 ;
+        upcast:numberOfCores    4 ;
+        upcast:storageSystem    "SSD" ;
+        upcast:storageSystemModel       "Seagate" ;
+        upcast:processorRAM     16 ;
+        dct:location            "Ireland" ;
+        
+# We use reification to state that running the example data service in the example execution environment has an enviromental profile
+# This way we can store information about the same service running in different environments, hence, with different environmental profile
+<http://upcast-project.eu/environmental-profile/task-on-exec-env-1>
+        a      rdf:Statement
+        rdf:subject      <http://upcast-project.eu/data-service/example-data-service> ;
+        rdf:predicate    upcast:hasExecutionEnvironment ;
+        rdf:object       <http://upcast-project.eu/execution-environment/example-exec-env> ;
+        upcast:hasEnvironmentalProfile  <http://upcast-project.eu/environmental-profile/example-env-profile> .    
+
+# Environmental profile, output by environmental plugin        
+<http://upcast-project.eu/environmental-profile/example-env-profile> ;
+        a       upcast:EnvironmentalProfile ;
+        upcast:profileTimestamp               "2024-09-10+06:00"^xsd:datetime ;
+        upcast:StoredEnergyConsumption        100 ;
+        upcast:StoredCarbonEmission           20 ; 
+        upcast:isMeasured                     false ;
+        upcast:isEstimated                    true ;   
+        # We don't explicitly state the dataset used for the estimation, as in the case of a data service we can follow the links to the dataset being served.        
+

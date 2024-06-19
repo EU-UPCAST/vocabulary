@@ -1,0 +1,62 @@
+@prefix upcast: <https://www.upcast-project.eu/upcast-vocab/1.0/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix idsa-core: <https://w3id.org/idsa/core/>.
+@prefix dct: <http://purl.org/dc/terms/> .
+
+
+
+### In this example we illustrate the environmental profile of a whole workflow
+### Assuming the whole workflow is executed in a single execution environment
+
+# DPW holder object
+<http://upcast-project.eu/dpws/example-dpw> 
+        a   upcast:DataProcessingWorkflow ;
+        wmo:wfPurposes      "Scientific Research and Development" ;
+        wmo:Initiators      <https://upcast-project.eu/consumer/example-data-consumer> ;                   
+        wmo:includesTask    <http://upcast-project.eu/dpws/steps/step-1> ;
+        wmo:includesTask    <http://upcast-project.eu/dpws/steps/step-2> ;
+        # Link to an executable representation, e.g., a nexflow script
+        upcast:has_executable_representation    <http://data-consumer.eu/my-nexflow-workflows/example-dpw-nexflow-script> ;
+        # Convenience property to list the low level operations input to the Environmental Profiler that are executed by this DPW        
+        upcast:lowlevelOperation        "groupby_count" , "select_by_id", "count_num_rows" .           
+
+# The execution environment, part of the input to the Enviromental Profile plugin
+<http://upcast-project.eu/execution-environment/example-exec-env>
+        a      upcast:ExecutionEnvironment ;
+        upcast:ipaddress        "192.168.0.1" ;
+        upcast:processorType    "Intel vPRO" ;
+        upcast:processorSpeed   4 ;
+        upcast:numberOfCores    4 ;
+        upcast:storageSystem    "SSD" ;
+        dct:location            "Ireland" ;
+
+# Here we state the nextflow script that is executable representation of the DPW is executed in an execution environment
+<http://upcast-project.eu/environmental-profile/task-on-exec-env-2>
+        a      rdf:Statement
+        rdf:subject      <http://data-consumer.eu/my-nexflow-workflows/example-dpw-nexflow-script> ;
+        rdf:predicate    upcast:hasExecutionEnvironment ;
+        rdf:object       <http://upcast-project.eu/execution-environment/example-exec-env> ;
+        upcast:hasEnvironmentalProfile  <http://upcast-project.eu/environmental-profile/example-env-profile-3> .    
+        
+<http://upcast-project.eu/environmental-profile/example-env-profile-3> ;
+        a       upcast:EnvironmentalProfile ;
+        upcast:profileTimestamp               "2024-09-10+06:00"^xsd:datetime ;
+        upcast:OperationEnergyConsumption        1500 ;
+        upcast:OperationCarbonEmission           420 ; 
+        # The profile is measured or estimated for processing the dataset distribution linked in this property (size being the important attribute of the distribution)
+        # Multiple distributions are possible, to accommodate for Data Processing Workflows that receive multiple datasets as input
+        upcast:forDatasetDistribution         <http://upcast-project.eu/distribution/example-distribution-dataset-1> ;
+        upcast:isMeasured                     false ;
+        upcast:isEstimated                    true ;   
+
+
+# In the case the workflow is comprised of tasks that execute in different environments, then the environmental profile is the aggregation
+# of the environmental profiles of all individual tasks.   
+
+
+
+
+
+    
+

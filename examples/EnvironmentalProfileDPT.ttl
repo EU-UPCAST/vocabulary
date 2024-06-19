@@ -1,0 +1,78 @@
+@prefix upcast: <https://www.upcast-project.eu/upcast-vocab/1.0/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix idsa-core: <https://w3id.org/idsa/core/>.
+@prefix dct: <http://purl.org/dc/terms/> .
+
+# In this example we show how the environmental profile of a data processing task is modelled.
+<http://upcast-project.eu/data-/example-data-processing-task>
+        a   upcast:DataProcessingTask ;
+        a   idsa-core:DataApp ;
+        upcast:applies           odrl:aggregate ;
+        dct:title               "Example Data Processing Task";        
+        dct:description         "Data Processing Task that implements an Abstract Operation of a DPW. In this case, odrl:aggregate" ;
+        idsa-core:data_app_information      <http://data-consumer.eu/data-app/example-dpt-info> .
+
+# IDSA way of linking a DataApp with the URI of the container
+<http://data-consumer.eu/data-app/example-dpt-info>
+        a       idsa-core:AppRepresentation ;
+        idsa-core:data_app_distribution_service    <https://hub.docker/example-data-consumer/processing-task-container> .   
+
+<http://upcast-project.eu/execution-environment/example-exec-env>
+        a      upcast:ExecutionEnvironment ;
+        upcast:ipaddress        "192.168.0.1" ;
+        upcast:processorType    "Intel vPRO" ;
+        upcast:processorSpeed   4 ;
+        upcast:numberOfCores    4 ;
+        upcast:storageSystem    "SSD" ;
+        dct:location            "Ireland" ;
+
+<http://upcast-project.eu/execution-environment/example-exec-env-2>
+        a      upcast:ExecutionEnvironment ;
+        upcast:ipaddress        "192.168.0.2" ;
+        upcast:processorType    "AMD Ryzen" ;
+        upcast:processorSpeed   "8Mhz" ;
+        upcast:numberOfCores    2 ;
+        upcast:storageSystem    "SSD" ;
+        dct:location            "Norway" ;
+        
+# We use reification to state that running the example data processing task in the example execution environment has an enviromental profile
+# This way we can store information about the same data processing task running in different environments, hence, with different environmental profiles
+<http://upcast-project.eu/environmental-profile/task-on-exec-env-1>
+        a      rdf:Statement
+        rdf:subject      <http://upcast-project.eu/data-/example-data-processing-task> ;
+        rdf:predicate    upcast:hasExecutionEnvironment ;
+        rdf:object       <http://upcast-project.eu/execution-environment/example-exec-env> ;
+        upcast:hasEnvironmentalProfile          <http://upcast-project.eu/environmental-profile/example-env-profile-2> . 
+
+# The environmental profile, filled with the output of the Environmental Profiler plugin        
+<http://upcast-project.eu/environmental-profile/example-env-profile-2> ;
+        a       upcast:EnvironmentalProfile ;
+        upcast:profileTimestamp               "2024-09-10+06:00"^xsd:datetime ;
+        upcast:OperationEnergyConsumption        150 ;
+        upcast:OperationCarbonEmission           42 ; 
+        # The profile is measured or estimated for processing the dataset distribution linked in this property (size being the important attribute of the distribution)
+        upcast:forDatasetDistribution         <http://upcast-project.eu/distribution/example-distribution-dataset-1> ;        
+        upcast:isMeasured                     false ;
+        upcast:isEstimated                    true ;
+
+# Here we state the Data Processing Task (DPT) is executed in an execution environment (EE), so we can model "The environmental profile of the execution of a DPT on an EE"
+<http://upcast-project.eu/environmental-profile/task-on-exec-env-2>
+        a      rdf:Statement
+        rdf:subject      <http://upcast-project.eu/data-/example-data-processing-task> ;
+        rdf:predicate    upcast:hasExecutionEnvironment ;
+        rdf:object       <http://upcast-project.eu/execution-environment/example-exec-env> ;
+        upcast:hasEnvironmentalProfile          <http://upcast-project.eu/environmental-profile/example-env-profile-3> .  
+
+ # The environmental profile, filled with the output of the Environmental Profiler plugin        
+<http://upcast-project.eu/environmental-profile/example-env-profile-3> ;
+        a       upcast:EnvironmentalProfile ;
+        upcast:profileTimestamp               "2024-09-10+06:00"^xsd:datetime ;
+        upcast:OperationEnergyConsumption        120 ;
+        upcast:OperationCarbonEmission           64 ; 
+        # The profile is measured or estimated for processing the dataset distribution linked in this property (size being the important attribute of the distribution)
+        # Multiple distributions are possible, to accommodate for Data Processing Tasks that receive multiple datasets as input
+        upcast:forDatasetDistribution         <http://upcast-project.eu/distribution/example-distribution-dataset-1>   
+        upcast:isMeasured                     true ;
+        upcast:isEstimated                    false .          
+
