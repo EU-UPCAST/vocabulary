@@ -1,205 +1,90 @@
-[
-    {
-        "@id": "_:b0",
-        "http://www.w3.org/ns/odrl/action": [
-            {
-                "@id": "http://www.w3.org/ns/odrl/aggregate"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/assigner": [
-            {
-                "@id": "https://upcast-project.eu/provider/example-data-provider"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/target": [
-            {
-                "@id": "http://upcast-project.eu/dataset/example-dataset-1"
-            }
-        ]
+{
+    "@context": {
+      "upcast": "https://www.upcast-project.eu/upcast-vocab/1.0/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "idsa-core": "https://w3id.org/idsa/core/",
+      "dct": "http://purl.org/dc/terms/",
+      "odrl": "http://www.w3.org/ns/odrl/"
     },
-    {
-        "@id": "_:b1",
-        "http://www.w3.org/ns/odrl/action": [
-            {
-                "@id": "http://www.w3.org/ns/odrl/use"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/assignee": [
-            {
-                "@id": "http://data-space-vocabulary/classes/AI-Agent"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/target": [
-            {
-                "@id": "http://upcast-project.eu/dataset/example-dataset-1"
-            }
-        ]
-    },
-    {
-        "@id": "http://data-space-vocabulary/classes/AI-Agent"
-    },
-    {
-        "@id": "http://upcast-project.eu/dataset/example-dataset-1",
-        "@type": [
-            "http://www.w3.org/ns/dcat#Dataset"
-        ],
-        "http://purl.org/dc/terms/title": [
-            {
-                "@value": "Example Dataset"
-            }
-        ],
-        "http://purl.org/dc/terms/description": [
-            {
-                "@value": "The initial offer refers to the same dataset published"
-            }
-        ],
-        "http://www.w3.org/ns/dcat#theme": [
-            {
-                "@value": "Financial"
-            },
-            {
-                "@value": "Resources"
-            }
-        ],
-        "http://purl.org/dc/terms/spatial": [
-            {
-                "@value": "European Union"
-            }
-        ],
-        "http://purl.org/dc/terms/publisher": [
-            {
-                "@id": "https://upcast-project.eu/producer/example-data-provider"
-            }
-        ],
-        "https://w3id.org/idsa/core/Provider": [
-            {
-                "@id": "https://upcast-project.eu/producer/example-data-provider"
-            }
-        ],
-        "http://www.w3.org/ns/dcat#distribution": [
-            {
-                "@id": "http://upcast-project.eu/dataset/example-dataset-1"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/hasPolicy": [
-            {
-                "@id": "http://upcast-project.eu/policy/usage-constraint-example"
-            }
-        ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/price": [
-            {
-                "@value": 400
-            }
-        ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/priceUnit": [
-            {
-                "@value": "EUR/Month"
-            }
-        ]
-    },
-    {
-        "@id": "http://upcast-project.eu/distribution/example-distribution-dataset-1",
-        "@type": [
-            "http://www.w3.org/ns/dcat#Distribution"
-        ],
-        "http://purl.org/dc/terms/description": [
-            {
-                "@value": "Example Distribution of a Dataset being offered"
-            }
-        ],
-        "http://purl.org/dc/terms/format": [
-            {
-                "@value": "csv"
-            }
-        ],
-        "http://purl.org/dc/terms/title": [
-            {
-                "@value": "CSV Distribution of Dataset 1"
-            }
-        ]
-    },
-    {
+    "@graph": [
+      {
         "@id": "http://upcast-project.eu/offer/example-offer",
-        "@type": [
-            "https://www.upcast-project.eu/upcast-vocab/1.0/Offer"
+        "@type": "upcast:Offer",
+        "upcast:refersTo": {
+          "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+        },
+        "upcast:hasOffer": {
+          "@id": "http://upcast-project.eu/policy/usage-constraint-example"
+        },
+        "upcast:hasNLP": "The Natural Language Version of the Contract",
+        "upcast:hasDPWPattern": "None"
+      },
+      {
+        "@id": "http://upcast-project.eu/distribution/example-distribution-dataset-1",
+        "@type": "dcat:Distribution",
+        "dct:description": "Example Distribution of a Dataset being offered",
+        "dct:format": "csv",
+        "dct:title": "CSV Distribution of Dataset 1"
+      },
+      {
+        "@id": "http://upcast-project.eu/dataset/example-dataset-1",
+        "@type": "dcat:Dataset",
+        "dct:title": "Example Dataset",
+        "dct:description": "The initial offer refers to the same dataset published",
+        "dcat:theme": [
+          "Financial",
+          "Resources"
         ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/refersTo": [
-            {
-                "@id": "http://upcast-project.eu/dataset/example-dataset-1"
-            }
-        ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/hasOffer": [
-            {
-                "@id": "http://upcast-project.eu/policy/usage-constraint-example"
-            }
-        ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/hasNLP": [
-            {
-                "@value": "The Natural Language Version of the Contract"
-            }
-        ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/hasDPWPattern": [
-            {
-                "@value": "None"
-            }
-        ]
-    },
-    {
-        "@id": "http://upcast-project.eu/policy/offer/example-offer-copy-for-negotiation",
-        "@type": [
-            "http://www.w3.org/ns/odrl/Offer"
-        ],
-        "http://www.w3.org/ns/odrl/permission": [
-            {
-                "@id": "_:b0"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/prohibition": [
-            {
-                "@id": "_:b1"
-            }
-        ]
-    },
-    {
-        "@id": "http://upcast-project.eu/policy/usage-constraint-example"
-    },
-    {
-        "@id": "http://www.w3.org/ns/dcat#Dataset"
-    },
-    {
-        "@id": "http://www.w3.org/ns/dcat#Distribution"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/Offer"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/aggregate"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/use"
-    },
-    {
-        "@id": "http://xmlns.com/foaf/0.1/Agent"
-    },
-    {
-        "@id": "http://xmlns.com/foaf/0.1/Organization"
-    },
-    {
-        "@id": "https://upcast-project.eu/producer/example-data-provider"
-    },
-    {
+        "dct:spatial": "European Union",
+        "dct:publisher": {
+          "@id": "https://upcast-project.eu/producer/example-data-provider"
+        },
+        "idsa-core:Provider": {
+          "@id": "https://upcast-project.eu/producer/example-data-provider"
+        },
+        "dcat:distribution": {
+          "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+        },
+        "odrl:hasPolicy": {
+          "@id": "http://upcast-project.eu/policy/usage-constraint-example"
+        },
+        "upcast:price": 400,
+        "upcast:priceUnit": "EUR/Month"
+      },
+      {
         "@id": "https://upcast-project.eu/provider/example-data-provider",
         "@type": [
-            "http://xmlns.com/foaf/0.1/Agent",
-            "http://xmlns.com/foaf/0.1/Organization"
+          "foaf:Agent",
+          "foaf:Organization"
         ],
-        "http://xmlns.com/foaf/0.1/name": [
-            {
-                "@value": "Data Provider Organization"
-            }
-        ]
-    },
-    {
-        "@id": "https://www.upcast-project.eu/upcast-vocab/1.0/Offer"
-    }
-]
+        "foaf:name": "Data Provider Organization"
+      },
+      {
+        "@id": "http://upcast-project.eu/policy/offer/example-offer-copy-for-negotiation",
+        "@type": "odrl:Offer",
+        "odrl:permission": {
+          "odrl:action": {
+            "@id": "odrl:aggregate"
+          },
+          "odrl:assigner": {
+            "@id": "https://upcast-project.eu/provider/example-data-provider"
+          },
+          "odrl:target": {
+            "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+          }
+        },
+        "odrl:prohibition": {
+          "odrl:action": {
+            "@id": "odrl:use"
+          },
+          "odrl:assignee": {
+            "@id": "http://data-space-vocabulary/classes/AI-Agent"
+          },
+          "odrl:target": {
+            "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+          }
+        }
+      }
+    ]
+  }

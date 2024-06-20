@@ -58,7 +58,8 @@
         a   idsa-core:DataApp ;
         upcast:applies           odrl:aggregate ;
         dct:title               "Example Data Processing Task";        
-        dct:description         "Data Processing Task that implements an Abstract Operation of a DPW. In this case, odrl:aggregate" .    
+        dct:description         "Data Processing Task that implements an Abstract Operation of a DPW. In this case, odrl:aggregate" .
+
 
 #The second step...
 <http://upcast-project.eu/dpws/steps/step-2>

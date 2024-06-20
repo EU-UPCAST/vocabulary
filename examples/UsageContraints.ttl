@@ -33,7 +33,7 @@
         odrl:permission [
                 odrl:action odrl:aggregate ;
                 odrl:assigner <https://upcast-project.eu/provider/example-data-provider>;
-                odrl:target <http://upcast-project.eu/dataset/example-dataset-1> ;
+                odrl:target <http://upcast-project.eu/dataset/example-dataset-1> ;                
         ] ;
         odrl:prohibition [
                 odrl:action odrl:use ;

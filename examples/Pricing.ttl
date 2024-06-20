@@ -18,7 +18,7 @@
         dct:description         "Example of a Dataset illustrating Pricing Facet related attributes";    
         idsa-core:Provider      <https://upcast-project.eu/producer/example-data-producer>;
         dcat:distribution       <http://upcast-project.eu/dataset/example-dataset-1>;
-        dcterms:isPartOf        <http://upcast-project.eu/data-product/example-data-product-1>;
+        dct:isPartOf        <http://upcast-project.eu/data-product/example-data-product-1>;
         dcat:theme              "Financial";
         dcat:theme              "Resources";
         dct:accrualPeriodicity      "Weekly";
@@ -41,7 +41,7 @@
         a   upcast:DataProduct;
         upcast:IdentifiesIndividuals    true;
         upcast:IdentifiesCompanies      false;
-        upacst:ProfessionalServices     false;
+        upcast:ProfessionalServices     false;
         upcast:OnDemand                 false;
         upcast:RealTime                 false;
         upcast:LocationData             true;

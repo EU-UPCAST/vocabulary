@@ -1,379 +1,165 @@
-[
-    {
-        "@id": "_:b0",
-        "http://www.w3.org/ns/odrl/action": [
-            {
-                "@id": "http://www.w3.org/ns/odrl/aggregate"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/assigner": [
-            {
-                "@id": "https://upcast-project.eu/provider/example-data-provider"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/assignee": [
-            {
-                "@id": "https://upcast-project.eu/consumer/example-data-consumer"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/target": [
-            {
-                "@id": "http://upcast-project.eu/dataset/example-dataset-agreed"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/constraint": [
-            {
-                "@id": "_:b2"
-            }
-        ]
+{
+    "@context": {
+      "upcast": "https://www.upcast-project.eu/upcast-vocab/1.0/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "idsa-core": "https://w3id.org/idsa/core/",
+      "dct": "http://purl.org/dc/terms/",
+      "odrl": "http://www.w3.org/ns/odrl/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
     },
-    {
-        "@id": "_:b1",
-        "http://www.w3.org/ns/odrl/action": [
-            {
-                "@id": "http://www.w3.org/ns/odrl/use"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/assigner": [
-            {
-                "@id": "https://upcast-project.eu/provider/example-data-provider"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/assignee": [
-            {
-                "@id": "http://data-space-vocabulary/classes/AI-Agent"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/target": [
-            {
-                "@id": "http://upcast-project.eu/dataset/example-dataset-agreed"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/constraint": [
-            {
-                "@id": "_:b3"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/duty": [
-            {
-                "@id": "_:b4"
-            }
-        ]
-    },
-    {
-        "@id": "_:b2",
-        "http://www.w3.org/ns/odrl/leftOperand": [
-            {
-                "@id": "http://www.w3.org/ns/odrl/dateTime"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/operator": [
-            {
-                "@id": "http://www.w3.org/ns/odrl/lt"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/rightOperand": [
-            {
-                "@value": "2024-12-31",
-                "@type": "http://www.w3.org/2001/XMLSchema#date"
-            }
-        ]
-    },
-    {
-        "@id": "_:b3",
-        "http://www.w3.org/ns/odrl/leftOperand": [
-            {
-                "@id": "http://www.w3.org/ns/odrl/count"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/operator": [
-            {
-                "@id": "http://www.w3.org/ns/odrl/lteq"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/rightOperand": [
-            {
-                "@value": 3
-            }
-        ]
-    },
-    {
-        "@id": "_:b4",
-        "http://www.w3.org/ns/odrl/action": [
-            {
-                "@id": "_:b5"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/constraint": [
-            {
-                "@id": "_:b6"
-            }
-        ]
-    },
-    {
-        "@id": "_:b5",
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": [
-            {
-                "@id": "http://upcast-project.eu/custom-actions/sendEvent"
-            }
-        ]
-    },
-    {
-        "@id": "_:b6",
-        "http://www.w3.org/ns/odrl/leftOperand": [
-            {
-                "@id": "http://www.w3.org/ns/odrl/event"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/operator": [
-            {
-                "@id": "http://www.w3.org/ns/odrl/gt"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/rightOperand": [
-            {
-                "@id": "http://www.w3.org/ns/odrl/policyUsage"
-            }
-        ]
-    },
-    {
-        "@id": "http://data-space-vocabulary/classes/AI-Agent"
-    },
-    {
-        "@id": "http://upcast-project.eu/conrtacts/example-contract"
-    },
-    {
-        "@id": "http://upcast-project.eu/custom-actions/sendEvent",
-        "@type": [
-            "http://www.w3.org/ns/odrl/Action"
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-            {
-                "@value": "sendEvent"
-            }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": [
-            {
-                "@value": "Send an Event. Used as a duty before or after and action"
-            }
-        ]
-    },
-    {
-        "@id": "http://upcast-project.eu/dataset/example-dataset-1"
-    },
-    {
-        "@id": "http://upcast-project.eu/dataset/example-dataset-agreed",
-        "@type": [
-            "http://www.w3.org/ns/dcat#Dataset"
-        ],
-        "http://purl.org/dc/terms/title": [
-            {
-                "@value": "Example Dataset agreed"
-            }
-        ],
-        "http://purl.org/dc/terms/description": [
-            {
-                "@value": "Specification of dataset agreed in this contract"
-            }
-        ],
-        "http://www.w3.org/ns/dcat#theme": [
-            {
-                "@value": "Financial"
-            },
-            {
-                "@value": "Resources"
-            }
-        ],
-        "http://purl.org/dc/terms/spatial": [
-            {
-                "@value": "European Union"
-            }
-        ],
-        "http://purl.org/dc/terms/publisher": [
-            {
-                "@id": "https://upcast-project.eu/provider/example-data-provider"
-            }
-        ],
-        "https://w3id.org/idsa/core/Provider": [
-            {
-                "@id": "https://upcast-project.eu/provider/example-data-provider"
-            }
-        ],
-        "http://www.w3.org/ns/dcat#distribution": [
-            {
-                "@id": "http://upcast-project.eu/dataset/example-dataset-1"
-            }
-        ],
-        "http://www.w3.org/ns/odrl/hasPolicy": [
-            {
-                "@id": "http://upcast-project.eu/policy/usage-constraint-example"
-            }
-        ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/price": [
-            {
-                "@value": 500
-            }
-        ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/priceUnit": [
-            {
-                "@value": "EUR/Month"
-            }
-        ]
-    },
-    {
-        "@id": "http://upcast-project.eu/distribution/example-distribution-agreed",
-        "@type": [
-            "http://www.w3.org/ns/dcat#Distribution"
-        ],
-        "http://purl.org/dc/terms/description": [
-            {
-                "@value": "The dataset in RDF format"
-            }
-        ],
-        "http://purl.org/dc/terms/format": [
-            {
-                "@value": "rdf"
-            }
-        ],
-        "http://purl.org/dc/terms/title": [
-            {
-                "@value": "RDF Distribution of Dataset 1"
-            }
-        ]
-    },
-    {
-        "@id": "http://upcast-project.eu/dpws/example-dpw"
-    },
-    {
+    "@graph": [
+      {
         "@id": "http://upcast-project.eu/offer/example-contract",
         "@type": [
-            "https://www.upcast-project.eu/upcast-vocab/1.0/Contract",
-            "https://w3id.org/idsa/core/Contract"
+          "upcast:Contract",
+          "idsa-core:Contract"
         ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/refersTo": [
-            {
-                "@id": "http://upcast-project.eu/dataset/example-dataset-1"
-            }
-        ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/hasAgreement": [
-            {
-                "@id": "http://upcast-project.eu/conrtacts/example-contract"
-            }
-        ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/hasNLP": [
-            {
-                "@value": "The Natural Language Version of the Contract after agreeing permission to use by AI-Agent for a higher price"
-            }
-        ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/hasDPW": [
-            {
-                "@id": "http://upcast-project.eu/dpws/example-dpw"
-            }
-        ],
-        "https://w3id.org/idsa/core/Consumer": [
-            {
-                "@id": "https://upcast-project.eu/consumer/example-data-consumer"
-            }
-        ],
-        "https://w3id.org/idsa/core/Provider": [
-            {
-                "@id": "https://upcast-project.eu/provider/example-data-provider"
-            }
-        ]
-    },
-    {
-        "@id": "http://upcast-project.eu/policy/agreement/example-agreement-of-this-negotiation",
-        "@type": [
-            "http://www.w3.org/ns/odrl/Agreement"
-        ],
-        "http://www.w3.org/ns/odrl/permission": [
-            {
-                "@id": "_:b0"
-            },
-            {
-                "@id": "_:b1"
-            }
-        ]
-    },
-    {
-        "@id": "http://upcast-project.eu/policy/usage-constraint-example"
-    },
-    {
-        "@id": "http://www.w3.org/ns/dcat#Dataset"
-    },
-    {
-        "@id": "http://www.w3.org/ns/dcat#Distribution"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/Action"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/Agreement"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/aggregate"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/count"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/dateTime"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/event"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/gt"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/lt"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/lteq"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/policyUsage"
-    },
-    {
-        "@id": "http://www.w3.org/ns/odrl/use"
-    },
-    {
-        "@id": "http://xmlns.com/foaf/0.1/Agent"
-    },
-    {
-        "@id": "http://xmlns.com/foaf/0.1/Organization"
-    },
-    {
-        "@id": "https://upcast-project.eu/consumer/example-data-consumer"
-    },
-    {
-        "@id": "https://upcast-project.eu/provider/example-data-consumer",
-        "@type": [
-            "http://xmlns.com/foaf/0.1/Agent",
-            "http://xmlns.com/foaf/0.1/Organization"
-        ],
-        "http://xmlns.com/foaf/0.1/name": [
-            {
-                "@value": "Data Consumer Organization"
-            }
-        ]
-    },
-    {
+        "upcast:refersTo": {
+          "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+        },
+        "upcast:hasAgreement": {
+          "@id": "http://upcast-project.eu/conrtacts/example-contract"
+        },
+        "upcast:hasNLP": "The Natural Language Version of the Contract after agreeing permission to use by AI-Agent for a higher price",
+        "upcast:hasDPW": {
+          "@id": "http://upcast-project.eu/dpws/example-dpw"
+        },
+        "idsa-core:Consumer": {
+          "@id": "https://upcast-project.eu/consumer/example-data-consumer"
+        },
+        "idsa-core:Provider": {
+          "@id": "https://upcast-project.eu/provider/example-data-provider"
+        }
+      },
+      {
         "@id": "https://upcast-project.eu/provider/example-data-provider",
         "@type": [
-            "http://xmlns.com/foaf/0.1/Agent",
-            "http://xmlns.com/foaf/0.1/Organization"
+          "foaf:Agent",
+          "foaf:Organization"
         ],
-        "http://xmlns.com/foaf/0.1/name": [
-            {
-                "@value": "Data Provider Organization"
+        "foaf:name": "Data Provider Organization"
+      },
+      {
+        "@id": "https://upcast-project.eu/provider/example-data-consumer",
+        "@type": [
+          "foaf:Agent",
+          "foaf:Organization"
+        ],
+        "foaf:name": "Data Consumer Organization"
+      },
+      {
+        "@id": "http://upcast-project.eu/dataset/example-dataset-agreed",
+        "@type": "dcat:Dataset",
+        "dct:title": "Example Dataset agreed",
+        "dct:description": "Specification of dataset agreed in this contract",
+        "dcat:theme": [
+          "Financial",
+          "Resources"
+        ],
+        "dct:spatial": "European Union",
+        "dct:publisher": {
+          "@id": "https://upcast-project.eu/provider/example-data-provider"
+        },
+        "idsa-core:Provider": {
+          "@id": "https://upcast-project.eu/provider/example-data-provider"
+        },
+        "dcat:distribution": {
+          "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+        },
+        "odrl:hasPolicy": {
+          "@id": "http://upcast-project.eu/policy/usage-constraint-example"
+        },
+        "upcast:price": 500,
+        "upcast:priceUnit": "EUR/Month"
+      },
+      {
+        "@id": "http://upcast-project.eu/distribution/example-distribution-agreed",
+        "@type": "dcat:Distribution",
+        "dct:description": "The dataset in RDF format",
+        "dct:format": "rdf",
+        "dct:title": "RDF Distribution of Dataset 1"
+      },
+      {
+        "@id": "http://upcast-project.eu/policy/agreement/example-agreement-of-this-negotiation",
+        "@type": "odrl:Agreement",
+        "odrl:permission": [
+          {
+            "odrl:action": {
+              "@id": "odrl:aggregate"
+            },
+            "odrl:assigner": {
+              "@id": "https://upcast-project.eu/provider/example-data-provider"
+            },
+            "odrl:assignee": {
+              "@id": "https://upcast-project.eu/consumer/example-data-consumer"
+            },
+            "odrl:target": {
+              "@id": "http://upcast-project.eu/dataset/example-dataset-agreed"
+            },
+            "odrl:constraint": {
+              "odrl:leftOperand": {
+                "@id": "odrl:dateTime"
+              },
+              "odrl:operator": {
+                "@id": "odrl:lt"
+              },
+              "odrl:rightOperand": {
+                "@value": "2024-12-31",
+                "@type": "xsd:date"
+              }
             }
+          },
+          {
+            "odrl:action": {
+              "@id": "odrl:use"
+            },
+            "odrl:assigner": {
+              "@id": "https://upcast-project.eu/provider/example-data-provider"
+            },
+            "odrl:assignee": {
+              "@id": "http://data-space-vocabulary/classes/AI-Agent"
+            },
+            "odrl:target": {
+              "@id": "http://upcast-project.eu/dataset/example-dataset-agreed"
+            },
+            "odrl:constraint": {
+              "odrl:leftOperand": {
+                "@id": "odrl:count"
+              },
+              "odrl:operator": {
+                "@id": "odrl:lteq"
+              },
+              "odrl:rightOperand": 3
+            },
+            "odrl:duty": {
+              "odrl:action": {
+                "rdf:value": {
+                  "@id": "http://upcast-project.eu/custom-actions/sendEvent"
+                }
+              },
+              "odrl:constraint": {
+                "odrl:leftOperand": {
+                  "@id": "odrl:event"
+                },
+                "odrl:operator": {
+                  "@id": "odrl:gt"
+                },
+                "odrl:rightOperand": {
+                  "@id": "odrl:policyUsage"
+                }
+              }
+            }
+          }
         ]
-    },
-    {
-        "@id": "https://w3id.org/idsa/core/Contract"
-    },
-    {
-        "@id": "https://www.upcast-project.eu/upcast-vocab/1.0/Contract"
-    }
-]
+      },
+      {
+        "@id": "http://upcast-project.eu/custom-actions/sendEvent",
+        "@type": "odrl:Action",
+        "rdfs:label": "sendEvent",
+        "rdfs:comment": "Send an Event. Used as a duty before or after and action"
+      }
+    ]
+  }

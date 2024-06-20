@@ -1,115 +1,51 @@
-[
-    {
-        "@id": "_:b0",
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
-            {
-                "@id": "http://upcast-project.eu/policy/offer/example-offer"
-            }
-        ],
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
-            {
-                "@id": "_:b1"
-            }
-        ]
+{
+    "@context": {
+      "upcast": "https://www.upcast-project.eu/upcast-vocab/1.0/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "idsa-core": "https://w3id.org/idsa/core/"
     },
-    {
-        "@id": "_:b1",
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
-            {
-                "@id": "http://upcast-project.eu/policy/request/example-request"
-            }
-        ],
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
-            {
-                "@id": "_:b2"
-            }
-        ]
-    },
-    {
-        "@id": "_:b2",
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
-            {
-                "@id": "http://upcast-project.eu/policy/agreement/example-agreement-of-this-negotiation"
-            }
-        ],
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
-            {
-                "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
-            }
-        ]
-    },
-    {
+    "@graph": [
+      {
         "@id": "http://upcast-project.eu/negotiation/example-negotiation",
-        "@type": [
-            "https://www.upcast-project.eu/upcast-vocab/1.0//Negotiation"
-        ],
-        "https://w3id.org/idsa/core/Consumer": [
+        "@type": "upcast:Negotiation",
+        "idsa-core:Consumer": {
+          "@id": "https://upcast-project.eu/provider/example-data-consumer"
+        },
+        "idsa-core:Provider": {
+          "@id": "https://upcast-project.eu/producer/example-data-provider"
+        },
+        "upcast:hasNegotiationSequence": {
+          "@list": [
             {
-                "@id": "https://upcast-project.eu/provider/example-data-consumer"
-            }
-        ],
-        "https://w3id.org/idsa/core/Provider": [
+              "@id": "http://upcast-project.eu/policy/offer/example-offer"
+            },
             {
-                "@id": "https://upcast-project.eu/producer/example-data-provider"
-            }
-        ],
-        "https://www.upcast-project.eu/upcast-vocab/1.0/hasNegotiationSequence": [
+              "@id": "http://upcast-project.eu/policy/request/example-request"
+            },
             {
-                "@id": "_:b0"
+              "@id": "http://upcast-project.eu/policy/agreement/example-agreement-of-this-negotiation"
             }
-        ]
-    },
-    {
-        "@id": "http://upcast-project.eu/policy/agreement/example-agreement-of-this-negotiation"
-    },
-    {
-        "@id": "http://upcast-project.eu/policy/offer/example-offer"
-    },
-    {
-        "@id": "http://upcast-project.eu/policy/request/example-request"
-    },
-    {
-        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
-    },
-    {
-        "@id": "http://xmlns.com/foaf/0.1/Agent"
-    },
-    {
-        "@id": "http://xmlns.com/foaf/0.1/Organization"
-    },
-    {
-        "@id": "https://upcast-project.eu/producer/example-data-provider"
-    },
-    {
-        "@id": "https://upcast-project.eu/provider/example-data-consumer",
-        "@type": [
-            "http://xmlns.com/foaf/0.1/Agent",
-            "http://xmlns.com/foaf/0.1/Organization",
-            "https://w3id.org/idsa/core/Participant"
-        ],
-        "http://xmlns.com/foaf/0.1/name": [
-            {
-                "@value": "Data Consumer Organization"
-            }
-        ]
-    },
-    {
+          ]
+        }
+      },
+      {
         "@id": "https://upcast-project.eu/provider/example-data-provider",
         "@type": [
-            "http://xmlns.com/foaf/0.1/Agent",
-            "http://xmlns.com/foaf/0.1/Organization",
-            "https://w3id.org/idsa/core/Participant"
+          "foaf:Agent",
+          "foaf:Organization",
+          "idsa-core:Participant"
         ],
-        "http://xmlns.com/foaf/0.1/name": [
-            {
-                "@value": "Data Provider Organization"
-            }
-        ]
-    },
-    {
-        "@id": "https://w3id.org/idsa/core/Participant"
-    },
-    {
-        "@id": "https://www.upcast-project.eu/upcast-vocab/1.0//Negotiation"
-    }
-]
+        "foaf:name": "Data Provider Organization"
+      },
+      {
+        "@id": "https://upcast-project.eu/provider/example-data-consumer",
+        "@type": [
+          "foaf:Agent",
+          "foaf:Organization",
+          "idsa-core:Participant"
+        ],
+        "foaf:name": "Data Consumer Organization"
+      }
+    ]
+  }
