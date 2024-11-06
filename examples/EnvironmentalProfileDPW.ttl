@@ -19,7 +19,7 @@
         # Link to an executable representation, e.g., a nexflow script
         upcast:has_executable_representation    <http://data-consumer.eu/my-nexflow-workflows/example-dpw-nexflow-script> ;
         # Convenience property to list the low level operations input to the Environmental Profiler that are executed by this DPW        
-        upcast:lowlevelOperation        "groupby_count" , "select_by_id", "count_num_rows" .           
+        upcast:lowlevelOperation        "select_by_id", "count_num_rows" .           
 
 # The execution environment, part of the input to the Enviromental Profile plugin
 <http://upcast-project.eu/execution-environment/example-exec-env>
@@ -42,8 +42,23 @@
 <http://upcast-project.eu/environmental-profile/example-env-profile-3> ;
         a       upcast:EnvironmentalProfile ;
         upcast:profileTimestamp               "2024-09-10+06:00"^xsd:datetime ;
-        upcast:OperationEnergyConsumption        1500 ;
-        upcast:OperationCarbonEmission           420 ; 
+        upcast:storedDatasetProfile [
+                upcast:operationEnergyConsumption        50 ;
+                upcast:operationCarbonEmission           50 ; 
+                upcast:energyIntensity                  1.4 ;
+        ]
+        upcast:operationEnergyProfile [
+                upcast:profiledOperation        "select_by_id" ;
+                upcast:operationEnergyConsumption        120 ;
+                upcast:operationCarbonEmission           64 ; 
+        ] ;
+        upcast:operationEnergyProfile [
+                upcast:profiledOperation        "count_num_rows" ;
+                upcast:operationEnergyConsumption        180 ;
+                upcast:operationCarbonEmission           36 ; 
+        ] ;
+        upcast:totalEnergyConsumption        350 ;
+        upcast:totalCarbonEmission           150 ; 
         # The profile is measured or estimated for processing the dataset distribution linked in this property (size being the important attribute of the distribution)
         # Multiple distributions are possible, to accommodate for Data Processing Workflows that receive multiple datasets as input
         upcast:forDatasetDistribution         <http://upcast-project.eu/distribution/example-distribution-dataset-1> ;
