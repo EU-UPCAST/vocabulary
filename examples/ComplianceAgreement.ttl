@@ -87,7 +87,11 @@
                     odrl:leftOperand upcast:executionCommand ;
                     odrl:operator odrl:eq ;
                     odrl:rightOperand "anonymize -level 3" ; 
-                   ]
+                   ] , [ #Must execute at least once
+                    odrl:leftOperand odrl:count ;
+                    odrl:operator odrl:gteq ;
+                    odrl:rightOperand 1 ; 
+                   ]                
                 ] ;  
                 # This states that integration comes before anonymization
                 odrl:duty [
@@ -109,9 +113,19 @@
                     odrl:operator odrl:eq ;
                     odrl:rightOperand "aggregate -agg sum" ; 
                    ]
-                ] ;
+                , [ #Can execute at most 3 times
+                    odrl:leftOperand odrl:count ;
+                    odrl:operator odrl:lteq ;
+                    odrl:rightOperand 3 ; 
+                   ]
+                , [ #Must execute at least once
+                    odrl:leftOperand odrl:count ;
+                    odrl:operator odrl:gteq ;
+                    odrl:rightOperand 1 ; 
+                   ]
+                ]  ;
                 # This states that anonymization comes before aggregation
                 odrl:duty [
-                   odrl:action [ rdf:value odrl:aggregate ] ;  
+                   odrl:action [ rdf:value odrl:anonymize ] ;  
                 ]                    
         ] .      
