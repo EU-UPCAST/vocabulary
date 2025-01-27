@@ -14,7 +14,7 @@
             "dct:format": "csv",
             "dct:title": "CSV Distribution of Dataset 1",
             "dcat:byteSize": 346,
-            "dcat:mediaType": "text/csv"
+            "dcat:mediaType": "http://www.iana.org/assignments/media-types/text/csv"
           },
           {
             "@id": "http://upcast-project.eu/dataset/example-dataset-1",
@@ -32,11 +32,11 @@
             },
             "dct:spatial": "European Union",
             "dcat:distribution": {
-              "@id": "http://upcast-project.eu/dataset/example-dataset-1"
+              "@id": "http://upcast-project.eu/distribution/example-distribution-dataset-1"
             }
           },
           {
-            "@id": "https://upcast-project.eu/provider/example-data-producer",
+            "@id": "https://upcast-project.eu/producer/example-data-producer",
             "@type": [
               "foaf:Agent",
               "foaf:Organization"
