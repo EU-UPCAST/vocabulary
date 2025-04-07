@@ -9,11 +9,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
-<http://upcast-project.eu/offer/example-contract>
+<http://upcast-project.eu/contracts/example-contract>
         a       upcast:Contract;
         a       idsa-core:Contract;
         upcast:refersTo         <http://upcast-project.eu/dataset/example-dataset-1>;
-        upcast:hasAgreement     <http://upcast-project.eu/contracts/example-contract>;
+        upcast:hasAgreement     <http://upcast-project.eu/policy/agreement/example-agreement-of-this-negotiation>;
         upcast:hasNLP           "The Natural Language Version of this Contract";
         upcast:hasDPW           <http://upcast-project.eu/dpws/example-dpw> ;   
         idsa-core:Consumer      <https://upcast-project.eu/consumer/example-data-consumer> ;
