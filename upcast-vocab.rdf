@@ -3,9 +3,12 @@
      xml:base="https://www.upcast-project.eu/upcast-vocab"
      xmlns:schema="http://schema.org/"
      xmlns:idsa-core="https://w3id.org/idsa/core/"
+     xmlns:void="http://rdfs.org/ns/void#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:dcam="http://purl.org/dc/dcam/"
      xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:dqv="http://www.w3.org/ns/dqv#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -15,6 +18,9 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:wmo="http://www.ict-abovo.eu/ontologies/Workflow#"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
@@ -22,6 +28,7 @@
         <owl:versionIRI rdf:resource="https://www.upcast-project.eu/upcast-vocab/1.0"/>
         <owl:imports rdf:resource="https://www.w3.org/TR/vocab-dcat-3/"/>
         <owl:imports rdf:resource="https://w3id.org/idsa/core"/>
+        <schema:funding rdf:resource="https://doi.org/10.3030/101093216"/>
         <dc:title>UPCAST Vocabulary</dc:title>
         <rdfs:label>UPCAST Vocabulary</rdfs:label>
         <terms:description>Vocabulary for interoperability of UPCAST plugins among themselves and with other Data Spaces and Data Marketplaces</terms:description>
@@ -984,6 +991,28 @@
         <rdfs:range rdf:resource="https://w3id.org/idsa/core/Participant"/>
         <rdfs:comment xml:lang="en">Provider of a Resource or Service that is the subject matter of the contract. This party may differ from the Assigner specified by the Contract rules.</rdfs:comment>
         <rdfs:label xml:lang="en">Provider</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#appliedBy -->
+
+    <owl:ObjectProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#appliedBy">
+        <owl:inverseOf rdf:resource="https://www.upcast-project.eu/upcast-vocab#applies"/>
+        <rdfs:domain rdf:resource="http://www.ict-abovo.eu/ontologies/PolicyModel#Actions"/>
+        <rdfs:range rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProcessingTask"/>
+        <rdfs:comment>Action is Applied By Data Processing Task</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#applies -->
+
+    <owl:ObjectProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#applies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProcessingTask"/>
+        <rdfs:range rdf:resource="http://www.ict-abovo.eu/ontologies/PolicyModel#Actions"/>
+        <rdfs:comment>Data Processing Task applies Action</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -2515,9 +2544,7 @@ A mutual contractual agreement involves an exchange of a promises in which the p
 
     <!-- https://www.upcast-project.eu/upcast-vocab -->
 
-    <owl:NamedIndividual rdf:about="https://www.upcast-project.eu/upcast-vocab">
-        <schema:funding rdf:resource="https://doi.org/10.3030/101093216"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="https://www.upcast-project.eu/upcast-vocab"/>
     
 
 
