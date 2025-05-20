@@ -5,7 +5,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 
 # In this example we show how the environmental profile of a data processing task is modelled.
-<http://upcast-project.eu/data-/example-data-processing-task>
+<http://upcast-project.eu/dpt/example-data-processing-task>
         a   upcast:DataProcessingTask ;
         a   idsa-core:DataApp ;
         upcast:applies           odrl:aggregate ;
@@ -64,7 +64,7 @@
         rdf:object       <http://upcast-project.eu/execution-environment/example-exec-env> ;
         upcast:hasEnvironmentalProfile          <http://upcast-project.eu/environmental-profile/example-env-profile-3> .  
 
- # The environmental profile, filled with the output of the Environmental Profiler plugin        
+ # The environmental profile, filled with the output of the Environmental Profiler plugin. this time, the profile is measured isntead of estimated        
 <http://upcast-project.eu/environmental-profile/example-env-profile-3> ;
         a       upcast:EnvironmentalProfile ;
         upcast:profileTimestamp               "2024-09-10+06:00"^xsd:datetime ;
@@ -75,4 +75,26 @@
         upcast:forDatasetDistribution         <http://upcast-project.eu/distribution/example-distribution-dataset-1>   
         upcast:isMeasured                     true ;
         upcast:isEstimated                    false .          
+
+# Below an example of the environmental profile of a a data service.
+<http://upcast-project.eu/data-service/example-data-service>    a   dcat:DataService .
+<http://upcast-project.eu/data-service/example-data-service>    dcat:servesDataset <http://upcast-project.eu/dataset/example-dataset-1> .
+
+<http://upcast-project.eu/environmental-profile/data-service-exec-env-1>
+        a      rdf:Statement
+        rdf:subject      <http://upcast-project.eu/data-service/example-data-service> ;
+        rdf:predicate    upcast:hasExecutionEnvironment ;
+        rdf:object       <http://upcast-project.eu/execution-environment/example-exec-env> ;
+        upcast:hasEnvironmentalProfile          <http://upcast-project.eu/environmental-profile/example-env-profile-4> .  
+
+<http://upcast-project.eu/environmental-profile/example-env-profile-4> ;
+        a       upcast:EnvironmentalProfile ;
+        upcast:profileTimestamp               "2024-09-10+06:00"^xsd:datetime ;
+        upcast:OperationEnergyConsumption        40 ;
+        upcast:OperationCarbonEmission           88 ; 
+        # The profile is measured or estimated for processing the dataset distribution linked in this property (size being the important attribute of the distribution)
+        # Multiple distributions are possible, to accommodate for Data Processing Tasks that receive multiple datasets as input
+        upcast:forDatasetDistribution         <http://upcast-project.eu/distribution/example-distribution-dataset-1>   
+        upcast:isMeasured                     true ;
+        upcast:isEstimated                    false .
 
