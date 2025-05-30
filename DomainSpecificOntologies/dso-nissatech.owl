@@ -99,14 +99,6 @@
     
 
 
-    <!-- http://upcast-project.eu/dso/nissatech#JuniorResearcher -->
-
-    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#JuniorResearcher">
-        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#Researcher"/>
-    </owl:Class>
-    
-
-
     <!-- http://upcast-project.eu/dso/nissatech#Mass -->
 
     <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#Mass">
@@ -131,34 +123,10 @@
     
 
 
-    <!-- http://upcast-project.eu/dso/nissatech#PrincipalResearcher -->
-
-    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#PrincipalResearcher">
-        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#Researcher"/>
-    </owl:Class>
-    
-
-
     <!-- http://upcast-project.eu/dso/nissatech#RawSequencing -->
 
     <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#RawSequencing">
         <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#BioinformaticAction"/>
-    </owl:Class>
-    
-
-
-    <!-- http://upcast-project.eu/dso/nissatech#Researcher -->
-
-    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#Researcher">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#NaturalPerson"/>
-    </owl:Class>
-    
-
-
-    <!-- http://upcast-project.eu/dso/nissatech#SeniorResearcher -->
-
-    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#SeniorResearcher">
-        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#Researcher"/>
     </owl:Class>
     
 
@@ -202,26 +170,6 @@
     <!-- https://w3id.org/dpv/owl#NaturalPerson -->
 
     <owl:Class rdf:about="https://w3id.org/dpv/owl#NaturalPerson"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://upcast-project.eu/dso/nissatech#NHRF -->
-
-    <owl:NamedIndividual rdf:about="http://upcast-project.eu/dso/nissatech#NHRF">
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <rdf:type rdf:resource="https://w3id.org/dpv/owl#LegalEntity"/>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
