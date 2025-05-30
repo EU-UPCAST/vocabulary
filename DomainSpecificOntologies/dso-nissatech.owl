@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://upcast-project.eu/dso/nhrf#"
+     xml:base="http://upcast-project.eu/dso/nhrf"
+     xmlns:schema="https://schema.org/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:upcast="https://www.upcast-project.eu/upcast-vocab#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prof="http://www.w3.org/ns/dx/prof/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:odrl="http://www.w3.org/ns/odrl/2/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:scoro="http://purl.org/spar/scoro/">
+    <owl:Ontology rdf:about="http://upcast-project.eu/dso/nissatech#">
+        <owl:imports rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:comment>Domain Specific Ontology of NHRF</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#Annotation -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#Annotation">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#BioinformaticAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#BioinformaticAction -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#BioinformaticAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#Biomechanic -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#Biomechanic"/>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#CaloriesBurned -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#CaloriesBurned">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#TrainingMeasurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#FilterVariants -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#FilterVariants">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#BioinformaticAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#Force -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#Force">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#Biomechanic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#HRZones -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#HRZones">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#TrainingMeasurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#HeartRateRange -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#HeartRateRange">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#TrainingMeasurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#JuniorResearcher -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#JuniorResearcher">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#Researcher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#Mass -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#Mass">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#Biomechanic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#Power -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#Power">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#Biomechanic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#Preprocessing-Alignment -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#Preprocessing-Alignment">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#BioinformaticAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#PrincipalResearcher -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#PrincipalResearcher">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#Researcher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#RawSequencing -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#RawSequencing">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#BioinformaticAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#Researcher -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#Researcher">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#NaturalPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#SeniorResearcher -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#SeniorResearcher">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#Researcher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#StressLevel -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#StressLevel">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#TrainingMeasurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#TrainingMeasurements -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#TrainingMeasurements"/>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#VariantCalling -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#VariantCalling">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#BioinformaticAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#Velocity -->
+
+    <owl:Class rdf:about="http://upcast-project.eu/dso/nissatech#Velocity">
+        <rdfs:subClassOf rdf:resource="http://upcast-project.eu/dso/nissatech#Biomechanic"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dpv/owl#LegalEntity -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/owl#LegalEntity"/>
+    
+
+
+    <!-- https://w3id.org/dpv/owl#NaturalPerson -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/owl#NaturalPerson"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://upcast-project.eu/dso/nissatech#NHRF -->
+
+    <owl:NamedIndividual rdf:about="http://upcast-project.eu/dso/nissatech#NHRF">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="https://w3id.org/dpv/owl#LegalEntity"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

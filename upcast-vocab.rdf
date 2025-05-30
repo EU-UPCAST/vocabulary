@@ -6,8 +6,8 @@
      xmlns:void="http://rdfs.org/ns/void#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:dcam="http://purl.org/dc/dcam/"
-     xmlns:org="http://www.w3.org/ns/org#"
      xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:org="http://www.w3.org/ns/org#"
      xmlns:dqv="http://www.w3.org/ns/dqv#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -28,7 +28,6 @@
         <owl:versionIRI rdf:resource="https://www.upcast-project.eu/upcast-vocab/1.0"/>
         <owl:imports rdf:resource="https://www.w3.org/TR/vocab-dcat-3/"/>
         <owl:imports rdf:resource="https://w3id.org/idsa/core"/>
-        <schema:funding rdf:resource="https://doi.org/10.3030/101093216"/>
         <dc:title>UPCAST Vocabulary</dc:title>
         <rdfs:label>UPCAST Vocabulary</rdfs:label>
         <terms:description>Vocabulary for interoperability of UPCAST plugins among themselves and with other Data Spaces and Data Marketplaces</terms:description>
@@ -2167,6 +2166,17 @@ Re-used from Workflow Ontology Model.</rdfs:comment>
     
 
 
+    <!-- http://www.w3.org/ns/odrl/2/LeftOperand -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/LeftOperand">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Left Operand</rdfs:label>
+        <skos:definition xml:lang="en">Left operand for a constraint expression.</skos:definition>
+        <skos:note xml:lang="en">Instances of the LeftOperand class are used as the leftOperand of a Constraint.</skos:note>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/ns/odrl/2/Offer -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Offer">
@@ -2544,7 +2554,20 @@ A mutual contractual agreement involves an exchange of a promises in which the p
 
     <!-- https://www.upcast-project.eu/upcast-vocab -->
 
-    <owl:NamedIndividual rdf:about="https://www.upcast-project.eu/upcast-vocab"/>
+    <owl:NamedIndividual rdf:about="https://www.upcast-project.eu/upcast-vocab">
+        <schema:funding rdf:resource="https://doi.org/10.3030/101093216"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#columns -->
+
+    <owl:NamedIndividual rdf:about="https://www.upcast-project.eu/upcast-vocab#columns">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/LeftOperand"/>
+        <rdfs:comment>The colums of the schema of a dataset.
+
+Used to refine an assetCollection of type Dataset into a subset of the data.</rdfs:comment>
+    </owl:NamedIndividual>
     
 
 

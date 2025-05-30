@@ -1,0 +1,477 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://upcast-project.eu/dso/nhrf#"
+     xml:base="https://upcast-project.eu/dso/nhrf"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/ns/prov#">
+    <owl:Ontology rdf:about="https://upcast-project.eu/dso/nhrf#">
+        <rdfs:comment>NHRF Domain Specific Ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/example -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/example"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#category -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#category"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#component -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#component"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#constraints -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#constraints"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#definition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#dm -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#dm"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#n -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#n"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#appliedBy -->
+
+    <owl:ObjectProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#appliedBy">
+        <owl:inverseOf rdf:resource="https://www.upcast-project.eu/upcast-vocab#applies"/>
+        <rdfs:domain rdf:resource="http://www.ict-abovo.eu/ontologies/PolicyModel#Actions"/>
+        <rdfs:range rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProcessingTask"/>
+        <rdfs:comment>Action is Applied By Data Processing Task</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#applies -->
+
+    <owl:ObjectProperty rdf:about="https://www.upcast-project.eu/upcast-vocab#applies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://www.upcast-project.eu/upcast-vocab#DataProcessingTask"/>
+        <rdfs:range rdf:resource="http://www.ict-abovo.eu/ontologies/PolicyModel#Actions"/>
+        <rdfs:comment>Data Processing Task applies Action</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Action -->
+
+    <owl:Class rdf:about="http://schema.org/Action"/>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://www.ict-abovo.eu/ontologies/PolicyModel#Actions -->
+
+    <owl:Class rdf:about="http://www.ict-abovo.eu/ontologies/PolicyModel#Actions"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Agent -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Agent"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Individual -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Individual"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Action -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Action">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Action"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Action</rdfs:label>
+        <skos:definition xml:lang="en">An operation on an Asset.</skos:definition>
+        <skos:note xml:lang="en">Actions may be allowed by Permissions, disallowed by Prohibitions, or made mandatory by Duties.</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Asset -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Asset">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Asset</rdfs:label>
+        <skos:definition xml:lang="en">A resource or a collection of resources that are the subject of a Rule.</skos:definition>
+        <skos:note xml:lang="en">The Asset entity can be any form of identifiable resource, such as data/information, content/media, applications, or services. Furthermore, it can be used to represent other Asset entities that are needed to undertake the Policy expression, such as with the Duty entity. To describe more details about the Asset, it is recommended to use Dublin Core [[dcterms]] elements or other content metadata.</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Party -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Party">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schema.org/Organization"/>
+                    <rdf:Description rdf:about="http://schema.org/Person"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Agent"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Individual"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Party</rdfs:label>
+        <skos:definition xml:lang="en">An entity or a collection of entities that undertake Roles in a Rule.</skos:definition>
+        <skos:note xml:lang="en">The Party entity could be a person, group of people, organisation, or agent. An agent is a person or thing that takes an active role or produces a specified effect. To describe more details about the Party, it is recommended to use W3C vCard Ontology [[vcard-rdf]] or FOAF Vocabulary [[foaf]].</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/purpose -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/purpose">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Purpose</rdfs:label>
+        <skos:definition xml:lang="en">A defined purpose for exercising the action of the Rule.</skos:definition>
+        <skos:note xml:lang="en">Example: Educational use.</skos:note>
+        <skos:scopeNote xml:lang="en">Non-Normative</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>Activity</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:constraints rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig</prov:constraints>
+        <prov:definition>An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</prov:definition>
+        <prov:dm rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity</prov:dm>
+        <prov:n rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity</prov:n>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://upcast-project.eu/dso/nhrf#JuniorResearcher -->
+
+    <owl:Class rdf:about="https://upcast-project.eu/dso/nhrf#JuniorResearcher">
+        <rdfs:subClassOf rdf:resource="https://upcast-project.eu/dso/nhrf#Researcher"/>
+    </owl:Class>
+    
+
+
+    <!-- https://upcast-project.eu/dso/nhrf#PrincipalResearcher -->
+
+    <owl:Class rdf:about="https://upcast-project.eu/dso/nhrf#PrincipalResearcher">
+        <rdfs:subClassOf rdf:resource="https://upcast-project.eu/dso/nhrf#Researcher"/>
+    </owl:Class>
+    
+
+
+    <!-- https://upcast-project.eu/dso/nhrf#Researcher -->
+
+    <owl:Class rdf:about="https://upcast-project.eu/dso/nhrf#Researcher">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#NaturalPerson"/>
+    </owl:Class>
+    
+
+
+    <!-- https://upcast-project.eu/dso/nhrf#SeniorResearcher -->
+
+    <owl:Class rdf:about="https://upcast-project.eu/dso/nhrf#SeniorResearcher">
+        <rdfs:subClassOf rdf:resource="https://upcast-project.eu/dso/nhrf#Researcher"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dpv/owl#Entity -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/owl#Entity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
+        <terms:contributor>
+            <rdf:Description rdf:nodeID="_:genid10"/>
+        </terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-02</terms:created>
+        <ns:term_status xml:lang="en">accepted</ns:term_status>
+        <skos:definition xml:lang="en">A human or non-human &apos;thing&apos; that constitutes as an entity</skos:definition>
+        <skos:prefLabel xml:lang="en">Entity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dpv/owl#LegalEntity -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/owl#LegalEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Entity"/>
+        <terms:contributor>
+            <rdf:Description rdf:nodeID="_:genid11"/>
+        </terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-05</terms:created>
+        <ns:term_status xml:lang="en">accepted</ns:term_status>
+        <skos:definition xml:lang="en">A human or non-human &apos;thing&apos; that constitutes as an entity and which is recognised and defined in law</skos:definition>
+        <skos:prefLabel xml:lang="en">Legal Entity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dpv/owl#NaturalPerson -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/owl#NaturalPerson">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Entity"/>
+        <terms:contributor>
+            <rdf:Description rdf:nodeID="_:genid12"/>
+        </terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-09</terms:created>
+        <ns:term_status xml:lang="en">accepted</ns:term_status>
+        <skos:definition xml:lang="en">A human</skos:definition>
+        <skos:prefLabel xml:lang="en">Natural Person</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dpv/owl#OrganisationalUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/dpv/owl#OrganisationalUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/owl#Entity"/>
+        <terms:contributor>
+            <rdf:Description rdf:nodeID="_:genid13"/>
+        </terms:contributor>
+        <terms:contributor>
+            <rdf:Description/>
+        </terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-03-23</terms:created>
+        <vann:example rdf:resource="https://w3id.org/dpv/examples/owl#E0037"/>
+        <ns:term_status xml:lang="en">accepted</ns:term_status>
+        <skos:definition xml:lang="en">Entity within an organisation that does not constitute as a separate legal entity</skos:definition>
+        <skos:prefLabel xml:lang="en">Organisational Unit</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- https://www.upcast-project.eu/upcast-vocab#DataProcessingTask -->
+
+    <owl:Class rdf:about="https://www.upcast-project.eu/upcast-vocab#DataProcessingTask"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://upcast-project.eu/dso/nhrf#Annotation -->
+
+    <owl:NamedIndividual rdf:about="https://upcast-project.eu/dso/nhrf#Annotation">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://upcast-project.eu/dso/nhrf#FilterVariants -->
+
+    <owl:NamedIndividual rdf:about="https://upcast-project.eu/dso/nhrf#FilterVariants">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://upcast-project.eu/dso/nhrf#Preprocessing-Alignment -->
+
+    <owl:NamedIndividual rdf:about="https://upcast-project.eu/dso/nhrf#Preprocessing-Alignment">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://upcast-project.eu/dso/nhrf#RawSequencing -->
+
+    <owl:NamedIndividual rdf:about="https://upcast-project.eu/dso/nhrf#RawSequencing">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://upcast-project.eu/dso/nhrf#VariantCalling -->
+
+    <owl:NamedIndividual rdf:about="https://upcast-project.eu/dso/nhrf#VariantCalling">
+        <rdf:type rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
